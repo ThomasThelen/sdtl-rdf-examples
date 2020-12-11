@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM python:3.8.6
 
 ENV REPRO_NAME  repro-template
 ENV REPRO_MNT   /mnt/${REPRO_NAME}
@@ -13,7 +13,10 @@ RUN echo '***** Install packages required for creating this image *****'    \
     && apt -y install apt-utils wget curl makepasswd gcc make git           \
                                                                             \
     && echo '***** Install command-line utility packages *****'             \
-    && apt -y install sudo less file tree
+    && apt -y install sudo less file tree                                   \
+                                                                            \
+    && echo '***** Install SDTL converter *****'                            \
+    && python3 -m pip install git+https://github.com/ThomasThelen/sdtl-converter.git
 
 RUN echo '***** Add the REPRO user and group *****'                         \
     && groupadd ${REPRO_USER} --gid ${REPRO_GID}                            \
@@ -32,6 +35,6 @@ WORKDIR $HOME
 
 RUN echo 'PATH=~/go/bin:/usr/local/go/bin:$PATH' >> ${BASHRC}
 RUN echo "export IN_RUNNING_REPRO=${REPRO_NAME}" >> ${BASHRC}
-RUN echo "cd ${REPRO_MNT}" >> ${BASHRC}
+RUN echo "cd ${REPRO_MNT}" >> ${BASHRC};
 
 CMD  /bin/bash -il
