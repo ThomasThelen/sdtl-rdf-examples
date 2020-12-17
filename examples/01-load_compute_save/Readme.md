@@ -4,8 +4,8 @@ This example has a Load, Compute, and Save command.
 
 `sdtl.json`: The SDTL as JSON
 
-`turtle.ttl`: The SDTL as RDF serialized as Turtle
+`rdf.ttl`: The SDTL as RDF serialized as Turtle
 
-`jsonld.jsonld`: The SDTL as RDF serialized as JSON-LD
+`rdf.jsonld`: The SDTL as RDF serialized as JSON-LD
 
 `script.do`: The STATA script being analyzed
