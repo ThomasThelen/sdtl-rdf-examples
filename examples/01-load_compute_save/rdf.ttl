@@ -1,0 +1,198 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://www.schema.org/#> .
+@prefix sdtl: <https://rdf-vocabulary.ddialliance.org/sdtl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#Program/1> a sdtl:Program ;
+    sdtl:Commands <#Commands/1> .
+
+<#ArgumentsInventory/1> a rdf:Bag ;
+    rdf:rdf:_1 <#FunctionArgument/1> ;
+    rdf:rdf:_2 <#FunctionArgument/2> .
+
+<#ArgumentsInventory/2> a rdf:Bag ;
+    rdf:rdf:_1 <#FunctionArgument/3> .
+
+<#ArgumentsInventory/3> a rdf:Bag ;
+    rdf:rdf:_1 <#FunctionArgument/4> ;
+    rdf:rdf:_2 <#FunctionArgument/5> .
+
+<#Commands/1> a rdf:Seq ;
+    rdf:rdf:_1 <#Load/1> ;
+    rdf:rdf:_2 <#Compute/1> ;
+    rdf:rdf:_3 <#Save/1> .
+
+<#Compute/1> a sdtl:Compute ;
+    sdtl:Command "compute" ;
+    sdtl:ConsumesDataframe <#DataframeInventory/2> ;
+    sdtl:Expression <#FunctionCallExpression/1> ;
+    sdtl:ProducesDataframe <#DataframeInventory/3> ;
+    sdtl:SourceInformation <#SourceInformationInventory/2> ;
+    sdtl:Variable <#VariableSymbolExpression/1> .
+
+<#DataframeInventory/1> a rdf:Bag ;
+    rdf:rdf:_1 <#DataframeDescription/1> .
+
+<#DataframeInventory/2> a rdf:Bag ;
+    rdf:rdf:_1 <#DataframeDescription/1> .
+
+<#DataframeInventory/3> a rdf:Bag ;
+    rdf:rdf:_1 <#DataframeDescription/2> .
+
+<#DataframeInventory/4> a rdf:Bag ;
+    rdf:rdf:_1 <#DataframeDescription/2> .
+
+<#FunctionArgument/1> a sdtl:FunctionArgument ;
+    sdtl:ArgumentName "EXP1" ;
+    sdtl:ArgumentValue <#NumericConstantExpression/1> .
+
+<#FunctionArgument/2> a sdtl:FunctionArgument ;
+    sdtl:ArgumentName "EXP2" ;
+    sdtl:ArgumentValue <#FunctionCallExpression/2> .
+
+<#FunctionArgument/3> a sdtl:FunctionArgument ;
+    sdtl:ArgumentName "EXP1" ;
+    sdtl:ArgumentValue <#FunctionCallExpression/3> .
+
+<#FunctionArgument/4> a sdtl:FunctionArgument ;
+    sdtl:ArgumentName "EXP1" ;
+    sdtl:ArgumentValue <#VariableSymbolExpression/2> .
+
+<#FunctionArgument/5> a sdtl:FunctionArgument ;
+    sdtl:ArgumentName "EXP2" ;
+    sdtl:ArgumentValue <#NumericConstantExpression/2> .
+
+<#FunctionCallExpression/1> a sdtl:FunctionCallExpression ;
+    sdtl:Arguments <#ArgumentsInventory/1> ;
+    sdtl:Function "multiplication" ;
+    sdtl:IsSdtlName true .
+
+<#FunctionCallExpression/2> a sdtl:FunctionCallExpression ;
+    sdtl:Arguments <#ArgumentsInventory/2> ;
+    sdtl:Function "int" ;
+    sdtl:IsSdtlName false .
+
+<#FunctionCallExpression/3> a sdtl:FunctionCallExpression ;
+    sdtl:Arguments <#ArgumentsInventory/3> ;
+    sdtl:Function "division" ;
+    sdtl:IsSdtlName true .
+
+<#Load/1> a sdtl:Load ;
+    sdtl:Command "load" ;
+    sdtl:FileName "AgeDeath.dta" ;
+    sdtl:IsCompressed false ;
+    sdtl:ProducesDataframe <#DataframeInventory/1> ;
+    sdtl:Software "Stata" ;
+    sdtl:SourceInformation <#SourceInformationInventory/1> .
+
+<#NumericConstantExpression/1> a sdtl:NumericConstantExpression ;
+    sdtl:NumericType "Integer" ;
+    sdtl:Value "5" .
+
+<#NumericConstantExpression/2> a sdtl:NumericConstantExpression ;
+    sdtl:NumericType "Integer" ;
+    sdtl:Value "5" .
+
+<#Save/1> a sdtl:Save ;
+    sdtl:Command "save" ;
+    sdtl:ConsumesDataframe <#DataframeInventory/4> ;
+    sdtl:FileName "AgeDeath5" ;
+    sdtl:IsCompressed false ;
+    sdtl:Software "Stata" ;
+    sdtl:SourceInformation <#SourceInformationInventory/3> .
+
+<#SourceInformation/1> a sdtl:SourceInformation ;
+    sdtl:LineNumberStart 1 ;
+    sdtl:OriginalSourceText "use \"AgeDeath.dta\"" .
+
+<#SourceInformation/2> a sdtl:SourceInformation ;
+    sdtl:LineNumberStart 2 ;
+    sdtl:OriginalSourceText "replace age = 5*int(age/5)" .
+
+<#SourceInformation/3> a sdtl:SourceInformation ;
+    sdtl:LineNumberStart 3 ;
+    sdtl:OriginalSourceText "save \"AgeDeath5\"" .
+
+<#SourceInformationInventory/1> a rdf:Seq ;
+    rdf:rdf:_1 <#SourceInformation/1> .
+
+<#SourceInformationInventory/2> a rdf:Seq ;
+    rdf:rdf:_1 <#SourceInformation/2> .
+
+<#SourceInformationInventory/3> a rdf:Seq ;
+    rdf:rdf:_1 <#SourceInformation/3> .
+
+<#VariableInventory/1> a rdf:Seq ;
+    rdf:rdf:_1 <#dataframeVariable/1> ;
+    rdf:rdf:_2 <#dataframeVariable/2> ;
+    rdf:rdf:_3 <#dataframeVariable/3> ;
+    rdf:rdf:_4 <#dataframeVariable/4> ;
+    rdf:rdf:_5 <#dataframeVariable/5> ;
+    rdf:rdf:_6 <#dataframeVariable/6> ;
+    rdf:rdf:_7 <#dataframeVariable/7> .
+
+<#VariableInventory/2> a rdf:Seq ;
+    rdf:rdf:_1 <#dataframeVariable/8> ;
+    rdf:rdf:_2 <#dataframeVariable/9> ;
+    rdf:rdf:_3 <#dataframeVariable/10> ;
+    rdf:rdf:_4 <#dataframeVariable/11> ;
+    rdf:rdf:_5 <#dataframeVariable/12> ;
+    rdf:rdf:_6 <#dataframeVariable/13> ;
+    rdf:rdf:_7 <#dataframeVariable/14> .
+
+<#VariableSymbolExpression/1> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "age" .
+
+<#VariableSymbolExpression/2> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "age" .
+
+<#dataframeVariable/1> a schema:Thing ;
+    schema:name "personid" .
+
+<#dataframeVariable/10> a schema:Thing ;
+    schema:name "died" .
+
+<#dataframeVariable/11> a schema:Thing ;
+    schema:name "name" .
+
+<#dataframeVariable/12> a schema:Thing ;
+    schema:name "refarea" .
+
+<#dataframeVariable/13> a schema:Thing ;
+    schema:name "sex" .
+
+<#dataframeVariable/14> a schema:Thing ;
+    schema:name "age" .
+
+<#dataframeVariable/2> a schema:Thing ;
+    schema:name "born" .
+
+<#dataframeVariable/3> a schema:Thing ;
+    schema:name "died" .
+
+<#dataframeVariable/4> a schema:Thing ;
+    schema:name "name" .
+
+<#dataframeVariable/5> a schema:Thing ;
+    schema:name "refarea" .
+
+<#dataframeVariable/6> a schema:Thing ;
+    schema:name "sex" .
+
+<#dataframeVariable/7> a schema:Thing ;
+    schema:name "age" .
+
+<#dataframeVariable/8> a schema:Thing ;
+    schema:name "personid" .
+
+<#dataframeVariable/9> a schema:Thing ;
+    schema:name "born" .
+
+<#DataframeDescription/1> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/1> ;
+    sdtl:dataframeName "Active" .
+
+<#DataframeDescription/2> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/2> ;
+    sdtl:dataframeName "Active" .
+
