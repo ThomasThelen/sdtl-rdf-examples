@@ -1,0 +1,613 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://www.schema.org/#> .
+@prefix sdtl: <https://rdf-vocabulary.ddialliance.org/sdtl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#Program/1> a sdtl:Program ;
+    sdtl:CommandCount 3 ;
+    sdtl:Commands <#CommandInventory/1> ;
+    sdtl:Parser "python-sdtl-converter" ;
+    sdtl:ParserVersion "SDTL0.3" ;
+    sdtl:SourceFileName "N/A" ;
+    sdtl:SourceLanguage "pytho" .
+
+<#CommandInventory/1> a rdf:Seq ;
+    rdf:_1 <#Load/1> ;
+    rdf:_10 <#Save/1> ;
+    rdf:_2 <#Compute/1> ;
+    rdf:_3 <#Compute/2> ;
+    rdf:_4 <#Compute/3> ;
+    rdf:_5 <#Load/2> ;
+    rdf:_6 <#Compute/4> ;
+    rdf:_7 <#Compute/5> ;
+    rdf:_8 <#Compute/6> ;
+    rdf:_9 <#Compute/7> .
+
+<#Compute/1> a sdtl:Compute ;
+    sdtl:ConsumesDataframe <#DataframeInventory/2> ;
+    sdtl:ProducesDataframe <#DataframeInventory/3> ;
+    sdtl:command "Compute" ;
+    sdtl:expression <#NumericConstantExpression/1> ;
+    sdtl:sourceInformation <#sourceInformation/2> ;
+    sdtl:variable <#VariableSymbolExpression/1> .
+
+<#Compute/2> a sdtl:Compute ;
+    sdtl:ConsumesDataframe <#DataframeInventory/4> ;
+    sdtl:ProducesDataframe <#DataframeInventory/5> ;
+    sdtl:command "Compute" ;
+    sdtl:expression <#FunctionCallExpression/1> ;
+    sdtl:sourceInformation <#sourceInformation/3> ;
+    sdtl:variable <#VariableSymbolExpression/3> .
+
+<#Compute/3> a sdtl:Compute ;
+    sdtl:ConsumesDataframe <#DataframeInventory/6> ;
+    sdtl:ProducesDataframe <#DataframeInventory/7> ;
+    sdtl:command "Compute" ;
+    sdtl:expression <#FunctionCallExpression/2> ;
+    sdtl:sourceInformation <#sourceInformation/4> ;
+    sdtl:variable <#VariableSymbolExpression/6> .
+
+<#Compute/4> a sdtl:Compute ;
+    sdtl:ConsumesDataframe <#DataframeInventory/9> ;
+    sdtl:ProducesDataframe <#DataframeInventory/10> ;
+    sdtl:command "Compute" ;
+    sdtl:expression <#FunctionCallExpression/3> ;
+    sdtl:sourceInformation <#sourceInformation/6> ;
+    sdtl:variable <#VariableSymbolExpression/8> .
+
+<#Compute/5> a sdtl:Compute ;
+    sdtl:ConsumesDataframe <#DataframeInventory/11> ;
+    sdtl:ProducesDataframe <#DataframeInventory/12> ;
+    sdtl:command "Compute" ;
+    sdtl:expression <#FunctionCallExpression/6> ;
+    sdtl:sourceInformation <#sourceInformation/7> ;
+    sdtl:variable <#VariableSymbolExpression/10> .
+
+<#Compute/6> a sdtl:Compute ;
+    sdtl:ConsumesDataframe <#DataframeInventory/13> ;
+    sdtl:ProducesDataframe <#DataframeInventory/14> ;
+    sdtl:command "Compute" ;
+    sdtl:expression <#FunctionCallExpression/9> ;
+    sdtl:sourceInformation <#sourceInformation/8> ;
+    sdtl:variable <#VariableSymbolExpression/12> .
+
+<#Compute/7> a sdtl:Compute ;
+    sdtl:ConsumesDataframe <#DataframeInventory/15> ;
+    sdtl:ProducesDataframe <#DataframeInventory/16> ;
+    sdtl:command "Compute" ;
+    sdtl:expression <#FunctionCallExpression/12> ;
+    sdtl:sourceInformation <#sourceInformation/9> ;
+    sdtl:variable <#VariableSymbolExpression/14> .
+
+<#DataframeDescription/4> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/4> ;
+    sdtl:dataframeName "df" .
+
+<#DataframeDescription/6> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/6> ;
+    sdtl:dataframeName "temps_c" .
+
+<#DataframeDescription/7> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/7> ;
+    sdtl:dataframeName "temps_c" .
+
+<#DataframeDescription/9> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/9> ;
+    sdtl:dataframeName "temps_k" .
+
+<#DataframeInventory/1> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/1> .
+
+<#DataframeInventory/10> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/6> .
+
+<#DataframeInventory/11> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/5> .
+
+<#DataframeInventory/12> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/7> .
+
+<#DataframeInventory/13> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/5> .
+
+<#DataframeInventory/14> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/8> .
+
+<#DataframeInventory/15> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/8> .
+
+<#DataframeInventory/16> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/9> .
+
+<#DataframeInventory/17> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/5> .
+
+<#DataframeInventory/2> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/1> .
+
+<#DataframeInventory/3> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/2> .
+
+<#DataframeInventory/4> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/2> .
+
+<#DataframeInventory/5> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/3> .
+
+<#DataframeInventory/6> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/3> .
+
+<#DataframeInventory/7> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/4> .
+
+<#DataframeInventory/8> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/5> .
+
+<#DataframeInventory/9> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/5> .
+
+<#FunctionCallExpression/1> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/1>,
+        <#arguments/2> ;
+    sdtl:function "addition" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/10> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/18>,
+        <#arguments/21> ;
+    sdtl:function "multiplication" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/11> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/19>,
+        <#arguments/20> ;
+    sdtl:function "subtraction" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/12> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/23>,
+        <#arguments/24> ;
+    sdtl:function "addition" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/2> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/3>,
+        <#arguments/4> ;
+    sdtl:function "subtraction" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/3> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/10>,
+        <#arguments/5> ;
+    sdtl:function "division" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/4> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/6>,
+        <#arguments/9> ;
+    sdtl:function "multiplication" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/5> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/7>,
+        <#arguments/8> ;
+    sdtl:function "subtraction" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/6> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/11>,
+        <#arguments/16> ;
+    sdtl:function "division" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/7> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/12>,
+        <#arguments/15> ;
+    sdtl:function "multiplication" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/8> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/13>,
+        <#arguments/14> ;
+    sdtl:function "subtraction" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/9> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/17>,
+        <#arguments/22> ;
+    sdtl:function "division" ;
+    sdtl:isSdtlName true .
+
+<#Load/1> a sdtl:Load ;
+    sdtl:ProducesDataframe <#DataframeInventory/1> ;
+    sdtl:command "Load" ;
+    sdtl:fileName "df.csv" ;
+    sdtl:software "csv" ;
+    sdtl:sourceInformation <#sourceInformation/1> .
+
+<#Load/2> a sdtl:Load ;
+    sdtl:ProducesDataframe <#DataframeInventory/8> ;
+    sdtl:command "Load" ;
+    sdtl:fileName "temps.csv" ;
+    sdtl:software "csv" ;
+    sdtl:sourceInformation <#sourceInformation/5> .
+
+<#NumericConstantExpression/1> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Integer" ;
+    sdtl:value "3" .
+
+<#NumericConstantExpression/10> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Integer" ;
+    sdtl:value "5" .
+
+<#NumericConstantExpression/11> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Integer" ;
+    sdtl:value "9" .
+
+<#NumericConstantExpression/12> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Integer" ;
+    sdtl:value "273" .
+
+<#NumericConstantExpression/2> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Real" ;
+    sdtl:value "6.5" .
+
+<#NumericConstantExpression/3> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Integer" ;
+    sdtl:value "32" .
+
+<#NumericConstantExpression/4> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Integer" ;
+    sdtl:value "5" .
+
+<#NumericConstantExpression/5> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Integer" ;
+    sdtl:value "9" .
+
+<#NumericConstantExpression/6> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Integer" ;
+    sdtl:value "32" .
+
+<#NumericConstantExpression/7> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Integer" ;
+    sdtl:value "5" .
+
+<#NumericConstantExpression/8> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Integer" ;
+    sdtl:value "9" .
+
+<#NumericConstantExpression/9> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Integer" ;
+    sdtl:value "32" .
+
+<#Save/1> a sdtl:Save ;
+    sdtl:ConsumesDataframe <#DataframeInventory/17> ;
+    sdtl:command "Save" ;
+    sdtl:fileName "temps.csv" ;
+    sdtl:software "csv" ;
+    sdtl:sourceInformation <#sourceInformation/10> .
+
+<#VariableInventory/1> a rdf:Seq ;
+    rdf:_1 <#dataframeVariable/1> ;
+    rdf:_2 <#dataframeVariable/2> .
+
+<#VariableInventory/2> a rdf:Seq ;
+    rdf:_1 <#dataframeVariable/3> ;
+    rdf:_2 <#dataframeVariable/4> .
+
+<#VariableInventory/3> a rdf:Seq ;
+    rdf:_1 <#dataframeVariable/5> ;
+    rdf:_2 <#dataframeVariable/6> .
+
+<#VariableInventory/4> a rdf:Seq ;
+    rdf:_1 <#dataframeVariable/7> ;
+    rdf:_2 <#dataframeVariable/8> ;
+    rdf:_3 <#dataframeVariable/9> .
+
+<#VariableInventory/5> a rdf:Seq ;
+    rdf:_1 <#dataframeVariable/10> .
+
+<#VariableInventory/6> a rdf:Seq ;
+    rdf:_1 <#dataframeVariable/11> ;
+    rdf:_2 <#dataframeVariable/12> .
+
+<#VariableInventory/7> a rdf:Seq ;
+    rdf:_1 <#dataframeVariable/13> ;
+    rdf:_2 <#dataframeVariable/14> .
+
+<#VariableInventory/8> a rdf:Seq ;
+    rdf:_1 <#dataframeVariable/15> ;
+    rdf:_2 <#dataframeVariable/16> .
+
+<#VariableInventory/9> a rdf:Seq ;
+    rdf:_1 <#dataframeVariable/17> ;
+    rdf:_2 <#dataframeVariable/18> ;
+    rdf:_3 <#dataframeVariable/19> .
+
+<#VariableSymbolExpression/1> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "A" .
+
+<#VariableSymbolExpression/10> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "celsius" .
+
+<#VariableSymbolExpression/11> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "fahrenheit" .
+
+<#VariableSymbolExpression/12> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "celsius" .
+
+<#VariableSymbolExpression/13> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "celsius" .
+
+<#VariableSymbolExpression/14> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "kelvin" .
+
+<#VariableSymbolExpression/2> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "B" .
+
+<#VariableSymbolExpression/3> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "B" .
+
+<#VariableSymbolExpression/4> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "A" .
+
+<#VariableSymbolExpression/5> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "B" .
+
+<#VariableSymbolExpression/6> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "C" .
+
+<#VariableSymbolExpression/7> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "fahrenheit" .
+
+<#VariableSymbolExpression/8> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "celsius" .
+
+<#VariableSymbolExpression/9> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "fahrenheit" .
+
+<#arguments/1> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#VariableSymbolExpression/2> .
+
+<#arguments/10> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/5> .
+
+<#arguments/11> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#FunctionCallExpression/7> .
+
+<#arguments/12> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#FunctionCallExpression/8> .
+
+<#arguments/13> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#VariableSymbolExpression/9> .
+
+<#arguments/14> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/6> .
+
+<#arguments/15> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/7> .
+
+<#arguments/16> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/8> .
+
+<#arguments/17> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#FunctionCallExpression/10> .
+
+<#arguments/18> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#FunctionCallExpression/11> .
+
+<#arguments/19> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#VariableSymbolExpression/11> .
+
+<#arguments/2> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/2> .
+
+<#arguments/20> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/9> .
+
+<#arguments/21> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/10> .
+
+<#arguments/22> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/11> .
+
+<#arguments/23> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#VariableSymbolExpression/13> .
+
+<#arguments/24> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/12> .
+
+<#arguments/3> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#VariableSymbolExpression/4> .
+
+<#arguments/4> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#VariableSymbolExpression/5> .
+
+<#arguments/5> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#FunctionCallExpression/4> .
+
+<#arguments/6> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#FunctionCallExpression/5> .
+
+<#arguments/7> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#VariableSymbolExpression/7> .
+
+<#arguments/8> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/3> .
+
+<#arguments/9> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/4> .
+
+<#dataframeVariable/1> a schema:Thing ;
+    schema:name "A" .
+
+<#dataframeVariable/10> a schema:Thing ;
+    schema:name "fahrenheit" .
+
+<#dataframeVariable/11> a schema:Thing ;
+    schema:name "fahrenheit" .
+
+<#dataframeVariable/12> a schema:Thing ;
+    schema:name "celsius" .
+
+<#dataframeVariable/13> a schema:Thing ;
+    schema:name "fahrenheit" .
+
+<#dataframeVariable/14> a schema:Thing ;
+    schema:name "celsius" .
+
+<#dataframeVariable/15> a schema:Thing ;
+    schema:name "fahrenheit" .
+
+<#dataframeVariable/16> a schema:Thing ;
+    schema:name "celsius" .
+
+<#dataframeVariable/17> a schema:Thing ;
+    schema:name "fahrenheit" .
+
+<#dataframeVariable/18> a schema:Thing ;
+    schema:name "celsius" .
+
+<#dataframeVariable/19> a schema:Thing ;
+    schema:name "kelvin" .
+
+<#dataframeVariable/2> a schema:Thing ;
+    schema:name "B" .
+
+<#dataframeVariable/3> a schema:Thing ;
+    schema:name "A" .
+
+<#dataframeVariable/4> a schema:Thing ;
+    schema:name "B" .
+
+<#dataframeVariable/5> a schema:Thing ;
+    schema:name "A" .
+
+<#dataframeVariable/6> a schema:Thing ;
+    schema:name "B" .
+
+<#dataframeVariable/7> a schema:Thing ;
+    schema:name "A" .
+
+<#dataframeVariable/8> a schema:Thing ;
+    schema:name "B" .
+
+<#dataframeVariable/9> a schema:Thing ;
+    schema:name "C" .
+
+<#sourceInformation/1> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 10 ;
+    sdtl:lineNumberStart 10 ;
+    sdtl:originalSourceText "df = pd.read_csv(\"df.csv\")" ;
+    sdtl:sourceStartIndex 70 ;
+    sdtl:sourceStopIndex 95 .
+
+<#sourceInformation/10> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 32 ;
+    sdtl:lineNumberStart 32 ;
+    sdtl:originalSourceText "temps.to_csv(\"temps.csv\")" ;
+    sdtl:sourceStartIndex 549 ;
+    sdtl:sourceStopIndex 573 .
+
+<#sourceInformation/2> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 12 ;
+    sdtl:lineNumberStart 12 ;
+    sdtl:originalSourceText "df[\"A\"] = 3" ;
+    sdtl:sourceStartIndex 98 ;
+    sdtl:sourceStopIndex 108 .
+
+<#sourceInformation/3> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 13 ;
+    sdtl:lineNumberStart 13 ;
+    sdtl:originalSourceText "df[\"B\"] = df[\"B\"] + 6.5" ;
+    sdtl:sourceStartIndex 110 ;
+    sdtl:sourceStopIndex 132 .
+
+<#sourceInformation/4> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 14 ;
+    sdtl:lineNumberStart 14 ;
+    sdtl:originalSourceText "df[\"C\"] = df[\"A\"] - df[\"B\"]" ;
+    sdtl:sourceStartIndex 134 ;
+    sdtl:sourceStopIndex 160 .
+
+<#sourceInformation/5> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 24 ;
+    sdtl:lineNumberStart 24 ;
+    sdtl:originalSourceText "temps = pd.read_csv(\"temps.csv\")" ;
+    sdtl:sourceStartIndex 235 ;
+    sdtl:sourceStopIndex 266 .
+
+<#sourceInformation/6> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 26 ;
+    sdtl:lineNumberStart 26 ;
+    sdtl:originalSourceText "temps_c = temps.assign(celsius=((temps[\"fahrenheit\"] - 32) * 5 / 9))" ;
+    sdtl:sourceStartIndex 269 ;
+    sdtl:sourceStopIndex 336 .
+
+<#sourceInformation/7> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 27 ;
+    sdtl:lineNumberStart 27 ;
+    sdtl:originalSourceText "temps_c = temps.assign(celsius=lambda x: (x.fahrenheit - 32) * 5 / 9)" ;
+    sdtl:sourceStartIndex 338 ;
+    sdtl:sourceStopIndex 406 .
+
+<#sourceInformation/8> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 30 ;
+    sdtl:lineNumberStart 29 ;
+    sdtl:originalSourceText """temps_k = temps.assign(celsius=lambda x: ((x["fahrenheit"] - 32) * 5 / 9), 
+                       kelvin=lambda x : (x["celsius"] + 273))""" ;
+    sdtl:sourceStartIndex 409 ;
+    sdtl:sourceStopIndex 546 .
+
+<#sourceInformation/9> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 30 ;
+    sdtl:lineNumberStart 29 ;
+    sdtl:originalSourceText """temps_k = temps.assign(celsius=lambda x: ((x["fahrenheit"] - 32) * 5 / 9), 
+                       kelvin=lambda x : (x["celsius"] + 273))""" ;
+    sdtl:sourceStartIndex 409 ;
+    sdtl:sourceStopIndex 546 .
+
+<#DataframeDescription/1> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/1> ;
+    sdtl:dataframeName "df" .
+
+<#DataframeDescription/2> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/2> ;
+    sdtl:dataframeName "df" .
+
+<#DataframeDescription/3> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/3> ;
+    sdtl:dataframeName "df" .
+
+<#DataframeDescription/8> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/8> ;
+    sdtl:dataframeName "_activeDataframe_0" .
+
+<#DataframeDescription/5> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/5> ;
+    sdtl:dataframeName "temps" .
+
