@@ -4,7 +4,12 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <#Program/1> a sdtl:Program ;
-    sdtl:Commands <#Commands/1> .
+    sdtl:CommandCount 3 ;
+    sdtl:Commands <#Commands/1> ;
+    sdtl:Parser "stata-sdtl-converter" ;
+    sdtl:ParserVersion "SDTL0.3" ;
+    sdtl:SourceFileName "N/A" ;
+    sdtl:SourceLanguage "stata" .
 
 <#ArgumentsInventory/1> a rdf:Bag ;
     rdf:rdf:_1 <#FunctionArgument/1> ;
