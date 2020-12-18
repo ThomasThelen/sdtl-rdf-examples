@@ -1,5 +1,4 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix schema: <http://www.schema.org/#> .
 @prefix sdtl: <https://rdf-vocabulary.ddialliance.org/sdtl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -462,62 +461,62 @@
     sdtl:argumentName "EXP2" ;
     sdtl:argumentValue <#NumericConstantExpression/4> .
 
-<#dataframeVariable/1> a schema:Thing ;
-    schema:name "A" .
+<#dataframeVariable/1> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "A" .
 
-<#dataframeVariable/10> a schema:Thing ;
-    schema:name "fahrenheit" .
+<#dataframeVariable/10> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "fahrenheit" .
 
-<#dataframeVariable/11> a schema:Thing ;
-    schema:name "fahrenheit" .
+<#dataframeVariable/11> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "fahrenheit" .
 
-<#dataframeVariable/12> a schema:Thing ;
-    schema:name "celsius" .
+<#dataframeVariable/12> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "celsius" .
 
-<#dataframeVariable/13> a schema:Thing ;
-    schema:name "fahrenheit" .
+<#dataframeVariable/13> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "fahrenheit" .
 
-<#dataframeVariable/14> a schema:Thing ;
-    schema:name "celsius" .
+<#dataframeVariable/14> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "celsius" .
 
-<#dataframeVariable/15> a schema:Thing ;
-    schema:name "fahrenheit" .
+<#dataframeVariable/15> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "fahrenheit" .
 
-<#dataframeVariable/16> a schema:Thing ;
-    schema:name "celsius" .
+<#dataframeVariable/16> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "celsius" .
 
-<#dataframeVariable/17> a schema:Thing ;
-    schema:name "fahrenheit" .
+<#dataframeVariable/17> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "fahrenheit" .
 
-<#dataframeVariable/18> a schema:Thing ;
-    schema:name "celsius" .
+<#dataframeVariable/18> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "celsius" .
 
-<#dataframeVariable/19> a schema:Thing ;
-    schema:name "kelvin" .
+<#dataframeVariable/19> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "kelvin" .
 
-<#dataframeVariable/2> a schema:Thing ;
-    schema:name "B" .
+<#dataframeVariable/2> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "B" .
 
-<#dataframeVariable/3> a schema:Thing ;
-    schema:name "A" .
+<#dataframeVariable/3> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "A" .
 
-<#dataframeVariable/4> a schema:Thing ;
-    schema:name "B" .
+<#dataframeVariable/4> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "B" .
 
-<#dataframeVariable/5> a schema:Thing ;
-    schema:name "A" .
+<#dataframeVariable/5> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "A" .
 
-<#dataframeVariable/6> a schema:Thing ;
-    schema:name "B" .
+<#dataframeVariable/6> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "B" .
 
-<#dataframeVariable/7> a schema:Thing ;
-    schema:name "A" .
+<#dataframeVariable/7> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "A" .
 
-<#dataframeVariable/8> a schema:Thing ;
-    schema:name "B" .
+<#dataframeVariable/8> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "B" .
 
-<#dataframeVariable/9> a schema:Thing ;
-    schema:name "C" .
+<#dataframeVariable/9> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "C" .
 
 <#sourceInformation/1> a sdtl:SourceInformation ;
     sdtl:lineNumberEnd 10 ;

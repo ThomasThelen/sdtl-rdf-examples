@@ -1,5 +1,4 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix schema: <http://www.schema.org/#> .
 @prefix sdtl: <https://rdf-vocabulary.ddialliance.org/sdtl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -151,47 +150,47 @@
 <#VariableSymbolExpression/2> a sdtl:VariableSymbolExpression ;
     sdtl:VariableName "age" .
 
-<#dataframeVariable/1> a schema:Thing ;
-    schema:name "personid" .
+<#dataframeVariable/1> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "personid" .
 
-<#dataframeVariable/10> a schema:Thing ;
-    schema:name "died" .
+<#dataframeVariable/10> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "died" .
 
-<#dataframeVariable/11> a schema:Thing ;
-    schema:name "name" .
+<#dataframeVariable/11> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "name" .
 
-<#dataframeVariable/12> a schema:Thing ;
-    schema:name "refarea" .
+<#dataframeVariable/12> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "refarea" .
 
-<#dataframeVariable/13> a schema:Thing ;
-    schema:name "sex" .
+<#dataframeVariable/13> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "sex" .
 
-<#dataframeVariable/14> a schema:Thing ;
-    schema:name "age" .
+<#dataframeVariable/14> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "age" .
 
-<#dataframeVariable/2> a schema:Thing ;
-    schema:name "born" .
+<#dataframeVariable/2> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "born" .
 
-<#dataframeVariable/3> a schema:Thing ;
-    schema:name "died" .
+<#dataframeVariable/3> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "died" .
 
-<#dataframeVariable/4> a schema:Thing ;
-    schema:name "name" .
+<#dataframeVariable/4> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "name" .
 
-<#dataframeVariable/5> a schema:Thing ;
-    schema:name "refarea" .
+<#dataframeVariable/5> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "refarea" .
 
-<#dataframeVariable/6> a schema:Thing ;
-    schema:name "sex" .
+<#dataframeVariable/6> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "sex" .
 
-<#dataframeVariable/7> a schema:Thing ;
-    schema:name "age" .
+<#dataframeVariable/7> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "age" .
 
-<#dataframeVariable/8> a schema:Thing ;
-    schema:name "personid" .
+<#dataframeVariable/8> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "personid" .
 
-<#dataframeVariable/9> a schema:Thing ;
-    schema:name "born" .
+<#dataframeVariable/9> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "born" .
 
 <#DataframeDescription/1> a sdtl:DataframeDescription ;
     sdtl:VariableInventory <#VariableInventory/1> ;
