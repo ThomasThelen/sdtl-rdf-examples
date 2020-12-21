@@ -1,0 +1,1416 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sdtl: <https://rdf-vocabulary.ddialliance.org/sdtl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#Program/1> a sdtl:Program ;
+    sdtl:Commands <#CommandInventory/1> .
+
+<#CommandInventory/1> a rdf:Seq ;
+    rdf:_1 <#Load/1> ;
+    rdf:_2 <#Compute/1> ;
+    rdf:_3 <#Compute/2> ;
+    rdf:_4 <#Save/1> ;
+    rdf:_5 <#Compute/3> ;
+    rdf:_6 <#Save/2> .
+
+<#Compute/1> a sdtl:Compute ;
+    sdtl:ConsumesDataframe <#DataframeInventory/2> ;
+    sdtl:ProducesDataframe <#DataframeInventory/3> ;
+    sdtl:command "Compute" ;
+    sdtl:expression <#FunctionCallExpression/1> ;
+    sdtl:sourceInformation <#sourceInformation/2> ;
+    sdtl:variable <#VariableSymbolExpression/1> .
+
+<#Compute/2> a sdtl:Compute ;
+    sdtl:ConsumesDataframe <#DataframeInventory/4> ;
+    sdtl:ProducesDataframe <#DataframeInventory/5> ;
+    sdtl:command "Compute" ;
+    sdtl:expression <#FunctionCallExpression/3> ;
+    sdtl:sourceInformation <#sourceInformation/3> ;
+    sdtl:variable <#VariableSymbolExpression/4> .
+
+<#Compute/3> a sdtl:Compute ;
+    sdtl:ConsumesDataframe <#DataframeInventory/7> ;
+    sdtl:ProducesDataframe <#DataframeInventory/8> ;
+    sdtl:command "Compute" ;
+    sdtl:expression <#FunctionCallExpression/5> ;
+    sdtl:sourceInformation <#sourceInformation/5> ;
+    sdtl:variable <#VariableSymbolExpression/6> .
+
+<#DataframeInventory/1> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/1> .
+
+<#DataframeInventory/2> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/1> .
+
+<#DataframeInventory/3> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/2> .
+
+<#DataframeInventory/4> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/2> .
+
+<#DataframeInventory/5> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/3> .
+
+<#DataframeInventory/6> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/3> .
+
+<#DataframeInventory/7> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/3> .
+
+<#DataframeInventory/8> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/4> .
+
+<#DataframeInventory/9> a rdf:Bag ;
+    rdf:_1 <#DataframeDescription/4> .
+
+<#FunctionCallExpression/1> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/1>,
+        <#arguments/4> ;
+    sdtl:function "division" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/2> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/2>,
+        <#arguments/3> ;
+    sdtl:function "multiplication" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/3> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/5>,
+        <#arguments/8> ;
+    sdtl:function "division" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/4> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/6>,
+        <#arguments/7> ;
+    sdtl:function "subtraction" ;
+    sdtl:isSdtlName true .
+
+<#FunctionCallExpression/5> a sdtl:FunctionCallExpression ;
+    sdtl:arguments <#arguments/10>,
+        <#arguments/9> ;
+    sdtl:function "multiplication" ;
+    sdtl:isSdtlName true .
+
+<#Load/1> a sdtl:Load ;
+    sdtl:ProducesDataframe <#DataframeInventory/1> ;
+    sdtl:command "Load" ;
+    sdtl:fileName "GSS_sample.csv" ;
+    sdtl:software "csv" ;
+    sdtl:sourceInformation <#sourceInformation/1> .
+
+<#NumericConstantExpression/1> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Integer" ;
+    sdtl:value "100" .
+
+<#NumericConstantExpression/2> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Real" ;
+    sdtl:value "45.99" .
+
+<#NumericConstantExpression/3> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Real" ;
+    sdtl:value "0.07" .
+
+<#NumericConstantExpression/4> a sdtl:NumericConstantExpression ;
+    sdtl:numericType "Real" ;
+    sdtl:value "0.07" .
+
+<#Save/1> a sdtl:Save ;
+    sdtl:ConsumesDataframe <#DataframeInventory/6> ;
+    sdtl:command "Save" ;
+    sdtl:fileName "GSS_sample_save1.csv" ;
+    sdtl:software "csv" ;
+    sdtl:sourceInformation <#sourceInformation/4> .
+
+<#Save/2> a sdtl:Save ;
+    sdtl:ConsumesDataframe <#DataframeInventory/9> ;
+    sdtl:command "Save" ;
+    sdtl:fileName "GSS_sample_save2.csv" ;
+    sdtl:software "csv" ;
+    sdtl:sourceInformation <#sourceInformation/6> .
+
+<#VariableInventory/1> a rdf:Seq ;
+    rdf:_1 <#dataframeVariable/1> ;
+    rdf:_10 <#dataframeVariable/10> ;
+    rdf:_11 <#dataframeVariable/11> ;
+    rdf:_12 <#dataframeVariable/12> ;
+    rdf:_13 <#dataframeVariable/13> ;
+    rdf:_14 <#dataframeVariable/14> ;
+    rdf:_15 <#dataframeVariable/15> ;
+    rdf:_16 <#dataframeVariable/16> ;
+    rdf:_17 <#dataframeVariable/17> ;
+    rdf:_18 <#dataframeVariable/18> ;
+    rdf:_19 <#dataframeVariable/19> ;
+    rdf:_2 <#dataframeVariable/2> ;
+    rdf:_20 <#dataframeVariable/20> ;
+    rdf:_21 <#dataframeVariable/21> ;
+    rdf:_22 <#dataframeVariable/22> ;
+    rdf:_23 <#dataframeVariable/23> ;
+    rdf:_24 <#dataframeVariable/24> ;
+    rdf:_25 <#dataframeVariable/25> ;
+    rdf:_26 <#dataframeVariable/26> ;
+    rdf:_27 <#dataframeVariable/27> ;
+    rdf:_28 <#dataframeVariable/28> ;
+    rdf:_29 <#dataframeVariable/29> ;
+    rdf:_3 <#dataframeVariable/3> ;
+    rdf:_30 <#dataframeVariable/30> ;
+    rdf:_31 <#dataframeVariable/31> ;
+    rdf:_32 <#dataframeVariable/32> ;
+    rdf:_33 <#dataframeVariable/33> ;
+    rdf:_34 <#dataframeVariable/34> ;
+    rdf:_35 <#dataframeVariable/35> ;
+    rdf:_36 <#dataframeVariable/36> ;
+    rdf:_37 <#dataframeVariable/37> ;
+    rdf:_38 <#dataframeVariable/38> ;
+    rdf:_39 <#dataframeVariable/39> ;
+    rdf:_4 <#dataframeVariable/4> ;
+    rdf:_40 <#dataframeVariable/40> ;
+    rdf:_41 <#dataframeVariable/41> ;
+    rdf:_42 <#dataframeVariable/42> ;
+    rdf:_43 <#dataframeVariable/43> ;
+    rdf:_44 <#dataframeVariable/44> ;
+    rdf:_45 <#dataframeVariable/45> ;
+    rdf:_46 <#dataframeVariable/46> ;
+    rdf:_47 <#dataframeVariable/47> ;
+    rdf:_48 <#dataframeVariable/48> ;
+    rdf:_49 <#dataframeVariable/49> ;
+    rdf:_5 <#dataframeVariable/5> ;
+    rdf:_50 <#dataframeVariable/50> ;
+    rdf:_51 <#dataframeVariable/51> ;
+    rdf:_52 <#dataframeVariable/52> ;
+    rdf:_53 <#dataframeVariable/53> ;
+    rdf:_54 <#dataframeVariable/54> ;
+    rdf:_55 <#dataframeVariable/55> ;
+    rdf:_56 <#dataframeVariable/56> ;
+    rdf:_57 <#dataframeVariable/57> ;
+    rdf:_58 <#dataframeVariable/58> ;
+    rdf:_59 <#dataframeVariable/59> ;
+    rdf:_6 <#dataframeVariable/6> ;
+    rdf:_60 <#dataframeVariable/60> ;
+    rdf:_61 <#dataframeVariable/61> ;
+    rdf:_62 <#dataframeVariable/62> ;
+    rdf:_63 <#dataframeVariable/63> ;
+    rdf:_64 <#dataframeVariable/64> ;
+    rdf:_65 <#dataframeVariable/65> ;
+    rdf:_66 <#dataframeVariable/66> ;
+    rdf:_67 <#dataframeVariable/67> ;
+    rdf:_68 <#dataframeVariable/68> ;
+    rdf:_69 <#dataframeVariable/69> ;
+    rdf:_7 <#dataframeVariable/7> ;
+    rdf:_70 <#dataframeVariable/70> ;
+    rdf:_71 <#dataframeVariable/71> ;
+    rdf:_8 <#dataframeVariable/8> ;
+    rdf:_9 <#dataframeVariable/9> .
+
+<#VariableInventory/2> a rdf:Seq ;
+    rdf:_1 <#dataframeVariable/72> ;
+    rdf:_10 <#dataframeVariable/81> ;
+    rdf:_11 <#dataframeVariable/82> ;
+    rdf:_12 <#dataframeVariable/83> ;
+    rdf:_13 <#dataframeVariable/84> ;
+    rdf:_14 <#dataframeVariable/85> ;
+    rdf:_15 <#dataframeVariable/86> ;
+    rdf:_16 <#dataframeVariable/87> ;
+    rdf:_17 <#dataframeVariable/88> ;
+    rdf:_18 <#dataframeVariable/89> ;
+    rdf:_19 <#dataframeVariable/90> ;
+    rdf:_2 <#dataframeVariable/73> ;
+    rdf:_20 <#dataframeVariable/91> ;
+    rdf:_21 <#dataframeVariable/92> ;
+    rdf:_22 <#dataframeVariable/93> ;
+    rdf:_23 <#dataframeVariable/94> ;
+    rdf:_24 <#dataframeVariable/95> ;
+    rdf:_25 <#dataframeVariable/96> ;
+    rdf:_26 <#dataframeVariable/97> ;
+    rdf:_27 <#dataframeVariable/98> ;
+    rdf:_28 <#dataframeVariable/99> ;
+    rdf:_29 <#dataframeVariable/100> ;
+    rdf:_3 <#dataframeVariable/74> ;
+    rdf:_30 <#dataframeVariable/101> ;
+    rdf:_31 <#dataframeVariable/102> ;
+    rdf:_32 <#dataframeVariable/103> ;
+    rdf:_33 <#dataframeVariable/104> ;
+    rdf:_34 <#dataframeVariable/105> ;
+    rdf:_35 <#dataframeVariable/106> ;
+    rdf:_36 <#dataframeVariable/107> ;
+    rdf:_37 <#dataframeVariable/108> ;
+    rdf:_38 <#dataframeVariable/109> ;
+    rdf:_39 <#dataframeVariable/110> ;
+    rdf:_4 <#dataframeVariable/75> ;
+    rdf:_40 <#dataframeVariable/111> ;
+    rdf:_41 <#dataframeVariable/112> ;
+    rdf:_42 <#dataframeVariable/113> ;
+    rdf:_43 <#dataframeVariable/114> ;
+    rdf:_44 <#dataframeVariable/115> ;
+    rdf:_45 <#dataframeVariable/116> ;
+    rdf:_46 <#dataframeVariable/117> ;
+    rdf:_47 <#dataframeVariable/118> ;
+    rdf:_48 <#dataframeVariable/119> ;
+    rdf:_49 <#dataframeVariable/120> ;
+    rdf:_5 <#dataframeVariable/76> ;
+    rdf:_50 <#dataframeVariable/121> ;
+    rdf:_51 <#dataframeVariable/122> ;
+    rdf:_52 <#dataframeVariable/123> ;
+    rdf:_53 <#dataframeVariable/124> ;
+    rdf:_54 <#dataframeVariable/125> ;
+    rdf:_55 <#dataframeVariable/126> ;
+    rdf:_56 <#dataframeVariable/127> ;
+    rdf:_57 <#dataframeVariable/128> ;
+    rdf:_58 <#dataframeVariable/129> ;
+    rdf:_59 <#dataframeVariable/130> ;
+    rdf:_6 <#dataframeVariable/77> ;
+    rdf:_60 <#dataframeVariable/131> ;
+    rdf:_61 <#dataframeVariable/132> ;
+    rdf:_62 <#dataframeVariable/133> ;
+    rdf:_63 <#dataframeVariable/134> ;
+    rdf:_64 <#dataframeVariable/135> ;
+    rdf:_65 <#dataframeVariable/136> ;
+    rdf:_66 <#dataframeVariable/137> ;
+    rdf:_67 <#dataframeVariable/138> ;
+    rdf:_68 <#dataframeVariable/139> ;
+    rdf:_69 <#dataframeVariable/140> ;
+    rdf:_7 <#dataframeVariable/78> ;
+    rdf:_70 <#dataframeVariable/141> ;
+    rdf:_71 <#dataframeVariable/142> ;
+    rdf:_72 <#dataframeVariable/143> ;
+    rdf:_8 <#dataframeVariable/79> ;
+    rdf:_9 <#dataframeVariable/80> .
+
+<#VariableInventory/3> a rdf:Seq ;
+    rdf:_1 <#dataframeVariable/144> ;
+    rdf:_10 <#dataframeVariable/153> ;
+    rdf:_11 <#dataframeVariable/154> ;
+    rdf:_12 <#dataframeVariable/155> ;
+    rdf:_13 <#dataframeVariable/156> ;
+    rdf:_14 <#dataframeVariable/157> ;
+    rdf:_15 <#dataframeVariable/158> ;
+    rdf:_16 <#dataframeVariable/159> ;
+    rdf:_17 <#dataframeVariable/160> ;
+    rdf:_18 <#dataframeVariable/161> ;
+    rdf:_19 <#dataframeVariable/162> ;
+    rdf:_2 <#dataframeVariable/145> ;
+    rdf:_20 <#dataframeVariable/163> ;
+    rdf:_21 <#dataframeVariable/164> ;
+    rdf:_22 <#dataframeVariable/165> ;
+    rdf:_23 <#dataframeVariable/166> ;
+    rdf:_24 <#dataframeVariable/167> ;
+    rdf:_25 <#dataframeVariable/168> ;
+    rdf:_26 <#dataframeVariable/169> ;
+    rdf:_27 <#dataframeVariable/170> ;
+    rdf:_28 <#dataframeVariable/171> ;
+    rdf:_29 <#dataframeVariable/172> ;
+    rdf:_3 <#dataframeVariable/146> ;
+    rdf:_30 <#dataframeVariable/173> ;
+    rdf:_31 <#dataframeVariable/174> ;
+    rdf:_32 <#dataframeVariable/175> ;
+    rdf:_33 <#dataframeVariable/176> ;
+    rdf:_34 <#dataframeVariable/177> ;
+    rdf:_35 <#dataframeVariable/178> ;
+    rdf:_36 <#dataframeVariable/179> ;
+    rdf:_37 <#dataframeVariable/180> ;
+    rdf:_38 <#dataframeVariable/181> ;
+    rdf:_39 <#dataframeVariable/182> ;
+    rdf:_4 <#dataframeVariable/147> ;
+    rdf:_40 <#dataframeVariable/183> ;
+    rdf:_41 <#dataframeVariable/184> ;
+    rdf:_42 <#dataframeVariable/185> ;
+    rdf:_43 <#dataframeVariable/186> ;
+    rdf:_44 <#dataframeVariable/187> ;
+    rdf:_45 <#dataframeVariable/188> ;
+    rdf:_46 <#dataframeVariable/189> ;
+    rdf:_47 <#dataframeVariable/190> ;
+    rdf:_48 <#dataframeVariable/191> ;
+    rdf:_49 <#dataframeVariable/192> ;
+    rdf:_5 <#dataframeVariable/148> ;
+    rdf:_50 <#dataframeVariable/193> ;
+    rdf:_51 <#dataframeVariable/194> ;
+    rdf:_52 <#dataframeVariable/195> ;
+    rdf:_53 <#dataframeVariable/196> ;
+    rdf:_54 <#dataframeVariable/197> ;
+    rdf:_55 <#dataframeVariable/198> ;
+    rdf:_56 <#dataframeVariable/199> ;
+    rdf:_57 <#dataframeVariable/200> ;
+    rdf:_58 <#dataframeVariable/201> ;
+    rdf:_59 <#dataframeVariable/202> ;
+    rdf:_6 <#dataframeVariable/149> ;
+    rdf:_60 <#dataframeVariable/203> ;
+    rdf:_61 <#dataframeVariable/204> ;
+    rdf:_62 <#dataframeVariable/205> ;
+    rdf:_63 <#dataframeVariable/206> ;
+    rdf:_64 <#dataframeVariable/207> ;
+    rdf:_65 <#dataframeVariable/208> ;
+    rdf:_66 <#dataframeVariable/209> ;
+    rdf:_67 <#dataframeVariable/210> ;
+    rdf:_68 <#dataframeVariable/211> ;
+    rdf:_69 <#dataframeVariable/212> ;
+    rdf:_7 <#dataframeVariable/150> ;
+    rdf:_70 <#dataframeVariable/213> ;
+    rdf:_71 <#dataframeVariable/214> ;
+    rdf:_72 <#dataframeVariable/215> ;
+    rdf:_73 <#dataframeVariable/216> ;
+    rdf:_8 <#dataframeVariable/151> ;
+    rdf:_9 <#dataframeVariable/152> .
+
+<#VariableInventory/4> a rdf:Seq ;
+    rdf:_1 <#dataframeVariable/217> ;
+    rdf:_10 <#dataframeVariable/226> ;
+    rdf:_11 <#dataframeVariable/227> ;
+    rdf:_12 <#dataframeVariable/228> ;
+    rdf:_13 <#dataframeVariable/229> ;
+    rdf:_14 <#dataframeVariable/230> ;
+    rdf:_15 <#dataframeVariable/231> ;
+    rdf:_16 <#dataframeVariable/232> ;
+    rdf:_17 <#dataframeVariable/233> ;
+    rdf:_18 <#dataframeVariable/234> ;
+    rdf:_19 <#dataframeVariable/235> ;
+    rdf:_2 <#dataframeVariable/218> ;
+    rdf:_20 <#dataframeVariable/236> ;
+    rdf:_21 <#dataframeVariable/237> ;
+    rdf:_22 <#dataframeVariable/238> ;
+    rdf:_23 <#dataframeVariable/239> ;
+    rdf:_24 <#dataframeVariable/240> ;
+    rdf:_25 <#dataframeVariable/241> ;
+    rdf:_26 <#dataframeVariable/242> ;
+    rdf:_27 <#dataframeVariable/243> ;
+    rdf:_28 <#dataframeVariable/244> ;
+    rdf:_29 <#dataframeVariable/245> ;
+    rdf:_3 <#dataframeVariable/219> ;
+    rdf:_30 <#dataframeVariable/246> ;
+    rdf:_31 <#dataframeVariable/247> ;
+    rdf:_32 <#dataframeVariable/248> ;
+    rdf:_33 <#dataframeVariable/249> ;
+    rdf:_34 <#dataframeVariable/250> ;
+    rdf:_35 <#dataframeVariable/251> ;
+    rdf:_36 <#dataframeVariable/252> ;
+    rdf:_37 <#dataframeVariable/253> ;
+    rdf:_38 <#dataframeVariable/254> ;
+    rdf:_39 <#dataframeVariable/255> ;
+    rdf:_4 <#dataframeVariable/220> ;
+    rdf:_40 <#dataframeVariable/256> ;
+    rdf:_41 <#dataframeVariable/257> ;
+    rdf:_42 <#dataframeVariable/258> ;
+    rdf:_43 <#dataframeVariable/259> ;
+    rdf:_44 <#dataframeVariable/260> ;
+    rdf:_45 <#dataframeVariable/261> ;
+    rdf:_46 <#dataframeVariable/262> ;
+    rdf:_47 <#dataframeVariable/263> ;
+    rdf:_48 <#dataframeVariable/264> ;
+    rdf:_49 <#dataframeVariable/265> ;
+    rdf:_5 <#dataframeVariable/221> ;
+    rdf:_50 <#dataframeVariable/266> ;
+    rdf:_51 <#dataframeVariable/267> ;
+    rdf:_52 <#dataframeVariable/268> ;
+    rdf:_53 <#dataframeVariable/269> ;
+    rdf:_54 <#dataframeVariable/270> ;
+    rdf:_55 <#dataframeVariable/271> ;
+    rdf:_56 <#dataframeVariable/272> ;
+    rdf:_57 <#dataframeVariable/273> ;
+    rdf:_58 <#dataframeVariable/274> ;
+    rdf:_59 <#dataframeVariable/275> ;
+    rdf:_6 <#dataframeVariable/222> ;
+    rdf:_60 <#dataframeVariable/276> ;
+    rdf:_61 <#dataframeVariable/277> ;
+    rdf:_62 <#dataframeVariable/278> ;
+    rdf:_63 <#dataframeVariable/279> ;
+    rdf:_64 <#dataframeVariable/280> ;
+    rdf:_65 <#dataframeVariable/281> ;
+    rdf:_66 <#dataframeVariable/282> ;
+    rdf:_67 <#dataframeVariable/283> ;
+    rdf:_68 <#dataframeVariable/284> ;
+    rdf:_69 <#dataframeVariable/285> ;
+    rdf:_7 <#dataframeVariable/223> ;
+    rdf:_70 <#dataframeVariable/286> ;
+    rdf:_71 <#dataframeVariable/287> ;
+    rdf:_72 <#dataframeVariable/288> ;
+    rdf:_73 <#dataframeVariable/289> ;
+    rdf:_8 <#dataframeVariable/224> ;
+    rdf:_9 <#dataframeVariable/225> .
+
+<#VariableSymbolExpression/1> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "pctFamIncome" .
+
+<#VariableSymbolExpression/2> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "REALRINC" .
+
+<#VariableSymbolExpression/3> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "REALINC" .
+
+<#VariableSymbolExpression/4> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "agestd" .
+
+<#VariableSymbolExpression/5> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "AGE" .
+
+<#VariableSymbolExpression/6> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "agestd" .
+
+<#VariableSymbolExpression/7> a sdtl:VariableSymbolExpression ;
+    sdtl:variableName "AGE" .
+
+<#arguments/1> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#FunctionCallExpression/2> .
+
+<#arguments/10> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/4> .
+
+<#arguments/2> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#NumericConstantExpression/1> .
+
+<#arguments/3> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#VariableSymbolExpression/2> .
+
+<#arguments/4> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#VariableSymbolExpression/3> .
+
+<#arguments/5> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#FunctionCallExpression/4> .
+
+<#arguments/6> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#VariableSymbolExpression/5> .
+
+<#arguments/7> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/2> .
+
+<#arguments/8> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/3> .
+
+<#arguments/9> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#VariableSymbolExpression/7> .
+
+<#dataframeVariable/1> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "ADULTS" .
+
+<#dataframeVariable/10> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CONROCK" .
+
+<#dataframeVariable/100> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HRS1" .
+
+<#dataframeVariable/101> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HVYMETAL" .
+
+<#dataframeVariable/102> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "ID" .
+
+<#dataframeVariable/103> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "INCOME" .
+
+<#dataframeVariable/104> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "ISSP" .
+
+<#dataframeVariable/105> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "JAZZ" .
+
+<#dataframeVariable/106> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "LATIN" .
+
+<#dataframeVariable/107> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MARCOHRT" .
+
+<#dataframeVariable/108> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MARITAL" .
+
+<#dataframeVariable/109> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MOODEASY" .
+
+<#dataframeVariable/11> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "COUNTRY" .
+
+<#dataframeVariable/110> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MUSICALS" .
+
+<#dataframeVariable/111> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "NATSPAC" .
+
+<#dataframeVariable/112> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "NEWAGE" .
+
+<#dataframeVariable/113> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD1" .
+
+<#dataframeVariable/114> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD2" .
+
+<#dataframeVariable/115> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD3" .
+
+<#dataframeVariable/116> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD4" .
+
+<#dataframeVariable/117> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD5" .
+
+<#dataframeVariable/118> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD6" .
+
+<#dataframeVariable/119> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD7" .
+
+<#dataframeVariable/12> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "DEGREE" .
+
+<#dataframeVariable/120> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD8" .
+
+<#dataframeVariable/121> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD9" .
+
+<#dataframeVariable/122> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLDIES" .
+
+<#dataframeVariable/123> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OPERA" .
+
+<#dataframeVariable/124> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OVERSAMP" .
+
+<#dataframeVariable/125> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "PARTYID" .
+
+<#dataframeVariable/126> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RACE" .
+
+<#dataframeVariable/127> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RAP" .
+
+<#dataframeVariable/128> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REALINC" .
+
+<#dataframeVariable/129> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REALRINC" .
+
+<#dataframeVariable/13> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "EARNRS" .
+
+<#dataframeVariable/130> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REGGAE" .
+
+<#dataframeVariable/131> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REGION" .
+
+<#dataframeVariable/132> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RESPNUM" .
+
+<#dataframeVariable/133> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RINCOME" .
+
+<#dataframeVariable/134> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RPLACE" .
+
+<#dataframeVariable/135> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SAMPCODE" .
+
+<#dataframeVariable/136> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SAMPLE" .
+
+<#dataframeVariable/137> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SEX" .
+
+<#dataframeVariable/138> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SIBS" .
+
+<#dataframeVariable/139> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SIZE" .
+
+<#dataframeVariable/14> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "EDUC" .
+
+<#dataframeVariable/140> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "UNRELAT" .
+
+<#dataframeVariable/141> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "WRKSTAT" .
+
+<#dataframeVariable/142> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "YEAR" .
+
+<#dataframeVariable/143> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "pctFamIncome" .
+
+<#dataframeVariable/144> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "ADULTS" .
+
+<#dataframeVariable/145> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "AGE" .
+
+<#dataframeVariable/146> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "BIGBAND" .
+
+<#dataframeVariable/147> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "BLUES" .
+
+<#dataframeVariable/148> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "BLUGRASS" .
+
+<#dataframeVariable/149> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CASEID" .
+
+<#dataframeVariable/15> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "FOLK" .
+
+<#dataframeVariable/150> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CHILDS" .
+
+<#dataframeVariable/151> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CLASSICL" .
+
+<#dataframeVariable/152> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "COHORT" .
+
+<#dataframeVariable/153> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CONROCK" .
+
+<#dataframeVariable/154> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "COUNTRY" .
+
+<#dataframeVariable/155> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "DEGREE" .
+
+<#dataframeVariable/156> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "EARNRS" .
+
+<#dataframeVariable/157> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "EDUC" .
+
+<#dataframeVariable/158> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "FOLK" .
+
+<#dataframeVariable/159> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "FORMWT" .
+
+<#dataframeVariable/16> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "FORMWT" .
+
+<#dataframeVariable/160> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER1" .
+
+<#dataframeVariable/161> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER2" .
+
+<#dataframeVariable/162> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER3" .
+
+<#dataframeVariable/163> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER4" .
+
+<#dataframeVariable/164> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER5" .
+
+<#dataframeVariable/165> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER6" .
+
+<#dataframeVariable/166> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER7" .
+
+<#dataframeVariable/167> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER8" .
+
+<#dataframeVariable/168> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER9" .
+
+<#dataframeVariable/169> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GOSPEL" .
+
+<#dataframeVariable/17> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER1" .
+
+<#dataframeVariable/170> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HHRACE" .
+
+<#dataframeVariable/171> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HHTYPE" .
+
+<#dataframeVariable/172> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HRS1" .
+
+<#dataframeVariable/173> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HVYMETAL" .
+
+<#dataframeVariable/174> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "ID" .
+
+<#dataframeVariable/175> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "INCOME" .
+
+<#dataframeVariable/176> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "ISSP" .
+
+<#dataframeVariable/177> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "JAZZ" .
+
+<#dataframeVariable/178> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "LATIN" .
+
+<#dataframeVariable/179> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MARCOHRT" .
+
+<#dataframeVariable/18> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER2" .
+
+<#dataframeVariable/180> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MARITAL" .
+
+<#dataframeVariable/181> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MOODEASY" .
+
+<#dataframeVariable/182> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MUSICALS" .
+
+<#dataframeVariable/183> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "NATSPAC" .
+
+<#dataframeVariable/184> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "NEWAGE" .
+
+<#dataframeVariable/185> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD1" .
+
+<#dataframeVariable/186> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD2" .
+
+<#dataframeVariable/187> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD3" .
+
+<#dataframeVariable/188> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD4" .
+
+<#dataframeVariable/189> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD5" .
+
+<#dataframeVariable/19> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER3" .
+
+<#dataframeVariable/190> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD6" .
+
+<#dataframeVariable/191> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD7" .
+
+<#dataframeVariable/192> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD8" .
+
+<#dataframeVariable/193> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD9" .
+
+<#dataframeVariable/194> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLDIES" .
+
+<#dataframeVariable/195> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OPERA" .
+
+<#dataframeVariable/196> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OVERSAMP" .
+
+<#dataframeVariable/197> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "PARTYID" .
+
+<#dataframeVariable/198> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RACE" .
+
+<#dataframeVariable/199> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RAP" .
+
+<#dataframeVariable/2> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "AGE" .
+
+<#dataframeVariable/20> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER4" .
+
+<#dataframeVariable/200> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REALINC" .
+
+<#dataframeVariable/201> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REALRINC" .
+
+<#dataframeVariable/202> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REGGAE" .
+
+<#dataframeVariable/203> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REGION" .
+
+<#dataframeVariable/204> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RESPNUM" .
+
+<#dataframeVariable/205> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RINCOME" .
+
+<#dataframeVariable/206> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RPLACE" .
+
+<#dataframeVariable/207> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SAMPCODE" .
+
+<#dataframeVariable/208> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SAMPLE" .
+
+<#dataframeVariable/209> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SEX" .
+
+<#dataframeVariable/21> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER5" .
+
+<#dataframeVariable/210> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SIBS" .
+
+<#dataframeVariable/211> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SIZE" .
+
+<#dataframeVariable/212> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "UNRELAT" .
+
+<#dataframeVariable/213> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "WRKSTAT" .
+
+<#dataframeVariable/214> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "YEAR" .
+
+<#dataframeVariable/215> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "pctFamIncome" .
+
+<#dataframeVariable/216> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "agestd" .
+
+<#dataframeVariable/217> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "ADULTS" .
+
+<#dataframeVariable/218> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "AGE" .
+
+<#dataframeVariable/219> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "BIGBAND" .
+
+<#dataframeVariable/22> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER6" .
+
+<#dataframeVariable/220> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "BLUES" .
+
+<#dataframeVariable/221> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "BLUGRASS" .
+
+<#dataframeVariable/222> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CASEID" .
+
+<#dataframeVariable/223> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CHILDS" .
+
+<#dataframeVariable/224> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CLASSICL" .
+
+<#dataframeVariable/225> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "COHORT" .
+
+<#dataframeVariable/226> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CONROCK" .
+
+<#dataframeVariable/227> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "COUNTRY" .
+
+<#dataframeVariable/228> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "DEGREE" .
+
+<#dataframeVariable/229> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "EARNRS" .
+
+<#dataframeVariable/23> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER7" .
+
+<#dataframeVariable/230> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "EDUC" .
+
+<#dataframeVariable/231> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "FOLK" .
+
+<#dataframeVariable/232> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "FORMWT" .
+
+<#dataframeVariable/233> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER1" .
+
+<#dataframeVariable/234> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER2" .
+
+<#dataframeVariable/235> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER3" .
+
+<#dataframeVariable/236> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER4" .
+
+<#dataframeVariable/237> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER5" .
+
+<#dataframeVariable/238> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER6" .
+
+<#dataframeVariable/239> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER7" .
+
+<#dataframeVariable/24> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER8" .
+
+<#dataframeVariable/240> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER8" .
+
+<#dataframeVariable/241> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER9" .
+
+<#dataframeVariable/242> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GOSPEL" .
+
+<#dataframeVariable/243> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HHRACE" .
+
+<#dataframeVariable/244> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HHTYPE" .
+
+<#dataframeVariable/245> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HRS1" .
+
+<#dataframeVariable/246> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HVYMETAL" .
+
+<#dataframeVariable/247> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "ID" .
+
+<#dataframeVariable/248> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "INCOME" .
+
+<#dataframeVariable/249> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "ISSP" .
+
+<#dataframeVariable/25> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER9" .
+
+<#dataframeVariable/250> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "JAZZ" .
+
+<#dataframeVariable/251> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "LATIN" .
+
+<#dataframeVariable/252> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MARCOHRT" .
+
+<#dataframeVariable/253> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MARITAL" .
+
+<#dataframeVariable/254> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MOODEASY" .
+
+<#dataframeVariable/255> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MUSICALS" .
+
+<#dataframeVariable/256> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "NATSPAC" .
+
+<#dataframeVariable/257> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "NEWAGE" .
+
+<#dataframeVariable/258> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD1" .
+
+<#dataframeVariable/259> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD2" .
+
+<#dataframeVariable/26> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GOSPEL" .
+
+<#dataframeVariable/260> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD3" .
+
+<#dataframeVariable/261> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD4" .
+
+<#dataframeVariable/262> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD5" .
+
+<#dataframeVariable/263> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD6" .
+
+<#dataframeVariable/264> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD7" .
+
+<#dataframeVariable/265> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD8" .
+
+<#dataframeVariable/266> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD9" .
+
+<#dataframeVariable/267> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLDIES" .
+
+<#dataframeVariable/268> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OPERA" .
+
+<#dataframeVariable/269> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OVERSAMP" .
+
+<#dataframeVariable/27> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HHRACE" .
+
+<#dataframeVariable/270> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "PARTYID" .
+
+<#dataframeVariable/271> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RACE" .
+
+<#dataframeVariable/272> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RAP" .
+
+<#dataframeVariable/273> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REALINC" .
+
+<#dataframeVariable/274> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REALRINC" .
+
+<#dataframeVariable/275> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REGGAE" .
+
+<#dataframeVariable/276> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REGION" .
+
+<#dataframeVariable/277> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RESPNUM" .
+
+<#dataframeVariable/278> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RINCOME" .
+
+<#dataframeVariable/279> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RPLACE" .
+
+<#dataframeVariable/28> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HHTYPE" .
+
+<#dataframeVariable/280> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SAMPCODE" .
+
+<#dataframeVariable/281> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SAMPLE" .
+
+<#dataframeVariable/282> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SEX" .
+
+<#dataframeVariable/283> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SIBS" .
+
+<#dataframeVariable/284> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SIZE" .
+
+<#dataframeVariable/285> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "UNRELAT" .
+
+<#dataframeVariable/286> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "WRKSTAT" .
+
+<#dataframeVariable/287> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "YEAR" .
+
+<#dataframeVariable/288> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "pctFamIncome" .
+
+<#dataframeVariable/289> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "agestd" .
+
+<#dataframeVariable/29> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HRS1" .
+
+<#dataframeVariable/3> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "BIGBAND" .
+
+<#dataframeVariable/30> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HVYMETAL" .
+
+<#dataframeVariable/31> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "ID" .
+
+<#dataframeVariable/32> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "INCOME" .
+
+<#dataframeVariable/33> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "ISSP" .
+
+<#dataframeVariable/34> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "JAZZ" .
+
+<#dataframeVariable/35> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "LATIN" .
+
+<#dataframeVariable/36> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MARCOHRT" .
+
+<#dataframeVariable/37> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MARITAL" .
+
+<#dataframeVariable/38> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MOODEASY" .
+
+<#dataframeVariable/39> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "MUSICALS" .
+
+<#dataframeVariable/4> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "BLUES" .
+
+<#dataframeVariable/40> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "NATSPAC" .
+
+<#dataframeVariable/41> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "NEWAGE" .
+
+<#dataframeVariable/42> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD1" .
+
+<#dataframeVariable/43> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD2" .
+
+<#dataframeVariable/44> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD3" .
+
+<#dataframeVariable/45> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD4" .
+
+<#dataframeVariable/46> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD5" .
+
+<#dataframeVariable/47> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD6" .
+
+<#dataframeVariable/48> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD7" .
+
+<#dataframeVariable/49> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD8" .
+
+<#dataframeVariable/5> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "BLUGRASS" .
+
+<#dataframeVariable/50> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLD9" .
+
+<#dataframeVariable/51> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OLDIES" .
+
+<#dataframeVariable/52> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OPERA" .
+
+<#dataframeVariable/53> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "OVERSAMP" .
+
+<#dataframeVariable/54> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "PARTYID" .
+
+<#dataframeVariable/55> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RACE" .
+
+<#dataframeVariable/56> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RAP" .
+
+<#dataframeVariable/57> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REALINC" .
+
+<#dataframeVariable/58> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REALRINC" .
+
+<#dataframeVariable/59> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REGGAE" .
+
+<#dataframeVariable/6> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CASEID" .
+
+<#dataframeVariable/60> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "REGION" .
+
+<#dataframeVariable/61> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RESPNUM" .
+
+<#dataframeVariable/62> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RINCOME" .
+
+<#dataframeVariable/63> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "RPLACE" .
+
+<#dataframeVariable/64> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SAMPCODE" .
+
+<#dataframeVariable/65> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SAMPLE" .
+
+<#dataframeVariable/66> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SEX" .
+
+<#dataframeVariable/67> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SIBS" .
+
+<#dataframeVariable/68> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "SIZE" .
+
+<#dataframeVariable/69> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "UNRELAT" .
+
+<#dataframeVariable/7> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CHILDS" .
+
+<#dataframeVariable/70> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "WRKSTAT" .
+
+<#dataframeVariable/71> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "YEAR" .
+
+<#dataframeVariable/72> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "ADULTS" .
+
+<#dataframeVariable/73> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "AGE" .
+
+<#dataframeVariable/74> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "BIGBAND" .
+
+<#dataframeVariable/75> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "BLUES" .
+
+<#dataframeVariable/76> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "BLUGRASS" .
+
+<#dataframeVariable/77> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CASEID" .
+
+<#dataframeVariable/78> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CHILDS" .
+
+<#dataframeVariable/79> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CLASSICL" .
+
+<#dataframeVariable/8> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CLASSICL" .
+
+<#dataframeVariable/80> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "COHORT" .
+
+<#dataframeVariable/81> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "CONROCK" .
+
+<#dataframeVariable/82> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "COUNTRY" .
+
+<#dataframeVariable/83> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "DEGREE" .
+
+<#dataframeVariable/84> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "EARNRS" .
+
+<#dataframeVariable/85> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "EDUC" .
+
+<#dataframeVariable/86> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "FOLK" .
+
+<#dataframeVariable/87> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "FORMWT" .
+
+<#dataframeVariable/88> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER1" .
+
+<#dataframeVariable/89> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER2" .
+
+<#dataframeVariable/9> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "COHORT" .
+
+<#dataframeVariable/90> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER3" .
+
+<#dataframeVariable/91> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER4" .
+
+<#dataframeVariable/92> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER5" .
+
+<#dataframeVariable/93> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER6" .
+
+<#dataframeVariable/94> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER7" .
+
+<#dataframeVariable/95> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER8" .
+
+<#dataframeVariable/96> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GENDER9" .
+
+<#dataframeVariable/97> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "GOSPEL" .
+
+<#dataframeVariable/98> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HHRACE" .
+
+<#dataframeVariable/99> a sdtl:VariableSymbolExpression ;
+    sdtl:VariableName "HHTYPE" .
+
+<#sourceInformation/1> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 6 ;
+    sdtl:lineNumberStart 6 ;
+    sdtl:originalSourceText "cdata = pd.read_csv(\"GSS_sample.csv\")" ;
+    sdtl:sourceStartIndex 61 ;
+    sdtl:sourceStopIndex 97 .
+
+<#sourceInformation/2> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 9 ;
+    sdtl:lineNumberStart 9 ;
+    sdtl:originalSourceText "cdata = cdata.assign(pctFamIncome = 100*cdata['REALRINC']/cdata['REALINC'] )" ;
+    sdtl:sourceStartIndex 154 ;
+    sdtl:sourceStopIndex 229 .
+
+<#sourceInformation/3> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 12 ;
+    sdtl:lineNumberStart 12 ;
+    sdtl:originalSourceText "cdata = cdata.assign(agestd = ((cdata['AGE'] - 45.99)/.07) )" ;
+    sdtl:sourceStartIndex 286 ;
+    sdtl:sourceStopIndex 345 .
+
+<#sourceInformation/4> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 16 ;
+    sdtl:lineNumberStart 16 ;
+    sdtl:originalSourceText "cdata.to_csv(\"GSS_sample_save1.csv\")" ;
+    sdtl:sourceStartIndex 409 ;
+    sdtl:sourceStopIndex 444 .
+
+<#sourceInformation/5> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 20 ;
+    sdtl:lineNumberStart 20 ;
+    sdtl:originalSourceText "cdata = cdata.assign(agestd = cdata['AGE']*.07 )" ;
+    sdtl:sourceStartIndex 502 ;
+    sdtl:sourceStopIndex 549 .
+
+<#sourceInformation/6> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 24 ;
+    sdtl:lineNumberStart 24 ;
+    sdtl:originalSourceText "cdata.to_csv(\"GSS_sample_save2.csv\")" ;
+    sdtl:sourceStartIndex 612 ;
+    sdtl:sourceStopIndex 647 .
+
+<#DataframeDescription/1> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/1> ;
+    sdtl:dataframeName "cdata" .
+
+<#DataframeDescription/2> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/2> ;
+    sdtl:dataframeName "cdata" .
+
+<#DataframeDescription/4> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/4> ;
+    sdtl:dataframeName "cdata" .
+
+<#DataframeDescription/3> a sdtl:DataframeDescription ;
+    sdtl:VariableInventory <#VariableInventory/3> ;
+    sdtl:dataframeName "cdata" .
+
