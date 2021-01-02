@@ -4,22 +4,11 @@
 
 <#Program/1> a sdtl:Program ;
     sdtl:CommandCount 3 ;
-    sdtl:Commands <#CommandInventory/1> ;
     sdtl:Parser "stata-sdtl-converter" ;
     sdtl:ParserVersion "SDTL0.3" ;
     sdtl:SourceFileName "N/A" ;
-    sdtl:SourceLanguage "stata" .
-
-<#ArgumentsInventory/1> a rdf:Bag ;
-    rdf:rdf:_1 <#FunctionArgument/1> ;
-    rdf:rdf:_2 <#FunctionArgument/2> .
-
-<#ArgumentsInventory/2> a rdf:Bag ;
-    rdf:rdf:_1 <#FunctionArgument/3> .
-
-<#ArgumentsInventory/3> a rdf:Bag ;
-    rdf:rdf:_1 <#FunctionArgument/4> ;
-    rdf:rdf:_2 <#FunctionArgument/5> .
+    sdtl:SourceLanguage "stata" ;
+    sdtl:commands <#CommandInventory/1> .
 
 <#CommandInventory/1> a rdf:Seq ;
     rdf:_1 <#Load/1> ;
@@ -46,39 +35,8 @@
 <#DataframeInventory/4> a rdf:Bag ;
     rdf:_1 <#DataframeDescription/2> .
 
-<#FunctionArgument/1> a sdtl:FunctionArgument ;
-    sdtl:ArgumentName "EXP1" ;
-    sdtl:ArgumentValue <#NumericConstantExpression/1> .
-
-<#FunctionArgument/2> a sdtl:FunctionArgument ;
-    sdtl:ArgumentName "EXP2" ;
-    sdtl:ArgumentValue <#FunctionCallExpression/2> .
-
-<#FunctionArgument/3> a sdtl:FunctionArgument ;
-    sdtl:ArgumentName "EXP1" ;
-    sdtl:ArgumentValue <#FunctionCallExpression/3> .
-
-<#FunctionArgument/4> a sdtl:FunctionArgument ;
-    sdtl:ArgumentName "EXP1" ;
-    sdtl:ArgumentValue <#VariableSymbolExpression/2> .
-
-<#FunctionArgument/5> a sdtl:FunctionArgument ;
-    sdtl:ArgumentName "EXP2" ;
-    sdtl:ArgumentValue <#NumericConstantExpression/2> .
-
 <#FunctionCallExpression/1> a sdtl:FunctionCallExpression ;
-    sdtl:Arguments <#ArgumentsInventory/1> ;
     sdtl:Function "multiplication" ;
-    sdtl:IsSdtlName true .
-
-<#FunctionCallExpression/2> a sdtl:FunctionCallExpression ;
-    sdtl:Arguments <#ArgumentsInventory/2> ;
-    sdtl:Function "int" ;
-    sdtl:IsSdtlName false .
-
-<#FunctionCallExpression/3> a sdtl:FunctionCallExpression ;
-    sdtl:Arguments <#ArgumentsInventory/3> ;
-    sdtl:Function "division" ;
     sdtl:IsSdtlName true .
 
 <#Load/1> a sdtl:Load ;
@@ -88,14 +46,6 @@
     sdtl:ProducesDataframe <#DataframeInventory/1> ;
     sdtl:Software "Stata" ;
     sdtl:SourceInformation <#SourceInformationInventory/1> .
-
-<#NumericConstantExpression/1> a sdtl:NumericConstantExpression ;
-    sdtl:NumericType "Integer" ;
-    sdtl:Value "5" .
-
-<#NumericConstantExpression/2> a sdtl:NumericConstantExpression ;
-    sdtl:NumericType "Integer" ;
-    sdtl:Value "5" .
 
 <#Save/1> a sdtl:Save ;
     sdtl:Command "save" ;
@@ -145,9 +95,6 @@
     rdf:_7 <#dataframeVariable/14> .
 
 <#VariableSymbolExpression/1> a sdtl:VariableSymbolExpression ;
-    sdtl:VariableName "age" .
-
-<#VariableSymbolExpression/2> a sdtl:VariableSymbolExpression ;
     sdtl:VariableName "age" .
 
 <#dataframeVariable/1> a sdtl:VariableSymbolExpression ;

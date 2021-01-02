@@ -6,31 +6,10 @@
   },
   "@graph": [
     {
-      "@id": "#ArgumentsInventory/3",
-      "@type": "rdf:Bag",
-      "rdf:rdf:_1": {
-        "@id": "#FunctionArgument/4"
-      },
-      "rdf:rdf:_2": {
-        "@id": "#FunctionArgument/5"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/14",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "age"
-    },
-    {
-      "@id": "#dataframeVariable/2",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "born"
-    },
-    {
-      "@id": "#SourceInformationInventory/1",
-      "@type": "rdf:Seq",
-      "rdf:rdf:_1": {
-        "@id": "#SourceInformation/1"
-      }
+      "@id": "#FunctionCallExpression/1",
+      "@type": "sdtl:FunctionCallExpression",
+      "sdtl:Function": "multiplication",
+      "sdtl:IsSdtlName": true
     },
     {
       "@id": "#SourceInformationInventory/2",
@@ -40,37 +19,40 @@
       }
     },
     {
-      "@id": "#ArgumentsInventory/2",
-      "@type": "rdf:Bag",
-      "rdf:rdf:_1": {
-        "@id": "#FunctionArgument/3"
-      }
+      "@id": "#SourceInformation/3",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:LineNumberStart": 3,
+      "sdtl:OriginalSourceText": "save \"AgeDeath5\""
     },
     {
-      "@id": "#NumericConstantExpression/1",
-      "@type": "sdtl:NumericConstantExpression",
-      "sdtl:NumericType": "Integer",
-      "sdtl:Value": "5"
+      "@id": "#VariableSymbolExpression/1",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "age"
     },
     {
-      "@id": "#DataframeInventory/1",
-      "@type": "rdf:Bag",
-      "rdf:_1": {
-        "@id": "#DataframeDescription/1"
-      }
+      "@id": "#dataframeVariable/1",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "personid"
     },
     {
-      "@id": "#DataframeDescription/1",
-      "@type": "sdtl:DataframeDescription",
-      "sdtl:VariableInventory": {
-        "@id": "#VariableInventory/1"
-      },
-      "sdtl:dataframeName": "Active"
+      "@id": "#dataframeVariable/3",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "died"
     },
     {
       "@id": "#dataframeVariable/4",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "name"
+    },
+    {
+      "@id": "#dataframeVariable/6",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "sex"
+    },
+    {
+      "@id": "#dataframeVariable/13",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "sex"
     },
     {
       "@id": "#Load/1",
@@ -87,48 +69,19 @@
       }
     },
     {
-      "@id": "#VariableSymbolExpression/1",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "age"
-    },
-    {
-      "@id": "#dataframeVariable/7",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "age"
-    },
-    {
-      "@id": "#SourceInformation/3",
-      "@type": "sdtl:SourceInformation",
-      "sdtl:LineNumberStart": 3,
-      "sdtl:OriginalSourceText": "save \"AgeDeath5\""
-    },
-    {
-      "@id": "#Compute/1",
-      "@type": "sdtl:Compute",
-      "sdtl:Command": "compute",
-      "sdtl:ConsumesDataframe": {
-        "@id": "#DataframeInventory/2"
-      },
-      "sdtl:Expression": {
-        "@id": "#FunctionCallExpression/1"
-      },
-      "sdtl:ProducesDataframe": {
-        "@id": "#DataframeInventory/3"
-      },
-      "sdtl:SourceInformation": {
-        "@id": "#SourceInformationInventory/2"
-      },
-      "sdtl:Variable": {
-        "@id": "#VariableSymbolExpression/1"
+      "@id": "#SourceInformationInventory/1",
+      "@type": "rdf:Seq",
+      "rdf:rdf:_1": {
+        "@id": "#SourceInformation/1"
       }
     },
     {
-      "@id": "#FunctionArgument/3",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:ArgumentName": "EXP1",
-      "sdtl:ArgumentValue": {
-        "@id": "#FunctionCallExpression/3"
-      }
+      "@id": "#DataframeDescription/1",
+      "@type": "sdtl:DataframeDescription",
+      "sdtl:VariableInventory": {
+        "@id": "#VariableInventory/1"
+      },
+      "sdtl:dataframeName": "Active"
     },
     {
       "@id": "#DataframeInventory/2",
@@ -138,134 +91,9 @@
       }
     },
     {
-      "@id": "#dataframeVariable/8",
+      "@id": "#dataframeVariable/7",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "personid"
-    },
-    {
-      "@id": "#SourceInformation/2",
-      "@type": "sdtl:SourceInformation",
-      "sdtl:LineNumberStart": 2,
-      "sdtl:OriginalSourceText": "replace age = 5*int(age/5)"
-    },
-    {
-      "@id": "#FunctionArgument/1",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:ArgumentName": "EXP1",
-      "sdtl:ArgumentValue": {
-        "@id": "#NumericConstantExpression/1"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/12",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "refarea"
-    },
-    {
-      "@id": "#dataframeVariable/3",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "died"
-    },
-    {
-      "@id": "#ArgumentsInventory/1",
-      "@type": "rdf:Bag",
-      "rdf:rdf:_1": {
-        "@id": "#FunctionArgument/1"
-      },
-      "rdf:rdf:_2": {
-        "@id": "#FunctionArgument/2"
-      }
-    },
-    {
-      "@id": "#FunctionArgument/4",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:ArgumentName": "EXP1",
-      "sdtl:ArgumentValue": {
-        "@id": "#VariableSymbolExpression/2"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/6",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "sex"
-    },
-    {
-      "@id": "#DataframeInventory/4",
-      "@type": "rdf:Bag",
-      "rdf:_1": {
-        "@id": "#DataframeDescription/2"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/9",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "born"
-    },
-    {
-      "@id": "#dataframeVariable/13",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "sex"
-    },
-    {
-      "@id": "#FunctionCallExpression/2",
-      "@type": "sdtl:FunctionCallExpression",
-      "sdtl:Arguments": {
-        "@id": "#ArgumentsInventory/2"
-      },
-      "sdtl:Function": "int",
-      "sdtl:IsSdtlName": false
-    },
-    {
-      "@id": "#Program/1",
-      "@type": "sdtl:Program",
-      "sdtl:CommandCount": 3,
-      "sdtl:Commands": {
-        "@id": "#CommandInventory/1"
-      },
-      "sdtl:Parser": "stata-sdtl-converter",
-      "sdtl:ParserVersion": "SDTL0.3",
-      "sdtl:SourceFileName": "N/A",
-      "sdtl:SourceLanguage": "stata"
-    },
-    {
-      "@id": "#VariableInventory/2",
-      "@type": "rdf:Seq",
-      "rdf:_1": {
-        "@id": "#dataframeVariable/8"
-      },
-      "rdf:_2": {
-        "@id": "#dataframeVariable/9"
-      },
-      "rdf:_3": {
-        "@id": "#dataframeVariable/10"
-      },
-      "rdf:_4": {
-        "@id": "#dataframeVariable/11"
-      },
-      "rdf:_5": {
-        "@id": "#dataframeVariable/12"
-      },
-      "rdf:_6": {
-        "@id": "#dataframeVariable/13"
-      },
-      "rdf:_7": {
-        "@id": "#dataframeVariable/14"
-      }
-    },
-    {
-      "@id": "#FunctionArgument/2",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:ArgumentName": "EXP2",
-      "sdtl:ArgumentValue": {
-        "@id": "#FunctionCallExpression/2"
-      }
-    },
-    {
-      "@id": "#DataframeInventory/3",
-      "@type": "rdf:Bag",
-      "rdf:_1": {
-        "@id": "#DataframeDescription/2"
-      }
+      "sdtl:VariableName": "age"
     },
     {
       "@id": "#SourceInformationInventory/3",
@@ -275,37 +103,9 @@
       }
     },
     {
-      "@id": "#Save/1",
-      "@type": "sdtl:Save",
-      "sdtl:Command": "save",
-      "sdtl:ConsumesDataframe": {
-        "@id": "#DataframeInventory/4"
-      },
-      "sdtl:FileName": "AgeDeath5",
-      "sdtl:IsCompressed": false,
-      "sdtl:Software": "Stata",
-      "sdtl:SourceInformation": {
-        "@id": "#SourceInformationInventory/3"
-      }
-    },
-    {
-      "@id": "#SourceInformation/1",
-      "@type": "sdtl:SourceInformation",
-      "sdtl:LineNumberStart": 1,
-      "sdtl:OriginalSourceText": "use \"AgeDeath.dta\""
-    },
-    {
-      "@id": "#CommandInventory/1",
-      "@type": "rdf:Seq",
-      "rdf:_1": {
-        "@id": "#Load/1"
-      },
-      "rdf:_2": {
-        "@id": "#Compute/1"
-      },
-      "rdf:_3": {
-        "@id": "#Save/1"
-      }
+      "@id": "#dataframeVariable/14",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "age"
     },
     {
       "@id": "#dataframeVariable/10",
@@ -313,9 +113,19 @@
       "sdtl:VariableName": "died"
     },
     {
-      "@id": "#dataframeVariable/5",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "refarea"
+      "@id": "#DataframeDescription/2",
+      "@type": "sdtl:DataframeDescription",
+      "sdtl:VariableInventory": {
+        "@id": "#VariableInventory/2"
+      },
+      "sdtl:dataframeName": "Active"
+    },
+    {
+      "@id": "#DataframeInventory/1",
+      "@type": "rdf:Bag",
+      "rdf:_1": {
+        "@id": "#DataframeDescription/1"
+      }
     },
     {
       "@id": "#VariableInventory/1",
@@ -343,46 +153,61 @@
       }
     },
     {
-      "@id": "#VariableSymbolExpression/2",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "age"
+      "@id": "#DataframeInventory/3",
+      "@type": "rdf:Bag",
+      "rdf:_1": {
+        "@id": "#DataframeDescription/2"
+      }
     },
     {
-      "@id": "#dataframeVariable/1",
+      "@id": "#Compute/1",
+      "@type": "sdtl:Compute",
+      "sdtl:Command": "compute",
+      "sdtl:ConsumesDataframe": {
+        "@id": "#DataframeInventory/2"
+      },
+      "sdtl:Expression": {
+        "@id": "#FunctionCallExpression/1"
+      },
+      "sdtl:ProducesDataframe": {
+        "@id": "#DataframeInventory/3"
+      },
+      "sdtl:SourceInformation": {
+        "@id": "#SourceInformationInventory/2"
+      },
+      "sdtl:Variable": {
+        "@id": "#VariableSymbolExpression/1"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/8",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "personid"
     },
     {
-      "@id": "#FunctionCallExpression/3",
-      "@type": "sdtl:FunctionCallExpression",
-      "sdtl:Arguments": {
-        "@id": "#ArgumentsInventory/3"
-      },
-      "sdtl:Function": "division",
-      "sdtl:IsSdtlName": true
+      "@id": "#dataframeVariable/12",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "refarea"
     },
     {
-      "@id": "#NumericConstantExpression/2",
-      "@type": "sdtl:NumericConstantExpression",
-      "sdtl:NumericType": "Integer",
-      "sdtl:Value": "5"
+      "@id": "#Save/1",
+      "@type": "sdtl:Save",
+      "sdtl:Command": "save",
+      "sdtl:ConsumesDataframe": {
+        "@id": "#DataframeInventory/4"
+      },
+      "sdtl:FileName": "AgeDeath5",
+      "sdtl:IsCompressed": false,
+      "sdtl:Software": "Stata",
+      "sdtl:SourceInformation": {
+        "@id": "#SourceInformationInventory/3"
+      }
     },
     {
-      "@id": "#DataframeDescription/2",
-      "@type": "sdtl:DataframeDescription",
-      "sdtl:VariableInventory": {
-        "@id": "#VariableInventory/2"
-      },
-      "sdtl:dataframeName": "Active"
-    },
-    {
-      "@id": "#FunctionCallExpression/1",
-      "@type": "sdtl:FunctionCallExpression",
-      "sdtl:Arguments": {
-        "@id": "#ArgumentsInventory/1"
-      },
-      "sdtl:Function": "multiplication",
-      "sdtl:IsSdtlName": true
+      "@id": "#SourceInformation/2",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:LineNumberStart": 2,
+      "sdtl:OriginalSourceText": "replace age = 5*int(age/5)"
     },
     {
       "@id": "#dataframeVariable/11",
@@ -390,12 +215,82 @@
       "sdtl:VariableName": "name"
     },
     {
-      "@id": "#FunctionArgument/5",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:ArgumentName": "EXP2",
-      "sdtl:ArgumentValue": {
-        "@id": "#NumericConstantExpression/2"
+      "@id": "#Program/1",
+      "@type": "sdtl:Program",
+      "sdtl:CommandCount": 3,
+      "sdtl:Parser": "stata-sdtl-converter",
+      "sdtl:ParserVersion": "SDTL0.3",
+      "sdtl:SourceFileName": "N/A",
+      "sdtl:SourceLanguage": "stata",
+      "sdtl:commands": {
+        "@id": "#CommandInventory/1"
       }
+    },
+    {
+      "@id": "#CommandInventory/1",
+      "@type": "rdf:Seq",
+      "rdf:_1": {
+        "@id": "#Load/1"
+      },
+      "rdf:_2": {
+        "@id": "#Compute/1"
+      },
+      "rdf:_3": {
+        "@id": "#Save/1"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/5",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "refarea"
+    },
+    {
+      "@id": "#VariableInventory/2",
+      "@type": "rdf:Seq",
+      "rdf:_1": {
+        "@id": "#dataframeVariable/8"
+      },
+      "rdf:_2": {
+        "@id": "#dataframeVariable/9"
+      },
+      "rdf:_3": {
+        "@id": "#dataframeVariable/10"
+      },
+      "rdf:_4": {
+        "@id": "#dataframeVariable/11"
+      },
+      "rdf:_5": {
+        "@id": "#dataframeVariable/12"
+      },
+      "rdf:_6": {
+        "@id": "#dataframeVariable/13"
+      },
+      "rdf:_7": {
+        "@id": "#dataframeVariable/14"
+      }
+    },
+    {
+      "@id": "#DataframeInventory/4",
+      "@type": "rdf:Bag",
+      "rdf:_1": {
+        "@id": "#DataframeDescription/2"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/2",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "born"
+    },
+    {
+      "@id": "#dataframeVariable/9",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "born"
+    },
+    {
+      "@id": "#SourceInformation/1",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:LineNumberStart": 1,
+      "sdtl:OriginalSourceText": "use \"AgeDeath.dta\""
     }
   ]
 }

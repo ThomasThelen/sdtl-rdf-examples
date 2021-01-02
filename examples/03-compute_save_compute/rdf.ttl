@@ -3,22 +3,72 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <#Program/1> a sdtl:Program ;
-    sdtl:Commands <#CommandInventory/1> .
+    sdtl:commands <#CommandInventory/1> .
+
+<#ArgumentsInventory/1> a rdf:Seq ;
+    rdf:rdf:_1 <#FunctionArgument/1> ;
+    rdf:rdf:_2 <#FunctionArgument/4> .
+
+<#ArgumentsInventory/2> a rdf:Seq ;
+    rdf:rdf:_1 <#FunctionArgument/2> ;
+    rdf:rdf:_2 <#FunctionArgument/3> .
+
+<#ArgumentsInventory/3> a rdf:Seq ;
+    rdf:rdf:_1 <#FunctionArgument/5> ;
+    rdf:rdf:_2 <#FunctionArgument/8> .
+
+<#ArgumentsInventory/4> a rdf:Seq ;
+    rdf:rdf:_1 <#FunctionArgument/6> ;
+    rdf:rdf:_2 <#FunctionArgument/7> .
+
+<#ArgumentsInventory/5> a rdf:Seq ;
+    rdf:rdf:_1 <#FunctionArgument/9> ;
+    rdf:rdf:_2 <#FunctionArgument/10> .
 
 <#CommandInventory/1> a rdf:Seq ;
     rdf:_1 <#Load/1> ;
-    rdf:_2 <#Compute/1> ;
-    rdf:_3 <#Compute/2> ;
-    rdf:_4 <#Save/1> ;
-    rdf:_5 <#Compute/3> ;
-    rdf:_6 <#Save/2> .
+    rdf:_10 <#Comment/5> ;
+    rdf:_11 <#Save/2> ;
+    rdf:_2 <#Comment/1> ;
+    rdf:_3 <#Compute/1> ;
+    rdf:_4 <#Comment/2> ;
+    rdf:_5 <#Compute/2> ;
+    rdf:_6 <#Comment/3> ;
+    rdf:_7 <#Save/1> ;
+    rdf:_8 <#Comment/4> ;
+    rdf:_9 <#Compute/3> .
+
+<#Comment/1> a sdtl:Comment ;
+    sdtl:command "Comment" ;
+    sdtl:commentText "#********** compute with 2 inputs  ****************." ;
+    sdtl:sourceInformation <#sourceInformation/2> .
+
+<#Comment/2> a sdtl:Comment ;
+    sdtl:command "Comment" ;
+    sdtl:commentText "#********* first change to agestd  *****************" ;
+    sdtl:sourceInformation <#sourceInformation/4> .
+
+<#Comment/3> a sdtl:Comment ;
+    sdtl:command "Comment" ;
+    sdtl:commentText "#********* SAVE FILE  1 **********************************" ;
+    sdtl:sourceInformation <#sourceInformation/6> .
+
+<#Comment/4> a sdtl:Comment ;
+    sdtl:command "Comment" ;
+    sdtl:commentText "#********* first change to agestd  *****************" ;
+    sdtl:sourceInformation <#sourceInformation/8> .
+
+<#Comment/5> a sdtl:Comment ;
+    sdtl:command "Comment" ;
+    sdtl:commentText "#********* SAVE FILE 2 **********************************" ;
+    sdtl:sourceInformation <#sourceInformation/10> .
 
 <#Compute/1> a sdtl:Compute ;
     sdtl:ConsumesDataframe <#DataframeInventory/2> ;
     sdtl:ProducesDataframe <#DataframeInventory/3> ;
     sdtl:command "Compute" ;
     sdtl:expression <#FunctionCallExpression/1> ;
-    sdtl:sourceInformation <#sourceInformation/2> ;
+    sdtl:sourceInformation <#sourceInformation/3> ;
     sdtl:variable <#VariableSymbolExpression/1> .
 
 <#Compute/2> a sdtl:Compute ;
@@ -26,7 +76,7 @@
     sdtl:ProducesDataframe <#DataframeInventory/5> ;
     sdtl:command "Compute" ;
     sdtl:expression <#FunctionCallExpression/3> ;
-    sdtl:sourceInformation <#sourceInformation/3> ;
+    sdtl:sourceInformation <#sourceInformation/5> ;
     sdtl:variable <#VariableSymbolExpression/4> .
 
 <#Compute/3> a sdtl:Compute ;
@@ -34,7 +84,7 @@
     sdtl:ProducesDataframe <#DataframeInventory/8> ;
     sdtl:command "Compute" ;
     sdtl:expression <#FunctionCallExpression/5> ;
-    sdtl:sourceInformation <#sourceInformation/5> ;
+    sdtl:sourceInformation <#sourceInformation/9> ;
     sdtl:variable <#VariableSymbolExpression/6> .
 
 <#DataframeInventory/1> a rdf:Bag ;
@@ -64,33 +114,68 @@
 <#DataframeInventory/9> a rdf:Bag ;
     rdf:_1 <#DataframeDescription/4> .
 
+<#FunctionArgument/1> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#FunctionCallExpression/2> .
+
+<#FunctionArgument/10> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/4> .
+
+<#FunctionArgument/2> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#NumericConstantExpression/1> .
+
+<#FunctionArgument/3> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#VariableSymbolExpression/2> .
+
+<#FunctionArgument/4> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#VariableSymbolExpression/3> .
+
+<#FunctionArgument/5> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#FunctionCallExpression/4> .
+
+<#FunctionArgument/6> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#VariableSymbolExpression/5> .
+
+<#FunctionArgument/7> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/2> .
+
+<#FunctionArgument/8> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP2" ;
+    sdtl:argumentValue <#NumericConstantExpression/3> .
+
+<#FunctionArgument/9> a sdtl:FunctionArgument ;
+    sdtl:argumentName "EXP1" ;
+    sdtl:argumentValue <#VariableSymbolExpression/7> .
+
 <#FunctionCallExpression/1> a sdtl:FunctionCallExpression ;
-    sdtl:arguments <#arguments/1>,
-        <#arguments/4> ;
+    sdtl:Arguments <#ArgumentsInventory/1> ;
     sdtl:function "division" ;
     sdtl:isSdtlName true .
 
 <#FunctionCallExpression/2> a sdtl:FunctionCallExpression ;
-    sdtl:arguments <#arguments/2>,
-        <#arguments/3> ;
+    sdtl:Arguments <#ArgumentsInventory/2> ;
     sdtl:function "multiplication" ;
     sdtl:isSdtlName true .
 
 <#FunctionCallExpression/3> a sdtl:FunctionCallExpression ;
-    sdtl:arguments <#arguments/5>,
-        <#arguments/8> ;
+    sdtl:Arguments <#ArgumentsInventory/3> ;
     sdtl:function "division" ;
     sdtl:isSdtlName true .
 
 <#FunctionCallExpression/4> a sdtl:FunctionCallExpression ;
-    sdtl:arguments <#arguments/6>,
-        <#arguments/7> ;
+    sdtl:Arguments <#ArgumentsInventory/4> ;
     sdtl:function "subtraction" ;
     sdtl:isSdtlName true .
 
 <#FunctionCallExpression/5> a sdtl:FunctionCallExpression ;
-    sdtl:arguments <#arguments/10>,
-        <#arguments/9> ;
+    sdtl:Arguments <#ArgumentsInventory/5> ;
     sdtl:function "multiplication" ;
     sdtl:isSdtlName true .
 
@@ -122,14 +207,14 @@
     sdtl:command "Save" ;
     sdtl:fileName "GSS_sample_save1.csv" ;
     sdtl:software "csv" ;
-    sdtl:sourceInformation <#sourceInformation/4> .
+    sdtl:sourceInformation <#sourceInformation/7> .
 
 <#Save/2> a sdtl:Save ;
     sdtl:ConsumesDataframe <#DataframeInventory/9> ;
     sdtl:command "Save" ;
     sdtl:fileName "GSS_sample_save2.csv" ;
     sdtl:software "csv" ;
-    sdtl:sourceInformation <#sourceInformation/6> .
+    sdtl:sourceInformation <#sourceInformation/11> .
 
 <#VariableInventory/1> a rdf:Seq ;
     rdf:_1 <#dataframeVariable/1> ;
@@ -448,46 +533,6 @@
 
 <#VariableSymbolExpression/7> a sdtl:VariableSymbolExpression ;
     sdtl:variableName "AGE" .
-
-<#arguments/1> a sdtl:FunctionArgument ;
-    sdtl:argumentName "EXP1" ;
-    sdtl:argumentValue <#FunctionCallExpression/2> .
-
-<#arguments/10> a sdtl:FunctionArgument ;
-    sdtl:argumentName "EXP2" ;
-    sdtl:argumentValue <#NumericConstantExpression/4> .
-
-<#arguments/2> a sdtl:FunctionArgument ;
-    sdtl:argumentName "EXP1" ;
-    sdtl:argumentValue <#NumericConstantExpression/1> .
-
-<#arguments/3> a sdtl:FunctionArgument ;
-    sdtl:argumentName "EXP2" ;
-    sdtl:argumentValue <#VariableSymbolExpression/2> .
-
-<#arguments/4> a sdtl:FunctionArgument ;
-    sdtl:argumentName "EXP2" ;
-    sdtl:argumentValue <#VariableSymbolExpression/3> .
-
-<#arguments/5> a sdtl:FunctionArgument ;
-    sdtl:argumentName "EXP1" ;
-    sdtl:argumentValue <#FunctionCallExpression/4> .
-
-<#arguments/6> a sdtl:FunctionArgument ;
-    sdtl:argumentName "EXP1" ;
-    sdtl:argumentValue <#VariableSymbolExpression/5> .
-
-<#arguments/7> a sdtl:FunctionArgument ;
-    sdtl:argumentName "EXP2" ;
-    sdtl:argumentValue <#NumericConstantExpression/2> .
-
-<#arguments/8> a sdtl:FunctionArgument ;
-    sdtl:argumentName "EXP2" ;
-    sdtl:argumentValue <#NumericConstantExpression/3> .
-
-<#arguments/9> a sdtl:FunctionArgument ;
-    sdtl:argumentName "EXP1" ;
-    sdtl:argumentValue <#VariableSymbolExpression/7> .
 
 <#dataframeVariable/1> a sdtl:VariableSymbolExpression ;
     sdtl:VariableName "ADULTS" .
@@ -1363,40 +1408,75 @@
     sdtl:sourceStartIndex 61 ;
     sdtl:sourceStopIndex 97 .
 
+<#sourceInformation/10> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 23 ;
+    sdtl:lineNumberStart 23 ;
+    sdtl:originalSourceText "##********* SAVE FILE 2 **********************************" ;
+    sdtl:sourceStartIndex 553 ;
+    sdtl:sourceStopIndex 610 .
+
+<#sourceInformation/11> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 24 ;
+    sdtl:lineNumberStart 24 ;
+    sdtl:originalSourceText "cdata.to_csv(\"GSS_sample_save2.csv\")" ;
+    sdtl:sourceStartIndex 612 ;
+    sdtl:sourceStopIndex 647 .
+
 <#sourceInformation/2> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 8 ;
+    sdtl:lineNumberStart 8 ;
+    sdtl:originalSourceText "##********** compute with 2 inputs  ****************." ;
+    sdtl:sourceStartIndex 100 ;
+    sdtl:sourceStopIndex 152 .
+
+<#sourceInformation/3> a sdtl:SourceInformation ;
     sdtl:lineNumberEnd 9 ;
     sdtl:lineNumberStart 9 ;
     sdtl:originalSourceText "cdata = cdata.assign(pctFamIncome = 100*cdata['REALRINC']/cdata['REALINC'] )" ;
     sdtl:sourceStartIndex 154 ;
     sdtl:sourceStopIndex 229 .
 
-<#sourceInformation/3> a sdtl:SourceInformation ;
+<#sourceInformation/4> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 11 ;
+    sdtl:lineNumberStart 11 ;
+    sdtl:originalSourceText "##********* first change to agestd  *****************" ;
+    sdtl:sourceStartIndex 232 ;
+    sdtl:sourceStopIndex 284 .
+
+<#sourceInformation/5> a sdtl:SourceInformation ;
     sdtl:lineNumberEnd 12 ;
     sdtl:lineNumberStart 12 ;
     sdtl:originalSourceText "cdata = cdata.assign(agestd = ((cdata['AGE'] - 45.99)/.07) )" ;
     sdtl:sourceStartIndex 286 ;
     sdtl:sourceStopIndex 345 .
 
-<#sourceInformation/4> a sdtl:SourceInformation ;
+<#sourceInformation/6> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 15 ;
+    sdtl:lineNumberStart 15 ;
+    sdtl:originalSourceText "##********* SAVE FILE  1 **********************************" ;
+    sdtl:sourceStartIndex 349 ;
+    sdtl:sourceStopIndex 407 .
+
+<#sourceInformation/7> a sdtl:SourceInformation ;
     sdtl:lineNumberEnd 16 ;
     sdtl:lineNumberStart 16 ;
     sdtl:originalSourceText "cdata.to_csv(\"GSS_sample_save1.csv\")" ;
     sdtl:sourceStartIndex 409 ;
     sdtl:sourceStopIndex 444 .
 
-<#sourceInformation/5> a sdtl:SourceInformation ;
+<#sourceInformation/8> a sdtl:SourceInformation ;
+    sdtl:lineNumberEnd 19 ;
+    sdtl:lineNumberStart 19 ;
+    sdtl:originalSourceText "##********* first change to agestd  *****************" ;
+    sdtl:sourceStartIndex 448 ;
+    sdtl:sourceStopIndex 500 .
+
+<#sourceInformation/9> a sdtl:SourceInformation ;
     sdtl:lineNumberEnd 20 ;
     sdtl:lineNumberStart 20 ;
     sdtl:originalSourceText "cdata = cdata.assign(agestd = cdata['AGE']*.07 )" ;
     sdtl:sourceStartIndex 502 ;
     sdtl:sourceStopIndex 549 .
-
-<#sourceInformation/6> a sdtl:SourceInformation ;
-    sdtl:lineNumberEnd 24 ;
-    sdtl:lineNumberStart 24 ;
-    sdtl:originalSourceText "cdata.to_csv(\"GSS_sample_save2.csv\")" ;
-    sdtl:sourceStartIndex 612 ;
-    sdtl:sourceStopIndex 647 .
 
 <#DataframeDescription/1> a sdtl:DataframeDescription ;
     sdtl:VariableInventory <#VariableInventory/1> ;

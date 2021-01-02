@@ -6,57 +6,115 @@
   },
   "@graph": [
     {
-      "@id": "#dataframeVariable/108",
+      "@id": "#dataframeVariable/76",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MARITAL"
+      "sdtl:VariableName": "BLUGRASS"
     },
     {
-      "@id": "#dataframeVariable/32",
+      "@id": "#dataframeVariable/75",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "INCOME"
+      "sdtl:VariableName": "BLUES"
     },
     {
-      "@id": "#dataframeVariable/189",
+      "@id": "#dataframeVariable/98",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD5"
+      "sdtl:VariableName": "HHRACE"
     },
     {
-      "@id": "#dataframeVariable/110",
+      "@id": "#dataframeVariable/3",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "BIGBAND"
+    },
+    {
+      "@id": "#dataframeVariable/265",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD8"
+    },
+    {
+      "@id": "#VariableSymbolExpression/5",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:variableName": "AGE"
+    },
+    {
+      "@id": "#sourceInformation/9",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:lineNumberEnd": 20,
+      "sdtl:lineNumberStart": 20,
+      "sdtl:originalSourceText": "cdata = cdata.assign(agestd = cdata['AGE']*.07 )",
+      "sdtl:sourceStartIndex": 502,
+      "sdtl:sourceStopIndex": 549
+    },
+    {
+      "@id": "#dataframeVariable/153",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CONROCK"
+    },
+    {
+      "@id": "#dataframeVariable/109",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "MOODEASY"
+    },
+    {
+      "@id": "#dataframeVariable/192",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD8"
+    },
+    {
+      "@id": "#dataframeVariable/86",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "FOLK"
+    },
+    {
+      "@id": "#dataframeVariable/164",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER5"
+    },
+    {
+      "@id": "#dataframeVariable/158",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "FOLK"
+    },
+    {
+      "@id": "#FunctionArgument/6",
+      "@type": "sdtl:FunctionArgument",
+      "sdtl:argumentName": "EXP1",
+      "sdtl:argumentValue": {
+        "@id": "#VariableSymbolExpression/5"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/182",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "MUSICALS"
     },
     {
-      "@id": "#Save/2",
-      "@type": "sdtl:Save",
-      "sdtl:ConsumesDataframe": {
-        "@id": "#DataframeInventory/9"
+      "@id": "#DataframeDescription/2",
+      "@type": "sdtl:DataframeDescription",
+      "sdtl:VariableInventory": {
+        "@id": "#VariableInventory/2"
       },
-      "sdtl:command": "Save",
-      "sdtl:fileName": "GSS_sample_save2.csv",
-      "sdtl:software": "csv",
-      "sdtl:sourceInformation": {
-        "@id": "#sourceInformation/6"
+      "sdtl:dataframeName": "cdata"
+    },
+    {
+      "@id": "#sourceInformation/11",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:lineNumberEnd": 24,
+      "sdtl:lineNumberStart": 24,
+      "sdtl:originalSourceText": "cdata.to_csv(\"GSS_sample_save2.csv\")",
+      "sdtl:sourceStartIndex": 612,
+      "sdtl:sourceStopIndex": 647
+    },
+    {
+      "@id": "#dataframeVariable/222",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CASEID"
+    },
+    {
+      "@id": "#DataframeInventory/1",
+      "@type": "rdf:Bag",
+      "rdf:_1": {
+        "@id": "#DataframeDescription/1"
       }
-    },
-    {
-      "@id": "#dataframeVariable/258",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD1"
-    },
-    {
-      "@id": "#dataframeVariable/205",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RINCOME"
-    },
-    {
-      "@id": "#dataframeVariable/174",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "ID"
-    },
-    {
-      "@id": "#dataframeVariable/171",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HHTYPE"
     },
     {
       "@id": "#dataframeVariable/163",
@@ -64,46 +122,66 @@
       "sdtl:VariableName": "GENDER4"
     },
     {
-      "@id": "#dataframeVariable/105",
+      "@id": "#dataframeVariable/96",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "JAZZ"
+      "sdtl:VariableName": "GENDER9"
     },
     {
-      "@id": "#dataframeVariable/34",
+      "@id": "#dataframeVariable/70",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "JAZZ"
+      "sdtl:VariableName": "WRKSTAT"
     },
     {
-      "@id": "#FunctionCallExpression/5",
-      "@type": "sdtl:FunctionCallExpression",
-      "sdtl:arguments": [
-        {
-          "@id": "#arguments/10"
-        },
-        {
-          "@id": "#arguments/9"
-        }
-      ],
-      "sdtl:function": "multiplication",
-      "sdtl:isSdtlName": true
-    },
-    {
-      "@id": "#dataframeVariable/140",
+      "@id": "#dataframeVariable/72",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "UNRELAT"
+      "sdtl:VariableName": "ADULTS"
     },
     {
-      "@id": "#dataframeVariable/161",
+      "@id": "#dataframeVariable/252",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER2"
+      "sdtl:VariableName": "MARCOHRT"
     },
     {
-      "@id": "#dataframeVariable/148",
+      "@id": "#dataframeVariable/101",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "BLUGRASS"
+      "sdtl:VariableName": "HVYMETAL"
     },
     {
-      "@id": "#dataframeVariable/273",
+      "@id": "#dataframeVariable/189",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD5"
+    },
+    {
+      "@id": "#dataframeVariable/36",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "MARCOHRT"
+    },
+    {
+      "@id": "#Comment/4",
+      "@type": "sdtl:Comment",
+      "sdtl:command": "Comment",
+      "sdtl:commentText": "#********* first change to agestd  *****************",
+      "sdtl:sourceInformation": {
+        "@id": "#sourceInformation/8"
+      }
+    },
+    {
+      "@id": "#VariableSymbolExpression/2",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:variableName": "REALRINC"
+    },
+    {
+      "@id": "#dataframeVariable/229",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "EARNRS"
+    },
+    {
+      "@id": "#dataframeVariable/74",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "BIGBAND"
+    },
+    {
+      "@id": "#dataframeVariable/200",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "REALINC"
     },
@@ -113,74 +191,38 @@
       "sdtl:VariableName": "JAZZ"
     },
     {
-      "@id": "#dataframeVariable/209",
+      "@id": "#dataframeVariable/239",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SEX"
+      "sdtl:VariableName": "GENDER7"
     },
     {
-      "@id": "#dataframeVariable/66",
+      "@id": "#dataframeVariable/249",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SEX"
+      "sdtl:VariableName": "ISSP"
     },
     {
-      "@id": "#dataframeVariable/118",
+      "@id": "#dataframeVariable/26",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD6"
+      "sdtl:VariableName": "GOSPEL"
     },
     {
-      "@id": "#dataframeVariable/202",
+      "@id": "#dataframeVariable/128",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REGGAE"
+      "sdtl:VariableName": "REALINC"
     },
     {
-      "@id": "#Program/1",
-      "@type": "sdtl:Program",
-      "sdtl:Commands": {
-        "@id": "#CommandInventory/1"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/263",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD6"
-    },
-    {
-      "@id": "#dataframeVariable/44",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD3"
-    },
-    {
-      "@id": "#dataframeVariable/130",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REGGAE"
-    },
-    {
-      "@id": "#dataframeVariable/194",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLDIES"
-    },
-    {
-      "@id": "#dataframeVariable/247",
+      "@id": "#dataframeVariable/174",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "ID"
     },
     {
-      "@id": "#VariableSymbolExpression/5",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:variableName": "AGE"
-    },
-    {
-      "@id": "#dataframeVariable/6",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CASEID"
-    },
-    {
-      "@id": "#arguments/6",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:argumentName": "EXP1",
-      "sdtl:argumentValue": {
-        "@id": "#VariableSymbolExpression/5"
-      }
+      "@id": "#sourceInformation/2",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:lineNumberEnd": 8,
+      "sdtl:lineNumberStart": 8,
+      "sdtl:originalSourceText": "##********** compute with 2 inputs  ****************.",
+      "sdtl:sourceStartIndex": 100,
+      "sdtl:sourceStopIndex": 152
     },
     {
       "@id": "#dataframeVariable/198",
@@ -188,392 +230,81 @@
       "sdtl:VariableName": "RACE"
     },
     {
-      "@id": "#dataframeVariable/222",
+      "@id": "#dataframeVariable/148",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CASEID"
+      "sdtl:VariableName": "BLUGRASS"
     },
     {
-      "@id": "#dataframeVariable/260",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD3"
-    },
-    {
-      "@id": "#dataframeVariable/214",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "YEAR"
-    },
-    {
-      "@id": "#dataframeVariable/135",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SAMPCODE"
-    },
-    {
-      "@id": "#dataframeVariable/251",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "LATIN"
-    },
-    {
-      "@id": "#dataframeVariable/40",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "NATSPAC"
-    },
-    {
-      "@id": "#dataframeVariable/236",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER4"
-    },
-    {
-      "@id": "#dataframeVariable/241",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER9"
-    },
-    {
-      "@id": "#dataframeVariable/18",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER2"
-    },
-    {
-      "@id": "#dataframeVariable/164",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER5"
-    },
-    {
-      "@id": "#dataframeVariable/229",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "EARNRS"
-    },
-    {
-      "@id": "#dataframeVariable/12",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "DEGREE"
-    },
-    {
-      "@id": "#dataframeVariable/217",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "ADULTS"
-    },
-    {
-      "@id": "#dataframeVariable/20",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER4"
-    },
-    {
-      "@id": "#dataframeVariable/33",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "ISSP"
-    },
-    {
-      "@id": "#VariableInventory/2",
+      "@id": "#ArgumentsInventory/2",
       "@type": "rdf:Seq",
-      "rdf:_1": {
-        "@id": "#dataframeVariable/72"
-      },
-      "rdf:_10": {
-        "@id": "#dataframeVariable/81"
-      },
-      "rdf:_11": {
-        "@id": "#dataframeVariable/82"
-      },
-      "rdf:_12": {
-        "@id": "#dataframeVariable/83"
-      },
-      "rdf:_13": {
-        "@id": "#dataframeVariable/84"
-      },
-      "rdf:_14": {
-        "@id": "#dataframeVariable/85"
-      },
-      "rdf:_15": {
-        "@id": "#dataframeVariable/86"
-      },
-      "rdf:_16": {
-        "@id": "#dataframeVariable/87"
-      },
-      "rdf:_17": {
-        "@id": "#dataframeVariable/88"
-      },
-      "rdf:_18": {
-        "@id": "#dataframeVariable/89"
-      },
-      "rdf:_19": {
-        "@id": "#dataframeVariable/90"
-      },
-      "rdf:_2": {
-        "@id": "#dataframeVariable/73"
-      },
-      "rdf:_20": {
-        "@id": "#dataframeVariable/91"
-      },
-      "rdf:_21": {
-        "@id": "#dataframeVariable/92"
-      },
-      "rdf:_22": {
-        "@id": "#dataframeVariable/93"
-      },
-      "rdf:_23": {
-        "@id": "#dataframeVariable/94"
-      },
-      "rdf:_24": {
-        "@id": "#dataframeVariable/95"
-      },
-      "rdf:_25": {
-        "@id": "#dataframeVariable/96"
-      },
-      "rdf:_26": {
-        "@id": "#dataframeVariable/97"
-      },
-      "rdf:_27": {
-        "@id": "#dataframeVariable/98"
-      },
-      "rdf:_28": {
-        "@id": "#dataframeVariable/99"
-      },
-      "rdf:_29": {
-        "@id": "#dataframeVariable/100"
-      },
-      "rdf:_3": {
-        "@id": "#dataframeVariable/74"
-      },
-      "rdf:_30": {
-        "@id": "#dataframeVariable/101"
-      },
-      "rdf:_31": {
-        "@id": "#dataframeVariable/102"
-      },
-      "rdf:_32": {
-        "@id": "#dataframeVariable/103"
-      },
-      "rdf:_33": {
-        "@id": "#dataframeVariable/104"
-      },
-      "rdf:_34": {
-        "@id": "#dataframeVariable/105"
-      },
-      "rdf:_35": {
-        "@id": "#dataframeVariable/106"
-      },
-      "rdf:_36": {
-        "@id": "#dataframeVariable/107"
-      },
-      "rdf:_37": {
-        "@id": "#dataframeVariable/108"
-      },
-      "rdf:_38": {
-        "@id": "#dataframeVariable/109"
-      },
-      "rdf:_39": {
-        "@id": "#dataframeVariable/110"
-      },
-      "rdf:_4": {
-        "@id": "#dataframeVariable/75"
-      },
-      "rdf:_40": {
-        "@id": "#dataframeVariable/111"
-      },
-      "rdf:_41": {
-        "@id": "#dataframeVariable/112"
-      },
-      "rdf:_42": {
-        "@id": "#dataframeVariable/113"
-      },
-      "rdf:_43": {
-        "@id": "#dataframeVariable/114"
-      },
-      "rdf:_44": {
-        "@id": "#dataframeVariable/115"
-      },
-      "rdf:_45": {
-        "@id": "#dataframeVariable/116"
-      },
-      "rdf:_46": {
-        "@id": "#dataframeVariable/117"
-      },
-      "rdf:_47": {
-        "@id": "#dataframeVariable/118"
-      },
-      "rdf:_48": {
-        "@id": "#dataframeVariable/119"
-      },
-      "rdf:_49": {
-        "@id": "#dataframeVariable/120"
-      },
-      "rdf:_5": {
-        "@id": "#dataframeVariable/76"
-      },
-      "rdf:_50": {
-        "@id": "#dataframeVariable/121"
-      },
-      "rdf:_51": {
-        "@id": "#dataframeVariable/122"
-      },
-      "rdf:_52": {
-        "@id": "#dataframeVariable/123"
-      },
-      "rdf:_53": {
-        "@id": "#dataframeVariable/124"
-      },
-      "rdf:_54": {
-        "@id": "#dataframeVariable/125"
-      },
-      "rdf:_55": {
-        "@id": "#dataframeVariable/126"
-      },
-      "rdf:_56": {
-        "@id": "#dataframeVariable/127"
-      },
-      "rdf:_57": {
-        "@id": "#dataframeVariable/128"
-      },
-      "rdf:_58": {
-        "@id": "#dataframeVariable/129"
-      },
-      "rdf:_59": {
-        "@id": "#dataframeVariable/130"
-      },
-      "rdf:_6": {
-        "@id": "#dataframeVariable/77"
-      },
-      "rdf:_60": {
-        "@id": "#dataframeVariable/131"
-      },
-      "rdf:_61": {
-        "@id": "#dataframeVariable/132"
-      },
-      "rdf:_62": {
-        "@id": "#dataframeVariable/133"
-      },
-      "rdf:_63": {
-        "@id": "#dataframeVariable/134"
-      },
-      "rdf:_64": {
-        "@id": "#dataframeVariable/135"
-      },
-      "rdf:_65": {
-        "@id": "#dataframeVariable/136"
-      },
-      "rdf:_66": {
-        "@id": "#dataframeVariable/137"
-      },
-      "rdf:_67": {
-        "@id": "#dataframeVariable/138"
-      },
-      "rdf:_68": {
-        "@id": "#dataframeVariable/139"
-      },
-      "rdf:_69": {
-        "@id": "#dataframeVariable/140"
-      },
-      "rdf:_7": {
-        "@id": "#dataframeVariable/78"
-      },
-      "rdf:_70": {
-        "@id": "#dataframeVariable/141"
-      },
-      "rdf:_71": {
-        "@id": "#dataframeVariable/142"
-      },
-      "rdf:_72": {
-        "@id": "#dataframeVariable/143"
-      },
-      "rdf:_8": {
-        "@id": "#dataframeVariable/79"
-      },
-      "rdf:_9": {
-        "@id": "#dataframeVariable/80"
+      "rdf:rdf:_1": {
+        "@id": "#FunctionArgument/2"
+      },
+      "rdf:rdf:_2": {
+        "@id": "#FunctionArgument/3"
       }
     },
     {
-      "@id": "#dataframeVariable/92",
+      "@id": "#dataframeVariable/122",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER5"
+      "sdtl:VariableName": "OLDIES"
     },
     {
-      "@id": "#dataframeVariable/19",
+      "@id": "#dataframeVariable/259",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER3"
+      "sdtl:VariableName": "OLD2"
     },
     {
-      "@id": "#dataframeVariable/274",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REALRINC"
-    },
-    {
-      "@id": "#dataframeVariable/180",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MARITAL"
-    },
-    {
-      "@id": "#dataframeVariable/23",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER7"
-    },
-    {
-      "@id": "#dataframeVariable/197",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "PARTYID"
-    },
-    {
-      "@id": "#dataframeVariable/65",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SAMPLE"
-    },
-    {
-      "@id": "#dataframeVariable/16",
+      "@id": "#dataframeVariable/159",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "FORMWT"
     },
     {
-      "@id": "#dataframeVariable/15",
+      "@id": "#dataframeVariable/121",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "FOLK"
+      "sdtl:VariableName": "OLD9"
     },
     {
-      "@id": "#DataframeInventory/7",
+      "@id": "#DataframeInventory/3",
       "@type": "rdf:Bag",
       "rdf:_1": {
-        "@id": "#DataframeDescription/3"
+        "@id": "#DataframeDescription/2"
       }
     },
     {
-      "@id": "#dataframeVariable/178",
+      "@id": "#dataframeVariable/34",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "LATIN"
+      "sdtl:VariableName": "JAZZ"
     },
     {
-      "@id": "#dataframeVariable/37",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MARITAL"
-    },
-    {
-      "@id": "#dataframeVariable/36",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MARCOHRT"
-    },
-    {
-      "@id": "#dataframeVariable/75",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "BLUES"
-    },
-    {
-      "@id": "#dataframeVariable/284",
+      "@id": "#dataframeVariable/211",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "SIZE"
     },
     {
-      "@id": "#sourceInformation/6",
-      "@type": "sdtl:SourceInformation",
-      "sdtl:lineNumberEnd": 24,
-      "sdtl:lineNumberStart": 24,
-      "sdtl:originalSourceText": "cdata.to_csv(\"GSS_sample_save2.csv\")",
-      "sdtl:sourceStartIndex": 612,
-      "sdtl:sourceStopIndex": 647
+      "@id": "#dataframeVariable/51",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLDIES"
     },
     {
-      "@id": "#DataframeInventory/1",
-      "@type": "rdf:Bag",
-      "rdf:_1": {
-        "@id": "#DataframeDescription/1"
-      }
+      "@id": "#dataframeVariable/129",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "REALRINC"
+    },
+    {
+      "@id": "#dataframeVariable/283",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SIBS"
+    },
+    {
+      "@id": "#dataframeVariable/2",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "AGE"
+    },
+    {
+      "@id": "#dataframeVariable/55",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RACE"
     },
     {
       "@id": "#Load/1",
@@ -589,367 +320,9 @@
       }
     },
     {
-      "@id": "#dataframeVariable/147",
+      "@id": "#dataframeVariable/196",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "BLUES"
-    },
-    {
-      "@id": "#dataframeVariable/262",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD5"
-    },
-    {
-      "@id": "#dataframeVariable/43",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD2"
-    },
-    {
-      "@id": "#dataframeVariable/85",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "EDUC"
-    },
-    {
-      "@id": "#dataframeVariable/60",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REGION"
-    },
-    {
-      "@id": "#dataframeVariable/22",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER6"
-    },
-    {
-      "@id": "#dataframeVariable/136",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SAMPLE"
-    },
-    {
-      "@id": "#dataframeVariable/166",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER7"
-    },
-    {
-      "@id": "#arguments/4",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:argumentName": "EXP2",
-      "sdtl:argumentValue": {
-        "@id": "#VariableSymbolExpression/3"
-      }
-    },
-    {
-      "@id": "#VariableInventory/1",
-      "@type": "rdf:Seq",
-      "rdf:_1": {
-        "@id": "#dataframeVariable/1"
-      },
-      "rdf:_10": {
-        "@id": "#dataframeVariable/10"
-      },
-      "rdf:_11": {
-        "@id": "#dataframeVariable/11"
-      },
-      "rdf:_12": {
-        "@id": "#dataframeVariable/12"
-      },
-      "rdf:_13": {
-        "@id": "#dataframeVariable/13"
-      },
-      "rdf:_14": {
-        "@id": "#dataframeVariable/14"
-      },
-      "rdf:_15": {
-        "@id": "#dataframeVariable/15"
-      },
-      "rdf:_16": {
-        "@id": "#dataframeVariable/16"
-      },
-      "rdf:_17": {
-        "@id": "#dataframeVariable/17"
-      },
-      "rdf:_18": {
-        "@id": "#dataframeVariable/18"
-      },
-      "rdf:_19": {
-        "@id": "#dataframeVariable/19"
-      },
-      "rdf:_2": {
-        "@id": "#dataframeVariable/2"
-      },
-      "rdf:_20": {
-        "@id": "#dataframeVariable/20"
-      },
-      "rdf:_21": {
-        "@id": "#dataframeVariable/21"
-      },
-      "rdf:_22": {
-        "@id": "#dataframeVariable/22"
-      },
-      "rdf:_23": {
-        "@id": "#dataframeVariable/23"
-      },
-      "rdf:_24": {
-        "@id": "#dataframeVariable/24"
-      },
-      "rdf:_25": {
-        "@id": "#dataframeVariable/25"
-      },
-      "rdf:_26": {
-        "@id": "#dataframeVariable/26"
-      },
-      "rdf:_27": {
-        "@id": "#dataframeVariable/27"
-      },
-      "rdf:_28": {
-        "@id": "#dataframeVariable/28"
-      },
-      "rdf:_29": {
-        "@id": "#dataframeVariable/29"
-      },
-      "rdf:_3": {
-        "@id": "#dataframeVariable/3"
-      },
-      "rdf:_30": {
-        "@id": "#dataframeVariable/30"
-      },
-      "rdf:_31": {
-        "@id": "#dataframeVariable/31"
-      },
-      "rdf:_32": {
-        "@id": "#dataframeVariable/32"
-      },
-      "rdf:_33": {
-        "@id": "#dataframeVariable/33"
-      },
-      "rdf:_34": {
-        "@id": "#dataframeVariable/34"
-      },
-      "rdf:_35": {
-        "@id": "#dataframeVariable/35"
-      },
-      "rdf:_36": {
-        "@id": "#dataframeVariable/36"
-      },
-      "rdf:_37": {
-        "@id": "#dataframeVariable/37"
-      },
-      "rdf:_38": {
-        "@id": "#dataframeVariable/38"
-      },
-      "rdf:_39": {
-        "@id": "#dataframeVariable/39"
-      },
-      "rdf:_4": {
-        "@id": "#dataframeVariable/4"
-      },
-      "rdf:_40": {
-        "@id": "#dataframeVariable/40"
-      },
-      "rdf:_41": {
-        "@id": "#dataframeVariable/41"
-      },
-      "rdf:_42": {
-        "@id": "#dataframeVariable/42"
-      },
-      "rdf:_43": {
-        "@id": "#dataframeVariable/43"
-      },
-      "rdf:_44": {
-        "@id": "#dataframeVariable/44"
-      },
-      "rdf:_45": {
-        "@id": "#dataframeVariable/45"
-      },
-      "rdf:_46": {
-        "@id": "#dataframeVariable/46"
-      },
-      "rdf:_47": {
-        "@id": "#dataframeVariable/47"
-      },
-      "rdf:_48": {
-        "@id": "#dataframeVariable/48"
-      },
-      "rdf:_49": {
-        "@id": "#dataframeVariable/49"
-      },
-      "rdf:_5": {
-        "@id": "#dataframeVariable/5"
-      },
-      "rdf:_50": {
-        "@id": "#dataframeVariable/50"
-      },
-      "rdf:_51": {
-        "@id": "#dataframeVariable/51"
-      },
-      "rdf:_52": {
-        "@id": "#dataframeVariable/52"
-      },
-      "rdf:_53": {
-        "@id": "#dataframeVariable/53"
-      },
-      "rdf:_54": {
-        "@id": "#dataframeVariable/54"
-      },
-      "rdf:_55": {
-        "@id": "#dataframeVariable/55"
-      },
-      "rdf:_56": {
-        "@id": "#dataframeVariable/56"
-      },
-      "rdf:_57": {
-        "@id": "#dataframeVariable/57"
-      },
-      "rdf:_58": {
-        "@id": "#dataframeVariable/58"
-      },
-      "rdf:_59": {
-        "@id": "#dataframeVariable/59"
-      },
-      "rdf:_6": {
-        "@id": "#dataframeVariable/6"
-      },
-      "rdf:_60": {
-        "@id": "#dataframeVariable/60"
-      },
-      "rdf:_61": {
-        "@id": "#dataframeVariable/61"
-      },
-      "rdf:_62": {
-        "@id": "#dataframeVariable/62"
-      },
-      "rdf:_63": {
-        "@id": "#dataframeVariable/63"
-      },
-      "rdf:_64": {
-        "@id": "#dataframeVariable/64"
-      },
-      "rdf:_65": {
-        "@id": "#dataframeVariable/65"
-      },
-      "rdf:_66": {
-        "@id": "#dataframeVariable/66"
-      },
-      "rdf:_67": {
-        "@id": "#dataframeVariable/67"
-      },
-      "rdf:_68": {
-        "@id": "#dataframeVariable/68"
-      },
-      "rdf:_69": {
-        "@id": "#dataframeVariable/69"
-      },
-      "rdf:_7": {
-        "@id": "#dataframeVariable/7"
-      },
-      "rdf:_70": {
-        "@id": "#dataframeVariable/70"
-      },
-      "rdf:_71": {
-        "@id": "#dataframeVariable/71"
-      },
-      "rdf:_8": {
-        "@id": "#dataframeVariable/8"
-      },
-      "rdf:_9": {
-        "@id": "#dataframeVariable/9"
-      }
-    },
-    {
-      "@id": "#DataframeDescription/1",
-      "@type": "sdtl:DataframeDescription",
-      "sdtl:VariableInventory": {
-        "@id": "#VariableInventory/1"
-      },
-      "sdtl:dataframeName": "cdata"
-    },
-    {
-      "@id": "#dataframeVariable/27",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HHRACE"
-    },
-    {
-      "@id": "#dataframeVariable/162",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER3"
-    },
-    {
-      "@id": "#dataframeVariable/83",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "DEGREE"
-    },
-    {
-      "@id": "#dataframeVariable/112",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "NEWAGE"
-    },
-    {
-      "@id": "#dataframeVariable/7",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CHILDS"
-    },
-    {
-      "@id": "#dataframeVariable/168",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER9"
-    },
-    {
-      "@id": "#dataframeVariable/59",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REGGAE"
-    },
-    {
-      "@id": "#dataframeVariable/234",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER2"
-    },
-    {
-      "@id": "#VariableSymbolExpression/4",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:variableName": "agestd"
-    },
-    {
-      "@id": "#dataframeVariable/8",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CLASSICL"
-    },
-    {
-      "@id": "#dataframeVariable/11",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "COUNTRY"
-    },
-    {
-      "@id": "#dataframeVariable/150",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CHILDS"
-    },
-    {
-      "@id": "#dataframeVariable/127",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RAP"
-    },
-    {
-      "@id": "#dataframeVariable/94",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER7"
-    },
-    {
-      "@id": "#dataframeVariable/114",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD2"
-    },
-    {
-      "@id": "#dataframeVariable/2",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "AGE"
-    },
-    {
-      "@id": "#dataframeVariable/152",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "COHORT"
-    },
-    {
-      "@id": "#dataframeVariable/142",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "YEAR"
+      "sdtl:VariableName": "OVERSAMP"
     },
     {
       "@id": "#DataframeInventory/8",
@@ -959,1504 +332,14 @@
       }
     },
     {
-      "@id": "#FunctionCallExpression/2",
-      "@type": "sdtl:FunctionCallExpression",
-      "sdtl:arguments": [
-        {
-          "@id": "#arguments/2"
-        },
-        {
-          "@id": "#arguments/3"
-        }
-      ],
-      "sdtl:function": "multiplication",
-      "sdtl:isSdtlName": true
-    },
-    {
-      "@id": "#dataframeVariable/56",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RAP"
-    },
-    {
-      "@id": "#dataframeVariable/53",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OVERSAMP"
-    },
-    {
-      "@id": "#dataframeVariable/57",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REALINC"
-    },
-    {
-      "@id": "#dataframeVariable/89",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER2"
-    },
-    {
-      "@id": "#dataframeVariable/84",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "EARNRS"
-    },
-    {
-      "@id": "#dataframeVariable/154",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "COUNTRY"
-    },
-    {
-      "@id": "#arguments/3",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:argumentName": "EXP2",
-      "sdtl:argumentValue": {
-        "@id": "#VariableSymbolExpression/2"
-      }
-    },
-    {
-      "@id": "#VariableSymbolExpression/1",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:variableName": "pctFamIncome"
-    },
-    {
-      "@id": "#Compute/1",
-      "@type": "sdtl:Compute",
-      "sdtl:ConsumesDataframe": {
-        "@id": "#DataframeInventory/2"
-      },
-      "sdtl:ProducesDataframe": {
-        "@id": "#DataframeInventory/3"
-      },
-      "sdtl:command": "Compute",
-      "sdtl:expression": {
-        "@id": "#FunctionCallExpression/1"
-      },
-      "sdtl:sourceInformation": {
-        "@id": "#sourceInformation/2"
-      },
-      "sdtl:variable": {
-        "@id": "#VariableSymbolExpression/1"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/141",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "WRKSTAT"
-    },
-    {
-      "@id": "#dataframeVariable/98",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HHRACE"
-    },
-    {
-      "@id": "#arguments/9",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:argumentName": "EXP1",
-      "sdtl:argumentValue": {
-        "@id": "#VariableSymbolExpression/7"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/39",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MUSICALS"
-    },
-    {
-      "@id": "#dataframeVariable/42",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD1"
-    },
-    {
-      "@id": "#dataframeVariable/165",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER6"
-    },
-    {
-      "@id": "#dataframeVariable/207",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SAMPCODE"
-    },
-    {
-      "@id": "#DataframeInventory/5",
-      "@type": "rdf:Bag",
-      "rdf:_1": {
-        "@id": "#DataframeDescription/3"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/196",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OVERSAMP"
-    },
-    {
-      "@id": "#FunctionCallExpression/1",
-      "@type": "sdtl:FunctionCallExpression",
-      "sdtl:arguments": [
-        {
-          "@id": "#arguments/1"
-        },
-        {
-          "@id": "#arguments/4"
-        }
-      ],
-      "sdtl:function": "division",
-      "sdtl:isSdtlName": true
-    },
-    {
-      "@id": "#dataframeVariable/86",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "FOLK"
-    },
-    {
-      "@id": "#NumericConstantExpression/3",
-      "@type": "sdtl:NumericConstantExpression",
-      "sdtl:numericType": "Real",
-      "sdtl:value": "0.07"
-    },
-    {
-      "@id": "#dataframeVariable/107",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MARCOHRT"
-    },
-    {
-      "@id": "#DataframeInventory/3",
-      "@type": "rdf:Bag",
-      "rdf:_1": {
-        "@id": "#DataframeDescription/2"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/159",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "FORMWT"
-    },
-    {
-      "@id": "#VariableSymbolExpression/6",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:variableName": "agestd"
-    },
-    {
-      "@id": "#NumericConstantExpression/4",
-      "@type": "sdtl:NumericConstantExpression",
-      "sdtl:numericType": "Real",
-      "sdtl:value": "0.07"
-    },
-    {
-      "@id": "#dataframeVariable/123",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OPERA"
-    },
-    {
-      "@id": "#dataframeVariable/9",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "COHORT"
-    },
-    {
-      "@id": "#dataframeVariable/255",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MUSICALS"
-    },
-    {
-      "@id": "#dataframeVariable/286",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "WRKSTAT"
-    },
-    {
-      "@id": "#dataframeVariable/248",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "INCOME"
-    },
-    {
-      "@id": "#dataframeVariable/235",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER3"
-    },
-    {
-      "@id": "#arguments/1",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:argumentName": "EXP1",
-      "sdtl:argumentValue": {
-        "@id": "#FunctionCallExpression/2"
-      }
-    },
-    {
       "@id": "#dataframeVariable/144",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "ADULTS"
     },
     {
-      "@id": "#Compute/3",
-      "@type": "sdtl:Compute",
-      "sdtl:ConsumesDataframe": {
-        "@id": "#DataframeInventory/7"
-      },
-      "sdtl:ProducesDataframe": {
-        "@id": "#DataframeInventory/8"
-      },
-      "sdtl:command": "Compute",
-      "sdtl:expression": {
-        "@id": "#FunctionCallExpression/5"
-      },
-      "sdtl:sourceInformation": {
-        "@id": "#sourceInformation/5"
-      },
-      "sdtl:variable": {
-        "@id": "#VariableSymbolExpression/6"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/287",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "YEAR"
-    },
-    {
-      "@id": "#dataframeVariable/35",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "LATIN"
-    },
-    {
-      "@id": "#VariableSymbolExpression/3",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:variableName": "REALINC"
-    },
-    {
-      "@id": "#dataframeVariable/149",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CASEID"
-    },
-    {
-      "@id": "#arguments/8",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:argumentName": "EXP2",
-      "sdtl:argumentValue": {
-        "@id": "#NumericConstantExpression/3"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/281",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SAMPLE"
-    },
-    {
-      "@id": "#dataframeVariable/252",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MARCOHRT"
-    },
-    {
-      "@id": "#dataframeVariable/227",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "COUNTRY"
-    },
-    {
-      "@id": "#dataframeVariable/288",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "pctFamIncome"
-    },
-    {
-      "@id": "#dataframeVariable/256",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "NATSPAC"
-    },
-    {
-      "@id": "#dataframeVariable/73",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "AGE"
-    },
-    {
-      "@id": "#dataframeVariable/219",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "BIGBAND"
-    },
-    {
-      "@id": "#arguments/10",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:argumentName": "EXP2",
-      "sdtl:argumentValue": {
-        "@id": "#NumericConstantExpression/4"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/79",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CLASSICL"
-    },
-    {
-      "@id": "#DataframeDescription/4",
-      "@type": "sdtl:DataframeDescription",
-      "sdtl:VariableInventory": {
-        "@id": "#VariableInventory/4"
-      },
-      "sdtl:dataframeName": "cdata"
-    },
-    {
-      "@id": "#sourceInformation/1",
-      "@type": "sdtl:SourceInformation",
-      "sdtl:lineNumberEnd": 6,
-      "sdtl:lineNumberStart": 6,
-      "sdtl:originalSourceText": "cdata = pd.read_csv(\"GSS_sample.csv\")",
-      "sdtl:sourceStartIndex": 61,
-      "sdtl:sourceStopIndex": 97
-    },
-    {
-      "@id": "#Save/1",
-      "@type": "sdtl:Save",
-      "sdtl:ConsumesDataframe": {
-        "@id": "#DataframeInventory/6"
-      },
-      "sdtl:command": "Save",
-      "sdtl:fileName": "GSS_sample_save1.csv",
-      "sdtl:software": "csv",
-      "sdtl:sourceInformation": {
-        "@id": "#sourceInformation/4"
-      }
-    },
-    {
-      "@id": "#DataframeInventory/4",
-      "@type": "rdf:Bag",
-      "rdf:_1": {
-        "@id": "#DataframeDescription/2"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/186",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD2"
-    },
-    {
-      "@id": "#dataframeVariable/220",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "BLUES"
-    },
-    {
-      "@id": "#dataframeVariable/72",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "ADULTS"
-    },
-    {
-      "@id": "#dataframeVariable/41",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "NEWAGE"
-    },
-    {
-      "@id": "#dataframeVariable/176",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "ISSP"
-    },
-    {
-      "@id": "#dataframeVariable/187",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD3"
-    },
-    {
-      "@id": "#dataframeVariable/272",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RAP"
-    },
-    {
-      "@id": "#dataframeVariable/153",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CONROCK"
-    },
-    {
-      "@id": "#dataframeVariable/278",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RINCOME"
-    },
-    {
-      "@id": "#dataframeVariable/146",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "BIGBAND"
-    },
-    {
-      "@id": "#dataframeVariable/129",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REALRINC"
-    },
-    {
-      "@id": "#dataframeVariable/47",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD6"
-    },
-    {
-      "@id": "#dataframeVariable/120",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD8"
-    },
-    {
-      "@id": "#sourceInformation/5",
-      "@type": "sdtl:SourceInformation",
-      "sdtl:lineNumberEnd": 20,
-      "sdtl:lineNumberStart": 20,
-      "sdtl:originalSourceText": "cdata = cdata.assign(agestd = cdata['AGE']*.07 )",
-      "sdtl:sourceStartIndex": 502,
-      "sdtl:sourceStopIndex": 549
-    },
-    {
-      "@id": "#dataframeVariable/52",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OPERA"
-    },
-    {
-      "@id": "#dataframeVariable/96",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER9"
-    },
-    {
-      "@id": "#dataframeVariable/63",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RPLACE"
-    },
-    {
-      "@id": "#sourceInformation/2",
-      "@type": "sdtl:SourceInformation",
-      "sdtl:lineNumberEnd": 9,
-      "sdtl:lineNumberStart": 9,
-      "sdtl:originalSourceText": "cdata = cdata.assign(pctFamIncome = 100*cdata['REALRINC']/cdata['REALINC'] )",
-      "sdtl:sourceStartIndex": 154,
-      "sdtl:sourceStopIndex": 229
-    },
-    {
-      "@id": "#dataframeVariable/265",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD8"
-    },
-    {
-      "@id": "#dataframeVariable/81",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CONROCK"
-    },
-    {
-      "@id": "#dataframeVariable/181",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MOODEASY"
-    },
-    {
-      "@id": "#dataframeVariable/82",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "COUNTRY"
-    },
-    {
-      "@id": "#Compute/2",
-      "@type": "sdtl:Compute",
-      "sdtl:ConsumesDataframe": {
-        "@id": "#DataframeInventory/4"
-      },
-      "sdtl:ProducesDataframe": {
-        "@id": "#DataframeInventory/5"
-      },
-      "sdtl:command": "Compute",
-      "sdtl:expression": {
-        "@id": "#FunctionCallExpression/3"
-      },
-      "sdtl:sourceInformation": {
-        "@id": "#sourceInformation/3"
-      },
-      "sdtl:variable": {
-        "@id": "#VariableSymbolExpression/4"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/218",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "AGE"
-    },
-    {
-      "@id": "#dataframeVariable/3",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "BIGBAND"
-    },
-    {
-      "@id": "#dataframeVariable/90",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER3"
-    },
-    {
-      "@id": "#dataframeVariable/10",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CONROCK"
-    },
-    {
-      "@id": "#dataframeVariable/173",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HVYMETAL"
-    },
-    {
-      "@id": "#dataframeVariable/240",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER8"
-    },
-    {
-      "@id": "#dataframeVariable/21",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER5"
-    },
-    {
-      "@id": "#dataframeVariable/106",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "LATIN"
-    },
-    {
-      "@id": "#dataframeVariable/137",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SEX"
-    },
-    {
-      "@id": "#dataframeVariable/191",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD7"
-    },
-    {
-      "@id": "#dataframeVariable/199",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RAP"
-    },
-    {
-      "@id": "#dataframeVariable/116",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD4"
-    },
-    {
-      "@id": "#dataframeVariable/24",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER8"
-    },
-    {
-      "@id": "#dataframeVariable/45",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD4"
-    },
-    {
-      "@id": "#dataframeVariable/25",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER9"
-    },
-    {
-      "@id": "#CommandInventory/1",
-      "@type": "rdf:Seq",
-      "rdf:_1": {
-        "@id": "#Load/1"
-      },
-      "rdf:_2": {
-        "@id": "#Compute/1"
-      },
-      "rdf:_3": {
-        "@id": "#Compute/2"
-      },
-      "rdf:_4": {
-        "@id": "#Save/1"
-      },
-      "rdf:_5": {
-        "@id": "#Compute/3"
-      },
-      "rdf:_6": {
-        "@id": "#Save/2"
-      }
-    },
-    {
-      "@id": "#VariableInventory/4",
-      "@type": "rdf:Seq",
-      "rdf:_1": {
-        "@id": "#dataframeVariable/217"
-      },
-      "rdf:_10": {
-        "@id": "#dataframeVariable/226"
-      },
-      "rdf:_11": {
-        "@id": "#dataframeVariable/227"
-      },
-      "rdf:_12": {
-        "@id": "#dataframeVariable/228"
-      },
-      "rdf:_13": {
-        "@id": "#dataframeVariable/229"
-      },
-      "rdf:_14": {
-        "@id": "#dataframeVariable/230"
-      },
-      "rdf:_15": {
-        "@id": "#dataframeVariable/231"
-      },
-      "rdf:_16": {
-        "@id": "#dataframeVariable/232"
-      },
-      "rdf:_17": {
-        "@id": "#dataframeVariable/233"
-      },
-      "rdf:_18": {
-        "@id": "#dataframeVariable/234"
-      },
-      "rdf:_19": {
-        "@id": "#dataframeVariable/235"
-      },
-      "rdf:_2": {
-        "@id": "#dataframeVariable/218"
-      },
-      "rdf:_20": {
-        "@id": "#dataframeVariable/236"
-      },
-      "rdf:_21": {
-        "@id": "#dataframeVariable/237"
-      },
-      "rdf:_22": {
-        "@id": "#dataframeVariable/238"
-      },
-      "rdf:_23": {
-        "@id": "#dataframeVariable/239"
-      },
-      "rdf:_24": {
-        "@id": "#dataframeVariable/240"
-      },
-      "rdf:_25": {
-        "@id": "#dataframeVariable/241"
-      },
-      "rdf:_26": {
-        "@id": "#dataframeVariable/242"
-      },
-      "rdf:_27": {
-        "@id": "#dataframeVariable/243"
-      },
-      "rdf:_28": {
-        "@id": "#dataframeVariable/244"
-      },
-      "rdf:_29": {
-        "@id": "#dataframeVariable/245"
-      },
-      "rdf:_3": {
-        "@id": "#dataframeVariable/219"
-      },
-      "rdf:_30": {
-        "@id": "#dataframeVariable/246"
-      },
-      "rdf:_31": {
-        "@id": "#dataframeVariable/247"
-      },
-      "rdf:_32": {
-        "@id": "#dataframeVariable/248"
-      },
-      "rdf:_33": {
-        "@id": "#dataframeVariable/249"
-      },
-      "rdf:_34": {
-        "@id": "#dataframeVariable/250"
-      },
-      "rdf:_35": {
-        "@id": "#dataframeVariable/251"
-      },
-      "rdf:_36": {
-        "@id": "#dataframeVariable/252"
-      },
-      "rdf:_37": {
-        "@id": "#dataframeVariable/253"
-      },
-      "rdf:_38": {
-        "@id": "#dataframeVariable/254"
-      },
-      "rdf:_39": {
-        "@id": "#dataframeVariable/255"
-      },
-      "rdf:_4": {
-        "@id": "#dataframeVariable/220"
-      },
-      "rdf:_40": {
-        "@id": "#dataframeVariable/256"
-      },
-      "rdf:_41": {
-        "@id": "#dataframeVariable/257"
-      },
-      "rdf:_42": {
-        "@id": "#dataframeVariable/258"
-      },
-      "rdf:_43": {
-        "@id": "#dataframeVariable/259"
-      },
-      "rdf:_44": {
-        "@id": "#dataframeVariable/260"
-      },
-      "rdf:_45": {
-        "@id": "#dataframeVariable/261"
-      },
-      "rdf:_46": {
-        "@id": "#dataframeVariable/262"
-      },
-      "rdf:_47": {
-        "@id": "#dataframeVariable/263"
-      },
-      "rdf:_48": {
-        "@id": "#dataframeVariable/264"
-      },
-      "rdf:_49": {
-        "@id": "#dataframeVariable/265"
-      },
-      "rdf:_5": {
-        "@id": "#dataframeVariable/221"
-      },
-      "rdf:_50": {
-        "@id": "#dataframeVariable/266"
-      },
-      "rdf:_51": {
-        "@id": "#dataframeVariable/267"
-      },
-      "rdf:_52": {
-        "@id": "#dataframeVariable/268"
-      },
-      "rdf:_53": {
-        "@id": "#dataframeVariable/269"
-      },
-      "rdf:_54": {
-        "@id": "#dataframeVariable/270"
-      },
-      "rdf:_55": {
-        "@id": "#dataframeVariable/271"
-      },
-      "rdf:_56": {
-        "@id": "#dataframeVariable/272"
-      },
-      "rdf:_57": {
-        "@id": "#dataframeVariable/273"
-      },
-      "rdf:_58": {
-        "@id": "#dataframeVariable/274"
-      },
-      "rdf:_59": {
-        "@id": "#dataframeVariable/275"
-      },
-      "rdf:_6": {
-        "@id": "#dataframeVariable/222"
-      },
-      "rdf:_60": {
-        "@id": "#dataframeVariable/276"
-      },
-      "rdf:_61": {
-        "@id": "#dataframeVariable/277"
-      },
-      "rdf:_62": {
-        "@id": "#dataframeVariable/278"
-      },
-      "rdf:_63": {
-        "@id": "#dataframeVariable/279"
-      },
-      "rdf:_64": {
-        "@id": "#dataframeVariable/280"
-      },
-      "rdf:_65": {
-        "@id": "#dataframeVariable/281"
-      },
-      "rdf:_66": {
-        "@id": "#dataframeVariable/282"
-      },
-      "rdf:_67": {
-        "@id": "#dataframeVariable/283"
-      },
-      "rdf:_68": {
-        "@id": "#dataframeVariable/284"
-      },
-      "rdf:_69": {
-        "@id": "#dataframeVariable/285"
-      },
-      "rdf:_7": {
-        "@id": "#dataframeVariable/223"
-      },
-      "rdf:_70": {
-        "@id": "#dataframeVariable/286"
-      },
-      "rdf:_71": {
-        "@id": "#dataframeVariable/287"
-      },
-      "rdf:_72": {
-        "@id": "#dataframeVariable/288"
-      },
-      "rdf:_73": {
-        "@id": "#dataframeVariable/289"
-      },
-      "rdf:_8": {
-        "@id": "#dataframeVariable/224"
-      },
-      "rdf:_9": {
-        "@id": "#dataframeVariable/225"
-      }
-    },
-    {
-      "@id": "#sourceInformation/3",
-      "@type": "sdtl:SourceInformation",
-      "sdtl:lineNumberEnd": 12,
-      "sdtl:lineNumberStart": 12,
-      "sdtl:originalSourceText": "cdata = cdata.assign(agestd = ((cdata['AGE'] - 45.99)/.07) )",
-      "sdtl:sourceStartIndex": 286,
-      "sdtl:sourceStopIndex": 345
-    },
-    {
-      "@id": "#dataframeVariable/279",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RPLACE"
-    },
-    {
-      "@id": "#dataframeVariable/192",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD8"
-    },
-    {
-      "@id": "#DataframeInventory/2",
-      "@type": "rdf:Bag",
-      "rdf:_1": {
-        "@id": "#DataframeDescription/1"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/158",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "FOLK"
-    },
-    {
-      "@id": "#dataframeVariable/91",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER4"
-    },
-    {
-      "@id": "#arguments/5",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:argumentName": "EXP1",
-      "sdtl:argumentValue": {
-        "@id": "#FunctionCallExpression/4"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/133",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RINCOME"
-    },
-    {
-      "@id": "#sourceInformation/4",
-      "@type": "sdtl:SourceInformation",
-      "sdtl:lineNumberEnd": 16,
-      "sdtl:lineNumberStart": 16,
-      "sdtl:originalSourceText": "cdata.to_csv(\"GSS_sample_save1.csv\")",
-      "sdtl:sourceStartIndex": 409,
-      "sdtl:sourceStopIndex": 444
-    },
-    {
-      "@id": "#dataframeVariable/61",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RESPNUM"
-    },
-    {
-      "@id": "#dataframeVariable/132",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RESPNUM"
-    },
-    {
-      "@id": "#dataframeVariable/97",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GOSPEL"
-    },
-    {
       "@id": "#dataframeVariable/276",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "REGION"
-    },
-    {
-      "@id": "#dataframeVariable/169",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GOSPEL"
-    },
-    {
-      "@id": "#dataframeVariable/54",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "PARTYID"
-    },
-    {
-      "@id": "#dataframeVariable/131",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REGION"
-    },
-    {
-      "@id": "#dataframeVariable/259",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD2"
-    },
-    {
-      "@id": "#dataframeVariable/49",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD8"
-    },
-    {
-      "@id": "#dataframeVariable/31",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "ID"
-    },
-    {
-      "@id": "#dataframeVariable/124",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OVERSAMP"
-    },
-    {
-      "@id": "#dataframeVariable/134",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RPLACE"
-    },
-    {
-      "@id": "#dataframeVariable/117",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD5"
-    },
-    {
-      "@id": "#dataframeVariable/1",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "ADULTS"
-    },
-    {
-      "@id": "#dataframeVariable/62",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RINCOME"
-    },
-    {
-      "@id": "#arguments/7",
-      "@type": "sdtl:FunctionArgument",
-      "sdtl:argumentName": "EXP2",
-      "sdtl:argumentValue": {
-        "@id": "#NumericConstantExpression/2"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/243",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HHRACE"
-    },
-    {
-      "@id": "#dataframeVariable/223",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CHILDS"
-    },
-    {
-      "@id": "#dataframeVariable/231",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "FOLK"
-    },
-    {
-      "@id": "#dataframeVariable/5",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "BLUGRASS"
-    },
-    {
-      "@id": "#dataframeVariable/277",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RESPNUM"
-    },
-    {
-      "@id": "#VariableSymbolExpression/2",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:variableName": "REALRINC"
-    },
-    {
-      "@id": "#dataframeVariable/78",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CHILDS"
-    },
-    {
-      "@id": "#dataframeVariable/26",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GOSPEL"
-    },
-    {
-      "@id": "#dataframeVariable/246",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HVYMETAL"
-    },
-    {
-      "@id": "#dataframeVariable/17",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER1"
-    },
-    {
-      "@id": "#NumericConstantExpression/2",
-      "@type": "sdtl:NumericConstantExpression",
-      "sdtl:numericType": "Real",
-      "sdtl:value": "45.99"
-    },
-    {
-      "@id": "#dataframeVariable/50",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD9"
-    },
-    {
-      "@id": "#dataframeVariable/77",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CASEID"
-    },
-    {
-      "@id": "#dataframeVariable/212",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "UNRELAT"
-    },
-    {
-      "@id": "#dataframeVariable/121",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD9"
-    },
-    {
-      "@id": "#dataframeVariable/289",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "agestd"
-    },
-    {
-      "@id": "#dataframeVariable/104",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "ISSP"
-    },
-    {
-      "@id": "#dataframeVariable/228",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "DEGREE"
-    },
-    {
-      "@id": "#dataframeVariable/253",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MARITAL"
-    },
-    {
-      "@id": "#VariableSymbolExpression/7",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:variableName": "AGE"
-    },
-    {
-      "@id": "#dataframeVariable/183",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "NATSPAC"
-    },
-    {
-      "@id": "#dataframeVariable/282",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SEX"
-    },
-    {
-      "@id": "#dataframeVariable/250",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "JAZZ"
-    },
-    {
-      "@id": "#dataframeVariable/210",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SIBS"
-    },
-    {
-      "@id": "#dataframeVariable/185",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD1"
-    },
-    {
-      "@id": "#dataframeVariable/175",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "INCOME"
-    },
-    {
-      "@id": "#dataframeVariable/95",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER8"
-    },
-    {
-      "@id": "#dataframeVariable/230",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "EDUC"
-    },
-    {
-      "@id": "#dataframeVariable/88",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER1"
-    },
-    {
-      "@id": "#dataframeVariable/280",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SAMPCODE"
-    },
-    {
-      "@id": "#dataframeVariable/193",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD9"
-    },
-    {
-      "@id": "#dataframeVariable/224",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CLASSICL"
-    },
-    {
-      "@id": "#dataframeVariable/80",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "COHORT"
-    },
-    {
-      "@id": "#dataframeVariable/99",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HHTYPE"
-    },
-    {
-      "@id": "#dataframeVariable/139",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SIZE"
-    },
-    {
-      "@id": "#dataframeVariable/270",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "PARTYID"
-    },
-    {
-      "@id": "#dataframeVariable/244",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HHTYPE"
-    },
-    {
-      "@id": "#dataframeVariable/195",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OPERA"
-    },
-    {
-      "@id": "#dataframeVariable/283",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SIBS"
-    },
-    {
-      "@id": "#dataframeVariable/170",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HHRACE"
-    },
-    {
-      "@id": "#dataframeVariable/156",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "EARNRS"
-    },
-    {
-      "@id": "#dataframeVariable/238",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER6"
-    },
-    {
-      "@id": "#dataframeVariable/74",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "BIGBAND"
-    },
-    {
-      "@id": "#dataframeVariable/87",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "FORMWT"
-    },
-    {
-      "@id": "#dataframeVariable/29",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HRS1"
-    },
-    {
-      "@id": "#dataframeVariable/242",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GOSPEL"
-    },
-    {
-      "@id": "#dataframeVariable/28",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HHTYPE"
-    },
-    {
-      "@id": "#dataframeVariable/4",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "BLUES"
-    },
-    {
-      "@id": "#dataframeVariable/58",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REALRINC"
-    },
-    {
-      "@id": "#dataframeVariable/151",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CLASSICL"
-    },
-    {
-      "@id": "#dataframeVariable/38",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MOODEASY"
-    },
-    {
-      "@id": "#dataframeVariable/14",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "EDUC"
-    },
-    {
-      "@id": "#dataframeVariable/245",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HRS1"
-    },
-    {
-      "@id": "#FunctionCallExpression/3",
-      "@type": "sdtl:FunctionCallExpression",
-      "sdtl:arguments": [
-        {
-          "@id": "#arguments/8"
-        },
-        {
-          "@id": "#arguments/5"
-        }
-      ],
-      "sdtl:function": "division",
-      "sdtl:isSdtlName": true
-    },
-    {
-      "@id": "#dataframeVariable/30",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HVYMETAL"
-    },
-    {
-      "@id": "#dataframeVariable/101",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HVYMETAL"
-    },
-    {
-      "@id": "#dataframeVariable/206",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RPLACE"
-    },
-    {
-      "@id": "#dataframeVariable/67",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SIBS"
-    },
-    {
-      "@id": "#dataframeVariable/76",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "BLUGRASS"
-    },
-    {
-      "@id": "#dataframeVariable/143",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "pctFamIncome"
-    },
-    {
-      "@id": "#dataframeVariable/271",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RACE"
-    },
-    {
-      "@id": "#dataframeVariable/100",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "HRS1"
-    },
-    {
-      "@id": "#dataframeVariable/257",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "NEWAGE"
-    },
-    {
-      "@id": "#dataframeVariable/138",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SIBS"
-    },
-    {
-      "@id": "#dataframeVariable/102",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "ID"
-    },
-    {
-      "@id": "#DataframeInventory/6",
-      "@type": "rdf:Bag",
-      "rdf:_1": {
-        "@id": "#DataframeDescription/3"
-      }
-    },
-    {
-      "@id": "#DataframeDescription/3",
-      "@type": "sdtl:DataframeDescription",
-      "sdtl:VariableInventory": {
-        "@id": "#VariableInventory/3"
-      },
-      "sdtl:dataframeName": "cdata"
-    },
-    {
-      "@id": "#dataframeVariable/125",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "PARTYID"
-    },
-    {
-      "@id": "#DataframeInventory/9",
-      "@type": "rdf:Bag",
-      "rdf:_1": {
-        "@id": "#DataframeDescription/4"
-      }
-    },
-    {
-      "@id": "#dataframeVariable/201",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REALRINC"
-    },
-    {
-      "@id": "#DataframeDescription/2",
-      "@type": "sdtl:DataframeDescription",
-      "sdtl:VariableInventory": {
-        "@id": "#VariableInventory/2"
-      },
-      "sdtl:dataframeName": "cdata"
-    },
-    {
-      "@id": "#dataframeVariable/285",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "UNRELAT"
-    },
-    {
-      "@id": "#dataframeVariable/232",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "FORMWT"
-    },
-    {
-      "@id": "#dataframeVariable/269",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OVERSAMP"
-    },
-    {
-      "@id": "#dataframeVariable/200",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REALINC"
-    },
-    {
-      "@id": "#dataframeVariable/122",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLDIES"
-    },
-    {
-      "@id": "#dataframeVariable/213",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "WRKSTAT"
-    },
-    {
-      "@id": "#dataframeVariable/119",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD7"
-    },
-    {
-      "@id": "#dataframeVariable/225",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "COHORT"
-    },
-    {
-      "@id": "#dataframeVariable/226",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "CONROCK"
-    },
-    {
-      "@id": "#dataframeVariable/268",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OPERA"
-    },
-    {
-      "@id": "#dataframeVariable/203",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REGION"
-    },
-    {
-      "@id": "#dataframeVariable/71",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "YEAR"
-    },
-    {
-      "@id": "#dataframeVariable/109",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MOODEASY"
-    },
-    {
-      "@id": "#dataframeVariable/249",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "ISSP"
-    },
-    {
-      "@id": "#dataframeVariable/70",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "WRKSTAT"
-    },
-    {
-      "@id": "#NumericConstantExpression/1",
-      "@type": "sdtl:NumericConstantExpression",
-      "sdtl:numericType": "Integer",
-      "sdtl:value": "100"
-    },
-    {
-      "@id": "#dataframeVariable/188",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD4"
-    },
-    {
-      "@id": "#dataframeVariable/179",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MARCOHRT"
-    },
-    {
-      "@id": "#dataframeVariable/103",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "INCOME"
-    },
-    {
-      "@id": "#dataframeVariable/64",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SAMPCODE"
-    },
-    {
-      "@id": "#dataframeVariable/233",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER1"
-    },
-    {
-      "@id": "#dataframeVariable/69",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "UNRELAT"
-    },
-    {
-      "@id": "#dataframeVariable/275",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REGGAE"
-    },
-    {
-      "@id": "#dataframeVariable/264",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD7"
-    },
-    {
-      "@id": "#dataframeVariable/13",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "EARNRS"
-    },
-    {
-      "@id": "#dataframeVariable/157",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "EDUC"
-    },
-    {
-      "@id": "#dataframeVariable/167",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER8"
-    },
-    {
-      "@id": "#FunctionCallExpression/4",
-      "@type": "sdtl:FunctionCallExpression",
-      "sdtl:arguments": [
-        {
-          "@id": "#arguments/6"
-        },
-        {
-          "@id": "#arguments/7"
-        }
-      ],
-      "sdtl:function": "subtraction",
-      "sdtl:isSdtlName": true
-    },
-    {
-      "@id": "#dataframeVariable/46",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD5"
-    },
-    {
-      "@id": "#dataframeVariable/48",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD7"
-    },
-    {
-      "@id": "#dataframeVariable/204",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RESPNUM"
-    },
-    {
-      "@id": "#dataframeVariable/190",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD6"
     },
     {
       "@id": "#VariableInventory/3",
@@ -2682,132 +565,190 @@
       }
     },
     {
-      "@id": "#dataframeVariable/216",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "agestd"
-    },
-    {
-      "@id": "#dataframeVariable/160",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER1"
-    },
-    {
-      "@id": "#dataframeVariable/155",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "DEGREE"
-    },
-    {
-      "@id": "#dataframeVariable/215",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "pctFamIncome"
-    },
-    {
-      "@id": "#dataframeVariable/182",
+      "@id": "#dataframeVariable/255",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "MUSICALS"
     },
     {
-      "@id": "#dataframeVariable/51",
+      "@id": "#dataframeVariable/31",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLDIES"
+      "sdtl:VariableName": "ID"
     },
     {
-      "@id": "#dataframeVariable/113",
+      "@id": "#dataframeVariable/17",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD1"
+      "sdtl:VariableName": "GENDER1"
     },
     {
-      "@id": "#dataframeVariable/221",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "BLUGRASS"
-    },
-    {
-      "@id": "#dataframeVariable/267",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLDIES"
-    },
-    {
-      "@id": "#dataframeVariable/184",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "NEWAGE"
-    },
-    {
-      "@id": "#dataframeVariable/172",
+      "@id": "#dataframeVariable/29",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "HRS1"
     },
     {
-      "@id": "#dataframeVariable/211",
+      "@id": "#dataframeVariable/287",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SIZE"
+      "sdtl:VariableName": "YEAR"
     },
     {
-      "@id": "#dataframeVariable/68",
+      "@id": "#dataframeVariable/227",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "SIZE"
+      "sdtl:VariableName": "COUNTRY"
     },
     {
-      "@id": "#dataframeVariable/55",
+      "@id": "#dataframeVariable/120",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RACE"
+      "sdtl:VariableName": "OLD8"
     },
     {
-      "@id": "#arguments/2",
+      "@id": "#dataframeVariable/149",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CASEID"
+    },
+    {
+      "@id": "#dataframeVariable/32",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "INCOME"
+    },
+    {
+      "@id": "#VariableSymbolExpression/6",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:variableName": "agestd"
+    },
+    {
+      "@id": "#dataframeVariable/130",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "REGGAE"
+    },
+    {
+      "@id": "#FunctionArgument/5",
       "@type": "sdtl:FunctionArgument",
       "sdtl:argumentName": "EXP1",
       "sdtl:argumentValue": {
-        "@id": "#NumericConstantExpression/1"
+        "@id": "#FunctionCallExpression/4"
       }
     },
     {
-      "@id": "#dataframeVariable/254",
+      "@id": "#dataframeVariable/90",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "MOODEASY"
+      "sdtl:VariableName": "GENDER3"
     },
     {
-      "@id": "#dataframeVariable/239",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER7"
+      "@id": "#DataframeInventory/9",
+      "@type": "rdf:Bag",
+      "rdf:_1": {
+        "@id": "#DataframeDescription/4"
+      }
     },
     {
-      "@id": "#dataframeVariable/126",
+      "@id": "#dataframeVariable/143",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "RACE"
+      "sdtl:VariableName": "pctFamIncome"
     },
     {
-      "@id": "#dataframeVariable/111",
-      "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "NATSPAC"
-    },
-    {
-      "@id": "#dataframeVariable/93",
+      "@id": "#dataframeVariable/22",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "GENDER6"
     },
     {
-      "@id": "#dataframeVariable/145",
+      "@id": "#dataframeVariable/285",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "AGE"
+      "sdtl:VariableName": "UNRELAT"
     },
     {
-      "@id": "#dataframeVariable/237",
+      "@id": "#dataframeVariable/271",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "GENDER5"
+      "sdtl:VariableName": "RACE"
     },
     {
-      "@id": "#dataframeVariable/261",
+      "@id": "#NumericConstantExpression/3",
+      "@type": "sdtl:NumericConstantExpression",
+      "sdtl:numericType": "Real",
+      "sdtl:value": "0.07"
+    },
+    {
+      "@id": "#dataframeVariable/284",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SIZE"
+    },
+    {
+      "@id": "#dataframeVariable/188",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "OLD4"
     },
     {
-      "@id": "#dataframeVariable/128",
+      "@id": "#dataframeVariable/253",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "REALINC"
+      "sdtl:VariableName": "MARITAL"
     },
     {
-      "@id": "#dataframeVariable/266",
+      "@id": "#dataframeVariable/212",
       "@type": "sdtl:VariableSymbolExpression",
-      "sdtl:VariableName": "OLD9"
+      "sdtl:VariableName": "UNRELAT"
+    },
+    {
+      "@id": "#dataframeVariable/69",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "UNRELAT"
+    },
+    {
+      "@id": "#VariableSymbolExpression/7",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:variableName": "AGE"
+    },
+    {
+      "@id": "#VariableSymbolExpression/4",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:variableName": "agestd"
+    },
+    {
+      "@id": "#dataframeVariable/8",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CLASSICL"
+    },
+    {
+      "@id": "#dataframeVariable/4",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "BLUES"
+    },
+    {
+      "@id": "#ArgumentsInventory/3",
+      "@type": "rdf:Seq",
+      "rdf:rdf:_1": {
+        "@id": "#FunctionArgument/5"
+      },
+      "rdf:rdf:_2": {
+        "@id": "#FunctionArgument/8"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/102",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "ID"
+    },
+    {
+      "@id": "#dataframeVariable/97",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GOSPEL"
+    },
+    {
+      "@id": "#dataframeVariable/194",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLDIES"
+    },
+    {
+      "@id": "#dataframeVariable/136",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SAMPLE"
+    },
+    {
+      "@id": "#ArgumentsInventory/1",
+      "@type": "rdf:Seq",
+      "rdf:rdf:_1": {
+        "@id": "#FunctionArgument/1"
+      },
+      "rdf:rdf:_2": {
+        "@id": "#FunctionArgument/4"
+      }
     },
     {
       "@id": "#dataframeVariable/115",
@@ -2815,9 +756,2198 @@
       "sdtl:VariableName": "OLD3"
     },
     {
+      "@id": "#dataframeVariable/59",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "REGGAE"
+    },
+    {
+      "@id": "#dataframeVariable/116",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD4"
+    },
+    {
+      "@id": "#dataframeVariable/214",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "YEAR"
+    },
+    {
+      "@id": "#dataframeVariable/275",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "REGGAE"
+    },
+    {
+      "@id": "#dataframeVariable/131",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "REGION"
+    },
+    {
+      "@id": "#dataframeVariable/236",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER4"
+    },
+    {
+      "@id": "#dataframeVariable/279",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RPLACE"
+    },
+    {
+      "@id": "#dataframeVariable/107",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "MARCOHRT"
+    },
+    {
+      "@id": "#dataframeVariable/57",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "REALINC"
+    },
+    {
+      "@id": "#dataframeVariable/223",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CHILDS"
+    },
+    {
+      "@id": "#dataframeVariable/226",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CONROCK"
+    },
+    {
+      "@id": "#dataframeVariable/5",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "BLUGRASS"
+    },
+    {
+      "@id": "#dataframeVariable/262",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD5"
+    },
+    {
+      "@id": "#dataframeVariable/20",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER4"
+    },
+    {
+      "@id": "#dataframeVariable/257",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "NEWAGE"
+    },
+    {
+      "@id": "#dataframeVariable/95",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER8"
+    },
+    {
+      "@id": "#dataframeVariable/88",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER1"
+    },
+    {
+      "@id": "#dataframeVariable/50",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD9"
+    },
+    {
+      "@id": "#dataframeVariable/18",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER2"
+    },
+    {
+      "@id": "#dataframeVariable/215",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "pctFamIncome"
+    },
+    {
+      "@id": "#ArgumentsInventory/4",
+      "@type": "rdf:Seq",
+      "rdf:rdf:_1": {
+        "@id": "#FunctionArgument/6"
+      },
+      "rdf:rdf:_2": {
+        "@id": "#FunctionArgument/7"
+      }
+    },
+    {
+      "@id": "#DataframeInventory/6",
+      "@type": "rdf:Bag",
+      "rdf:_1": {
+        "@id": "#DataframeDescription/3"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/1",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "ADULTS"
+    },
+    {
+      "@id": "#dataframeVariable/156",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "EARNRS"
+    },
+    {
+      "@id": "#dataframeVariable/37",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "MARITAL"
+    },
+    {
+      "@id": "#dataframeVariable/42",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD1"
+    },
+    {
+      "@id": "#dataframeVariable/146",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "BIGBAND"
+    },
+    {
+      "@id": "#dataframeVariable/19",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER3"
+    },
+    {
+      "@id": "#dataframeVariable/199",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RAP"
+    },
+    {
+      "@id": "#CommandInventory/1",
+      "@type": "rdf:Seq",
+      "rdf:_1": {
+        "@id": "#Load/1"
+      },
+      "rdf:_10": {
+        "@id": "#Comment/5"
+      },
+      "rdf:_11": {
+        "@id": "#Save/2"
+      },
+      "rdf:_2": {
+        "@id": "#Comment/1"
+      },
+      "rdf:_3": {
+        "@id": "#Compute/1"
+      },
+      "rdf:_4": {
+        "@id": "#Comment/2"
+      },
+      "rdf:_5": {
+        "@id": "#Compute/2"
+      },
+      "rdf:_6": {
+        "@id": "#Comment/3"
+      },
+      "rdf:_7": {
+        "@id": "#Save/1"
+      },
+      "rdf:_8": {
+        "@id": "#Comment/4"
+      },
+      "rdf:_9": {
+        "@id": "#Compute/3"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/237",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER5"
+    },
+    {
+      "@id": "#dataframeVariable/230",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "EDUC"
+    },
+    {
+      "@id": "#dataframeVariable/187",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD3"
+    },
+    {
+      "@id": "#dataframeVariable/104",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "ISSP"
+    },
+    {
+      "@id": "#sourceInformation/4",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:lineNumberEnd": 11,
+      "sdtl:lineNumberStart": 11,
+      "sdtl:originalSourceText": "##********* first change to agestd  *****************",
+      "sdtl:sourceStartIndex": 232,
+      "sdtl:sourceStopIndex": 284
+    },
+    {
+      "@id": "#dataframeVariable/44",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD3"
+    },
+    {
+      "@id": "#dataframeVariable/35",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "LATIN"
+    },
+    {
+      "@id": "#FunctionArgument/4",
+      "@type": "sdtl:FunctionArgument",
+      "sdtl:argumentName": "EXP2",
+      "sdtl:argumentValue": {
+        "@id": "#VariableSymbolExpression/3"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/124",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OVERSAMP"
+    },
+    {
+      "@id": "#dataframeVariable/11",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "COUNTRY"
+    },
+    {
+      "@id": "#dataframeVariable/213",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "WRKSTAT"
+    },
+    {
+      "@id": "#dataframeVariable/126",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RACE"
+    },
+    {
+      "@id": "#Compute/3",
+      "@type": "sdtl:Compute",
+      "sdtl:ConsumesDataframe": {
+        "@id": "#DataframeInventory/7"
+      },
+      "sdtl:ProducesDataframe": {
+        "@id": "#DataframeInventory/8"
+      },
+      "sdtl:command": "Compute",
+      "sdtl:expression": {
+        "@id": "#FunctionCallExpression/5"
+      },
+      "sdtl:sourceInformation": {
+        "@id": "#sourceInformation/9"
+      },
+      "sdtl:variable": {
+        "@id": "#VariableSymbolExpression/6"
+      }
+    },
+    {
+      "@id": "#FunctionCallExpression/1",
+      "@type": "sdtl:FunctionCallExpression",
+      "sdtl:Arguments": {
+        "@id": "#ArgumentsInventory/1"
+      },
+      "sdtl:function": "division",
+      "sdtl:isSdtlName": true
+    },
+    {
+      "@id": "#dataframeVariable/248",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "INCOME"
+    },
+    {
+      "@id": "#dataframeVariable/106",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "LATIN"
+    },
+    {
+      "@id": "#dataframeVariable/108",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "MARITAL"
+    },
+    {
+      "@id": "#dataframeVariable/71",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "YEAR"
+    },
+    {
+      "@id": "#dataframeVariable/209",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SEX"
+    },
+    {
+      "@id": "#dataframeVariable/123",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OPERA"
+    },
+    {
+      "@id": "#dataframeVariable/7",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CHILDS"
+    },
+    {
+      "@id": "#dataframeVariable/272",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RAP"
+    },
+    {
+      "@id": "#dataframeVariable/219",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "BIGBAND"
+    },
+    {
+      "@id": "#dataframeVariable/48",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD7"
+    },
+    {
+      "@id": "#dataframeVariable/67",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SIBS"
+    },
+    {
+      "@id": "#dataframeVariable/193",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD9"
+    },
+    {
+      "@id": "#dataframeVariable/168",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER9"
+    },
+    {
+      "@id": "#dataframeVariable/166",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER7"
+    },
+    {
+      "@id": "#dataframeVariable/282",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SEX"
+    },
+    {
+      "@id": "#dataframeVariable/41",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "NEWAGE"
+    },
+    {
+      "@id": "#dataframeVariable/99",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "HHTYPE"
+    },
+    {
+      "@id": "#dataframeVariable/43",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD2"
+    },
+    {
+      "@id": "#FunctionArgument/7",
+      "@type": "sdtl:FunctionArgument",
+      "sdtl:argumentName": "EXP2",
+      "sdtl:argumentValue": {
+        "@id": "#NumericConstantExpression/2"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/206",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RPLACE"
+    },
+    {
+      "@id": "#dataframeVariable/267",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLDIES"
+    },
+    {
+      "@id": "#dataframeVariable/218",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "AGE"
+    },
+    {
+      "@id": "#dataframeVariable/241",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER9"
+    },
+    {
+      "@id": "#dataframeVariable/27",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "HHRACE"
+    },
+    {
+      "@id": "#dataframeVariable/270",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "PARTYID"
+    },
+    {
+      "@id": "#dataframeVariable/127",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RAP"
+    },
+    {
+      "@id": "#sourceInformation/6",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:lineNumberEnd": 15,
+      "sdtl:lineNumberStart": 15,
+      "sdtl:originalSourceText": "##********* SAVE FILE  1 **********************************",
+      "sdtl:sourceStartIndex": 349,
+      "sdtl:sourceStopIndex": 407
+    },
+    {
+      "@id": "#dataframeVariable/52",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OPERA"
+    },
+    {
+      "@id": "#dataframeVariable/68",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SIZE"
+    },
+    {
+      "@id": "#FunctionArgument/9",
+      "@type": "sdtl:FunctionArgument",
+      "sdtl:argumentName": "EXP1",
+      "sdtl:argumentValue": {
+        "@id": "#VariableSymbolExpression/7"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/110",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "MUSICALS"
+    },
+    {
+      "@id": "#dataframeVariable/243",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "HHRACE"
+    },
+    {
+      "@id": "#dataframeVariable/87",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "FORMWT"
+    },
+    {
+      "@id": "#dataframeVariable/21",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER5"
+    },
+    {
+      "@id": "#dataframeVariable/145",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "AGE"
+    },
+    {
+      "@id": "#dataframeVariable/160",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER1"
+    },
+    {
+      "@id": "#dataframeVariable/202",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "REGGAE"
+    },
+    {
+      "@id": "#dataframeVariable/232",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "FORMWT"
+    },
+    {
+      "@id": "#FunctionArgument/10",
+      "@type": "sdtl:FunctionArgument",
+      "sdtl:argumentName": "EXP2",
+      "sdtl:argumentValue": {
+        "@id": "#NumericConstantExpression/4"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/81",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CONROCK"
+    },
+    {
+      "@id": "#dataframeVariable/205",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RINCOME"
+    },
+    {
+      "@id": "#NumericConstantExpression/1",
+      "@type": "sdtl:NumericConstantExpression",
+      "sdtl:numericType": "Integer",
+      "sdtl:value": "100"
+    },
+    {
+      "@id": "#VariableSymbolExpression/1",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:variableName": "pctFamIncome"
+    },
+    {
+      "@id": "#dataframeVariable/25",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER9"
+    },
+    {
+      "@id": "#dataframeVariable/64",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SAMPCODE"
+    },
+    {
+      "@id": "#Comment/2",
+      "@type": "sdtl:Comment",
+      "sdtl:command": "Comment",
+      "sdtl:commentText": "#********* first change to agestd  *****************",
+      "sdtl:sourceInformation": {
+        "@id": "#sourceInformation/4"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/38",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "MOODEASY"
+    },
+    {
+      "@id": "#dataframeVariable/269",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OVERSAMP"
+    },
+    {
+      "@id": "#Compute/2",
+      "@type": "sdtl:Compute",
+      "sdtl:ConsumesDataframe": {
+        "@id": "#DataframeInventory/4"
+      },
+      "sdtl:ProducesDataframe": {
+        "@id": "#DataframeInventory/5"
+      },
+      "sdtl:command": "Compute",
+      "sdtl:expression": {
+        "@id": "#FunctionCallExpression/3"
+      },
+      "sdtl:sourceInformation": {
+        "@id": "#sourceInformation/5"
+      },
+      "sdtl:variable": {
+        "@id": "#VariableSymbolExpression/4"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/134",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RPLACE"
+    },
+    {
+      "@id": "#dataframeVariable/24",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER8"
+    },
+    {
+      "@id": "#dataframeVariable/220",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "BLUES"
+    },
+    {
+      "@id": "#DataframeInventory/5",
+      "@type": "rdf:Bag",
+      "rdf:_1": {
+        "@id": "#DataframeDescription/3"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/112",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "NEWAGE"
+    },
+    {
+      "@id": "#dataframeVariable/186",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD2"
+    },
+    {
+      "@id": "#dataframeVariable/139",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SIZE"
+    },
+    {
+      "@id": "#dataframeVariable/191",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD7"
+    },
+    {
+      "@id": "#dataframeVariable/46",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD5"
+    },
+    {
+      "@id": "#dataframeVariable/273",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "REALINC"
+    },
+    {
+      "@id": "#dataframeVariable/93",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER6"
+    },
+    {
+      "@id": "#FunctionArgument/8",
+      "@type": "sdtl:FunctionArgument",
+      "sdtl:argumentName": "EXP2",
+      "sdtl:argumentValue": {
+        "@id": "#NumericConstantExpression/3"
+      }
+    },
+    {
+      "@id": "#sourceInformation/8",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:lineNumberEnd": 19,
+      "sdtl:lineNumberStart": 19,
+      "sdtl:originalSourceText": "##********* first change to agestd  *****************",
+      "sdtl:sourceStartIndex": 448,
+      "sdtl:sourceStopIndex": 500
+    },
+    {
+      "@id": "#dataframeVariable/83",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "DEGREE"
+    },
+    {
+      "@id": "#dataframeVariable/142",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "YEAR"
+    },
+    {
+      "@id": "#dataframeVariable/138",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SIBS"
+    },
+    {
+      "@id": "#DataframeInventory/2",
+      "@type": "rdf:Bag",
+      "rdf:_1": {
+        "@id": "#DataframeDescription/1"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/247",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "ID"
+    },
+    {
+      "@id": "#dataframeVariable/203",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "REGION"
+    },
+    {
+      "@id": "#dataframeVariable/171",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "HHTYPE"
+    },
+    {
+      "@id": "#dataframeVariable/73",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "AGE"
+    },
+    {
+      "@id": "#dataframeVariable/264",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD7"
+    },
+    {
+      "@id": "#dataframeVariable/12",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "DEGREE"
+    },
+    {
+      "@id": "#dataframeVariable/238",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER6"
+    },
+    {
+      "@id": "#dataframeVariable/175",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "INCOME"
+    },
+    {
+      "@id": "#dataframeVariable/151",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CLASSICL"
+    },
+    {
+      "@id": "#Comment/5",
+      "@type": "sdtl:Comment",
+      "sdtl:command": "Comment",
+      "sdtl:commentText": "#********* SAVE FILE 2 **********************************",
+      "sdtl:sourceInformation": {
+        "@id": "#sourceInformation/10"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/165",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER6"
+    },
+    {
+      "@id": "#dataframeVariable/84",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "EARNRS"
+    },
+    {
+      "@id": "#dataframeVariable/65",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SAMPLE"
+    },
+    {
+      "@id": "#DataframeDescription/4",
+      "@type": "sdtl:DataframeDescription",
+      "sdtl:VariableInventory": {
+        "@id": "#VariableInventory/4"
+      },
+      "sdtl:dataframeName": "cdata"
+    },
+    {
+      "@id": "#dataframeVariable/141",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "WRKSTAT"
+    },
+    {
+      "@id": "#dataframeVariable/263",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD6"
+    },
+    {
+      "@id": "#dataframeVariable/125",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "PARTYID"
+    },
+    {
+      "@id": "#dataframeVariable/274",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "REALRINC"
+    },
+    {
+      "@id": "#dataframeVariable/117",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD5"
+    },
+    {
+      "@id": "#dataframeVariable/23",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER7"
+    },
+    {
+      "@id": "#dataframeVariable/49",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD8"
+    },
+    {
+      "@id": "#dataframeVariable/210",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SIBS"
+    },
+    {
+      "@id": "#dataframeVariable/66",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SEX"
+    },
+    {
+      "@id": "#dataframeVariable/85",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "EDUC"
+    },
+    {
+      "@id": "#Comment/1",
+      "@type": "sdtl:Comment",
+      "sdtl:command": "Comment",
+      "sdtl:commentText": "#********** compute with 2 inputs  ****************.",
+      "sdtl:sourceInformation": {
+        "@id": "#sourceInformation/2"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/231",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "FOLK"
+    },
+    {
+      "@id": "#dataframeVariable/288",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "pctFamIncome"
+    },
+    {
+      "@id": "#dataframeVariable/260",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD3"
+    },
+    {
+      "@id": "#dataframeVariable/221",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "BLUGRASS"
+    },
+    {
+      "@id": "#VariableInventory/2",
+      "@type": "rdf:Seq",
+      "rdf:_1": {
+        "@id": "#dataframeVariable/72"
+      },
+      "rdf:_10": {
+        "@id": "#dataframeVariable/81"
+      },
+      "rdf:_11": {
+        "@id": "#dataframeVariable/82"
+      },
+      "rdf:_12": {
+        "@id": "#dataframeVariable/83"
+      },
+      "rdf:_13": {
+        "@id": "#dataframeVariable/84"
+      },
+      "rdf:_14": {
+        "@id": "#dataframeVariable/85"
+      },
+      "rdf:_15": {
+        "@id": "#dataframeVariable/86"
+      },
+      "rdf:_16": {
+        "@id": "#dataframeVariable/87"
+      },
+      "rdf:_17": {
+        "@id": "#dataframeVariable/88"
+      },
+      "rdf:_18": {
+        "@id": "#dataframeVariable/89"
+      },
+      "rdf:_19": {
+        "@id": "#dataframeVariable/90"
+      },
+      "rdf:_2": {
+        "@id": "#dataframeVariable/73"
+      },
+      "rdf:_20": {
+        "@id": "#dataframeVariable/91"
+      },
+      "rdf:_21": {
+        "@id": "#dataframeVariable/92"
+      },
+      "rdf:_22": {
+        "@id": "#dataframeVariable/93"
+      },
+      "rdf:_23": {
+        "@id": "#dataframeVariable/94"
+      },
+      "rdf:_24": {
+        "@id": "#dataframeVariable/95"
+      },
+      "rdf:_25": {
+        "@id": "#dataframeVariable/96"
+      },
+      "rdf:_26": {
+        "@id": "#dataframeVariable/97"
+      },
+      "rdf:_27": {
+        "@id": "#dataframeVariable/98"
+      },
+      "rdf:_28": {
+        "@id": "#dataframeVariable/99"
+      },
+      "rdf:_29": {
+        "@id": "#dataframeVariable/100"
+      },
+      "rdf:_3": {
+        "@id": "#dataframeVariable/74"
+      },
+      "rdf:_30": {
+        "@id": "#dataframeVariable/101"
+      },
+      "rdf:_31": {
+        "@id": "#dataframeVariable/102"
+      },
+      "rdf:_32": {
+        "@id": "#dataframeVariable/103"
+      },
+      "rdf:_33": {
+        "@id": "#dataframeVariable/104"
+      },
+      "rdf:_34": {
+        "@id": "#dataframeVariable/105"
+      },
+      "rdf:_35": {
+        "@id": "#dataframeVariable/106"
+      },
+      "rdf:_36": {
+        "@id": "#dataframeVariable/107"
+      },
+      "rdf:_37": {
+        "@id": "#dataframeVariable/108"
+      },
+      "rdf:_38": {
+        "@id": "#dataframeVariable/109"
+      },
+      "rdf:_39": {
+        "@id": "#dataframeVariable/110"
+      },
+      "rdf:_4": {
+        "@id": "#dataframeVariable/75"
+      },
+      "rdf:_40": {
+        "@id": "#dataframeVariable/111"
+      },
+      "rdf:_41": {
+        "@id": "#dataframeVariable/112"
+      },
+      "rdf:_42": {
+        "@id": "#dataframeVariable/113"
+      },
+      "rdf:_43": {
+        "@id": "#dataframeVariable/114"
+      },
+      "rdf:_44": {
+        "@id": "#dataframeVariable/115"
+      },
+      "rdf:_45": {
+        "@id": "#dataframeVariable/116"
+      },
+      "rdf:_46": {
+        "@id": "#dataframeVariable/117"
+      },
+      "rdf:_47": {
+        "@id": "#dataframeVariable/118"
+      },
+      "rdf:_48": {
+        "@id": "#dataframeVariable/119"
+      },
+      "rdf:_49": {
+        "@id": "#dataframeVariable/120"
+      },
+      "rdf:_5": {
+        "@id": "#dataframeVariable/76"
+      },
+      "rdf:_50": {
+        "@id": "#dataframeVariable/121"
+      },
+      "rdf:_51": {
+        "@id": "#dataframeVariable/122"
+      },
+      "rdf:_52": {
+        "@id": "#dataframeVariable/123"
+      },
+      "rdf:_53": {
+        "@id": "#dataframeVariable/124"
+      },
+      "rdf:_54": {
+        "@id": "#dataframeVariable/125"
+      },
+      "rdf:_55": {
+        "@id": "#dataframeVariable/126"
+      },
+      "rdf:_56": {
+        "@id": "#dataframeVariable/127"
+      },
+      "rdf:_57": {
+        "@id": "#dataframeVariable/128"
+      },
+      "rdf:_58": {
+        "@id": "#dataframeVariable/129"
+      },
+      "rdf:_59": {
+        "@id": "#dataframeVariable/130"
+      },
+      "rdf:_6": {
+        "@id": "#dataframeVariable/77"
+      },
+      "rdf:_60": {
+        "@id": "#dataframeVariable/131"
+      },
+      "rdf:_61": {
+        "@id": "#dataframeVariable/132"
+      },
+      "rdf:_62": {
+        "@id": "#dataframeVariable/133"
+      },
+      "rdf:_63": {
+        "@id": "#dataframeVariable/134"
+      },
+      "rdf:_64": {
+        "@id": "#dataframeVariable/135"
+      },
+      "rdf:_65": {
+        "@id": "#dataframeVariable/136"
+      },
+      "rdf:_66": {
+        "@id": "#dataframeVariable/137"
+      },
+      "rdf:_67": {
+        "@id": "#dataframeVariable/138"
+      },
+      "rdf:_68": {
+        "@id": "#dataframeVariable/139"
+      },
+      "rdf:_69": {
+        "@id": "#dataframeVariable/140"
+      },
+      "rdf:_7": {
+        "@id": "#dataframeVariable/78"
+      },
+      "rdf:_70": {
+        "@id": "#dataframeVariable/141"
+      },
+      "rdf:_71": {
+        "@id": "#dataframeVariable/142"
+      },
+      "rdf:_72": {
+        "@id": "#dataframeVariable/143"
+      },
+      "rdf:_8": {
+        "@id": "#dataframeVariable/79"
+      },
+      "rdf:_9": {
+        "@id": "#dataframeVariable/80"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/190",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD6"
+    },
+    {
+      "@id": "#dataframeVariable/147",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "BLUES"
+    },
+    {
+      "@id": "#dataframeVariable/119",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD7"
+    },
+    {
+      "@id": "#dataframeVariable/185",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD1"
+    },
+    {
+      "@id": "#dataframeVariable/132",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RESPNUM"
+    },
+    {
+      "@id": "#dataframeVariable/234",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER2"
+    },
+    {
+      "@id": "#dataframeVariable/256",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "NATSPAC"
+    },
+    {
+      "@id": "#dataframeVariable/45",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD4"
+    },
+    {
+      "@id": "#dataframeVariable/172",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "HRS1"
+    },
+    {
+      "@id": "#FunctionCallExpression/4",
+      "@type": "sdtl:FunctionCallExpression",
+      "sdtl:Arguments": {
+        "@id": "#ArgumentsInventory/4"
+      },
+      "sdtl:function": "subtraction",
+      "sdtl:isSdtlName": true
+    },
+    {
+      "@id": "#NumericConstantExpression/4",
+      "@type": "sdtl:NumericConstantExpression",
+      "sdtl:numericType": "Real",
+      "sdtl:value": "0.07"
+    },
+    {
+      "@id": "#dataframeVariable/197",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "PARTYID"
+    },
+    {
+      "@id": "#dataframeVariable/178",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "LATIN"
+    },
+    {
+      "@id": "#dataframeVariable/33",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "ISSP"
+    },
+    {
+      "@id": "#dataframeVariable/277",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RESPNUM"
+    },
+    {
+      "@id": "#dataframeVariable/135",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SAMPCODE"
+    },
+    {
+      "@id": "#dataframeVariable/250",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "JAZZ"
+    },
+    {
+      "@id": "#dataframeVariable/155",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "DEGREE"
+    },
+    {
+      "@id": "#dataframeVariable/181",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "MOODEASY"
+    },
+    {
+      "@id": "#dataframeVariable/15",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "FOLK"
+    },
+    {
+      "@id": "#dataframeVariable/280",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SAMPCODE"
+    },
+    {
+      "@id": "#dataframeVariable/173",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "HVYMETAL"
+    },
+    {
+      "@id": "#FunctionArgument/3",
+      "@type": "sdtl:FunctionArgument",
+      "sdtl:argumentName": "EXP2",
+      "sdtl:argumentValue": {
+        "@id": "#VariableSymbolExpression/2"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/9",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "COHORT"
+    },
+    {
+      "@id": "#dataframeVariable/235",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER3"
+    },
+    {
+      "@id": "#dataframeVariable/30",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "HVYMETAL"
+    },
+    {
+      "@id": "#dataframeVariable/113",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD1"
+    },
+    {
+      "@id": "#dataframeVariable/228",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "DEGREE"
+    },
+    {
+      "@id": "#dataframeVariable/133",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RINCOME"
+    },
+    {
+      "@id": "#dataframeVariable/170",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "HHRACE"
+    },
+    {
+      "@id": "#sourceInformation/10",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:lineNumberEnd": 23,
+      "sdtl:lineNumberStart": 23,
+      "sdtl:originalSourceText": "##********* SAVE FILE 2 **********************************",
+      "sdtl:sourceStartIndex": 553,
+      "sdtl:sourceStopIndex": 610
+    },
+    {
+      "@id": "#Comment/3",
+      "@type": "sdtl:Comment",
+      "sdtl:command": "Comment",
+      "sdtl:commentText": "#********* SAVE FILE  1 **********************************",
+      "sdtl:sourceInformation": {
+        "@id": "#sourceInformation/6"
+      }
+    },
+    {
+      "@id": "#DataframeDescription/1",
+      "@type": "sdtl:DataframeDescription",
+      "sdtl:VariableInventory": {
+        "@id": "#VariableInventory/1"
+      },
+      "sdtl:dataframeName": "cdata"
+    },
+    {
+      "@id": "#dataframeVariable/14",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "EDUC"
+    },
+    {
+      "@id": "#dataframeVariable/268",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OPERA"
+    },
+    {
+      "@id": "#dataframeVariable/207",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SAMPCODE"
+    },
+    {
+      "@id": "#sourceInformation/7",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:lineNumberEnd": 16,
+      "sdtl:lineNumberStart": 16,
+      "sdtl:originalSourceText": "cdata.to_csv(\"GSS_sample_save1.csv\")",
+      "sdtl:sourceStartIndex": 409,
+      "sdtl:sourceStopIndex": 444
+    },
+    {
+      "@id": "#dataframeVariable/281",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SAMPLE"
+    },
+    {
+      "@id": "#sourceInformation/5",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:lineNumberEnd": 12,
+      "sdtl:lineNumberStart": 12,
+      "sdtl:originalSourceText": "cdata = cdata.assign(agestd = ((cdata['AGE'] - 45.99)/.07) )",
+      "sdtl:sourceStartIndex": 286,
+      "sdtl:sourceStopIndex": 345
+    },
+    {
+      "@id": "#dataframeVariable/184",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "NEWAGE"
+    },
+    {
+      "@id": "#dataframeVariable/266",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD9"
+    },
+    {
+      "@id": "#dataframeVariable/246",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "HVYMETAL"
+    },
+    {
+      "@id": "#dataframeVariable/89",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER2"
+    },
+    {
+      "@id": "#dataframeVariable/6",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CASEID"
+    },
+    {
+      "@id": "#dataframeVariable/217",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "ADULTS"
+    },
+    {
+      "@id": "#FunctionCallExpression/3",
+      "@type": "sdtl:FunctionCallExpression",
+      "sdtl:Arguments": {
+        "@id": "#ArgumentsInventory/3"
+      },
+      "sdtl:function": "division",
+      "sdtl:isSdtlName": true
+    },
+    {
+      "@id": "#dataframeVariable/140",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "UNRELAT"
+    },
+    {
+      "@id": "#dataframeVariable/162",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER3"
+    },
+    {
+      "@id": "#dataframeVariable/154",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "COUNTRY"
+    },
+    {
+      "@id": "#dataframeVariable/150",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CHILDS"
+    },
+    {
+      "@id": "#dataframeVariable/61",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RESPNUM"
+    },
+    {
+      "@id": "#dataframeVariable/103",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "INCOME"
+    },
+    {
+      "@id": "#dataframeVariable/183",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "NATSPAC"
+    },
+    {
+      "@id": "#dataframeVariable/242",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GOSPEL"
+    },
+    {
+      "@id": "#dataframeVariable/240",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER8"
+    },
+    {
+      "@id": "#dataframeVariable/63",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RPLACE"
+    },
+    {
+      "@id": "#dataframeVariable/244",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "HHTYPE"
+    },
+    {
+      "@id": "#dataframeVariable/39",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "MUSICALS"
+    },
+    {
+      "@id": "#dataframeVariable/60",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "REGION"
+    },
+    {
+      "@id": "#dataframeVariable/77",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CASEID"
+    },
+    {
+      "@id": "#dataframeVariable/216",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "agestd"
+    },
+    {
+      "@id": "#dataframeVariable/82",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "COUNTRY"
+    },
+    {
+      "@id": "#dataframeVariable/28",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "HHTYPE"
+    },
+    {
+      "@id": "#dataframeVariable/167",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER8"
+    },
+    {
+      "@id": "#dataframeVariable/289",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "agestd"
+    },
+    {
+      "@id": "#dataframeVariable/176",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "ISSP"
+    },
+    {
+      "@id": "#FunctionCallExpression/2",
+      "@type": "sdtl:FunctionCallExpression",
+      "sdtl:Arguments": {
+        "@id": "#ArgumentsInventory/2"
+      },
+      "sdtl:function": "multiplication",
+      "sdtl:isSdtlName": true
+    },
+    {
+      "@id": "#dataframeVariable/157",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "EDUC"
+    },
+    {
+      "@id": "#dataframeVariable/100",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "HRS1"
+    },
+    {
+      "@id": "#dataframeVariable/195",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OPERA"
+    },
+    {
+      "@id": "#dataframeVariable/10",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CONROCK"
+    },
+    {
+      "@id": "#dataframeVariable/118",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD6"
+    },
+    {
+      "@id": "#Save/1",
+      "@type": "sdtl:Save",
+      "sdtl:ConsumesDataframe": {
+        "@id": "#DataframeInventory/6"
+      },
+      "sdtl:command": "Save",
+      "sdtl:fileName": "GSS_sample_save1.csv",
+      "sdtl:software": "csv",
+      "sdtl:sourceInformation": {
+        "@id": "#sourceInformation/7"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/54",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "PARTYID"
+    },
+    {
+      "@id": "#dataframeVariable/286",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "WRKSTAT"
+    },
+    {
+      "@id": "#dataframeVariable/58",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "REALRINC"
+    },
+    {
+      "@id": "#dataframeVariable/78",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CHILDS"
+    },
+    {
+      "@id": "#DataframeInventory/4",
+      "@type": "rdf:Bag",
+      "rdf:_1": {
+        "@id": "#DataframeDescription/2"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/62",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RINCOME"
+    },
+    {
+      "@id": "#DataframeInventory/7",
+      "@type": "rdf:Bag",
+      "rdf:_1": {
+        "@id": "#DataframeDescription/3"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/245",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "HRS1"
+    },
+    {
+      "@id": "#dataframeVariable/91",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER4"
+    },
+    {
+      "@id": "#dataframeVariable/13",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "EARNRS"
+    },
+    {
+      "@id": "#dataframeVariable/111",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "NATSPAC"
+    },
+    {
+      "@id": "#FunctionCallExpression/5",
+      "@type": "sdtl:FunctionCallExpression",
+      "sdtl:Arguments": {
+        "@id": "#ArgumentsInventory/5"
+      },
+      "sdtl:function": "multiplication",
+      "sdtl:isSdtlName": true
+    },
+    {
+      "@id": "#VariableInventory/4",
+      "@type": "rdf:Seq",
+      "rdf:_1": {
+        "@id": "#dataframeVariable/217"
+      },
+      "rdf:_10": {
+        "@id": "#dataframeVariable/226"
+      },
+      "rdf:_11": {
+        "@id": "#dataframeVariable/227"
+      },
+      "rdf:_12": {
+        "@id": "#dataframeVariable/228"
+      },
+      "rdf:_13": {
+        "@id": "#dataframeVariable/229"
+      },
+      "rdf:_14": {
+        "@id": "#dataframeVariable/230"
+      },
+      "rdf:_15": {
+        "@id": "#dataframeVariable/231"
+      },
+      "rdf:_16": {
+        "@id": "#dataframeVariable/232"
+      },
+      "rdf:_17": {
+        "@id": "#dataframeVariable/233"
+      },
+      "rdf:_18": {
+        "@id": "#dataframeVariable/234"
+      },
+      "rdf:_19": {
+        "@id": "#dataframeVariable/235"
+      },
+      "rdf:_2": {
+        "@id": "#dataframeVariable/218"
+      },
+      "rdf:_20": {
+        "@id": "#dataframeVariable/236"
+      },
+      "rdf:_21": {
+        "@id": "#dataframeVariable/237"
+      },
+      "rdf:_22": {
+        "@id": "#dataframeVariable/238"
+      },
+      "rdf:_23": {
+        "@id": "#dataframeVariable/239"
+      },
+      "rdf:_24": {
+        "@id": "#dataframeVariable/240"
+      },
+      "rdf:_25": {
+        "@id": "#dataframeVariable/241"
+      },
+      "rdf:_26": {
+        "@id": "#dataframeVariable/242"
+      },
+      "rdf:_27": {
+        "@id": "#dataframeVariable/243"
+      },
+      "rdf:_28": {
+        "@id": "#dataframeVariable/244"
+      },
+      "rdf:_29": {
+        "@id": "#dataframeVariable/245"
+      },
+      "rdf:_3": {
+        "@id": "#dataframeVariable/219"
+      },
+      "rdf:_30": {
+        "@id": "#dataframeVariable/246"
+      },
+      "rdf:_31": {
+        "@id": "#dataframeVariable/247"
+      },
+      "rdf:_32": {
+        "@id": "#dataframeVariable/248"
+      },
+      "rdf:_33": {
+        "@id": "#dataframeVariable/249"
+      },
+      "rdf:_34": {
+        "@id": "#dataframeVariable/250"
+      },
+      "rdf:_35": {
+        "@id": "#dataframeVariable/251"
+      },
+      "rdf:_36": {
+        "@id": "#dataframeVariable/252"
+      },
+      "rdf:_37": {
+        "@id": "#dataframeVariable/253"
+      },
+      "rdf:_38": {
+        "@id": "#dataframeVariable/254"
+      },
+      "rdf:_39": {
+        "@id": "#dataframeVariable/255"
+      },
+      "rdf:_4": {
+        "@id": "#dataframeVariable/220"
+      },
+      "rdf:_40": {
+        "@id": "#dataframeVariable/256"
+      },
+      "rdf:_41": {
+        "@id": "#dataframeVariable/257"
+      },
+      "rdf:_42": {
+        "@id": "#dataframeVariable/258"
+      },
+      "rdf:_43": {
+        "@id": "#dataframeVariable/259"
+      },
+      "rdf:_44": {
+        "@id": "#dataframeVariable/260"
+      },
+      "rdf:_45": {
+        "@id": "#dataframeVariable/261"
+      },
+      "rdf:_46": {
+        "@id": "#dataframeVariable/262"
+      },
+      "rdf:_47": {
+        "@id": "#dataframeVariable/263"
+      },
+      "rdf:_48": {
+        "@id": "#dataframeVariable/264"
+      },
+      "rdf:_49": {
+        "@id": "#dataframeVariable/265"
+      },
+      "rdf:_5": {
+        "@id": "#dataframeVariable/221"
+      },
+      "rdf:_50": {
+        "@id": "#dataframeVariable/266"
+      },
+      "rdf:_51": {
+        "@id": "#dataframeVariable/267"
+      },
+      "rdf:_52": {
+        "@id": "#dataframeVariable/268"
+      },
+      "rdf:_53": {
+        "@id": "#dataframeVariable/269"
+      },
+      "rdf:_54": {
+        "@id": "#dataframeVariable/270"
+      },
+      "rdf:_55": {
+        "@id": "#dataframeVariable/271"
+      },
+      "rdf:_56": {
+        "@id": "#dataframeVariable/272"
+      },
+      "rdf:_57": {
+        "@id": "#dataframeVariable/273"
+      },
+      "rdf:_58": {
+        "@id": "#dataframeVariable/274"
+      },
+      "rdf:_59": {
+        "@id": "#dataframeVariable/275"
+      },
+      "rdf:_6": {
+        "@id": "#dataframeVariable/222"
+      },
+      "rdf:_60": {
+        "@id": "#dataframeVariable/276"
+      },
+      "rdf:_61": {
+        "@id": "#dataframeVariable/277"
+      },
+      "rdf:_62": {
+        "@id": "#dataframeVariable/278"
+      },
+      "rdf:_63": {
+        "@id": "#dataframeVariable/279"
+      },
+      "rdf:_64": {
+        "@id": "#dataframeVariable/280"
+      },
+      "rdf:_65": {
+        "@id": "#dataframeVariable/281"
+      },
+      "rdf:_66": {
+        "@id": "#dataframeVariable/282"
+      },
+      "rdf:_67": {
+        "@id": "#dataframeVariable/283"
+      },
+      "rdf:_68": {
+        "@id": "#dataframeVariable/284"
+      },
+      "rdf:_69": {
+        "@id": "#dataframeVariable/285"
+      },
+      "rdf:_7": {
+        "@id": "#dataframeVariable/223"
+      },
+      "rdf:_70": {
+        "@id": "#dataframeVariable/286"
+      },
+      "rdf:_71": {
+        "@id": "#dataframeVariable/287"
+      },
+      "rdf:_72": {
+        "@id": "#dataframeVariable/288"
+      },
+      "rdf:_73": {
+        "@id": "#dataframeVariable/289"
+      },
+      "rdf:_8": {
+        "@id": "#dataframeVariable/224"
+      },
+      "rdf:_9": {
+        "@id": "#dataframeVariable/225"
+      }
+    },
+    {
+      "@id": "#FunctionArgument/1",
+      "@type": "sdtl:FunctionArgument",
+      "sdtl:argumentName": "EXP1",
+      "sdtl:argumentValue": {
+        "@id": "#FunctionCallExpression/2"
+      }
+    },
+    {
+      "@id": "#Save/2",
+      "@type": "sdtl:Save",
+      "sdtl:ConsumesDataframe": {
+        "@id": "#DataframeInventory/9"
+      },
+      "sdtl:command": "Save",
+      "sdtl:fileName": "GSS_sample_save2.csv",
+      "sdtl:software": "csv",
+      "sdtl:sourceInformation": {
+        "@id": "#sourceInformation/11"
+      }
+    },
+    {
+      "@id": "#DataframeDescription/3",
+      "@type": "sdtl:DataframeDescription",
+      "sdtl:VariableInventory": {
+        "@id": "#VariableInventory/3"
+      },
+      "sdtl:dataframeName": "cdata"
+    },
+    {
+      "@id": "#ArgumentsInventory/5",
+      "@type": "rdf:Seq",
+      "rdf:rdf:_1": {
+        "@id": "#FunctionArgument/9"
+      },
+      "rdf:rdf:_2": {
+        "@id": "#FunctionArgument/10"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/47",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD6"
+    },
+    {
+      "@id": "#dataframeVariable/92",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER5"
+    },
+    {
+      "@id": "#dataframeVariable/180",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "MARITAL"
+    },
+    {
       "@id": "#dataframeVariable/208",
       "@type": "sdtl:VariableSymbolExpression",
       "sdtl:VariableName": "SAMPLE"
+    },
+    {
+      "@id": "#NumericConstantExpression/2",
+      "@type": "sdtl:NumericConstantExpression",
+      "sdtl:numericType": "Real",
+      "sdtl:value": "45.99"
+    },
+    {
+      "@id": "#dataframeVariable/137",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "SEX"
+    },
+    {
+      "@id": "#sourceInformation/3",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:lineNumberEnd": 9,
+      "sdtl:lineNumberStart": 9,
+      "sdtl:originalSourceText": "cdata = cdata.assign(pctFamIncome = 100*cdata['REALRINC']/cdata['REALINC'] )",
+      "sdtl:sourceStartIndex": 154,
+      "sdtl:sourceStopIndex": 229
+    },
+    {
+      "@id": "#dataframeVariable/114",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD2"
+    },
+    {
+      "@id": "#dataframeVariable/169",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GOSPEL"
+    },
+    {
+      "@id": "#dataframeVariable/80",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "COHORT"
+    },
+    {
+      "@id": "#dataframeVariable/258",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD1"
+    },
+    {
+      "@id": "#VariableSymbolExpression/3",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:variableName": "REALINC"
+    },
+    {
+      "@id": "#dataframeVariable/224",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CLASSICL"
+    },
+    {
+      "@id": "#dataframeVariable/233",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER1"
+    },
+    {
+      "@id": "#dataframeVariable/56",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RAP"
+    },
+    {
+      "@id": "#dataframeVariable/16",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "FORMWT"
+    },
+    {
+      "@id": "#dataframeVariable/179",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "MARCOHRT"
+    },
+    {
+      "@id": "#dataframeVariable/105",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "JAZZ"
+    },
+    {
+      "@id": "#dataframeVariable/278",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RINCOME"
+    },
+    {
+      "@id": "#dataframeVariable/254",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "MOODEASY"
+    },
+    {
+      "@id": "#Program/1",
+      "@type": "sdtl:Program",
+      "sdtl:commands": {
+        "@id": "#CommandInventory/1"
+      }
+    },
+    {
+      "@id": "#sourceInformation/1",
+      "@type": "sdtl:SourceInformation",
+      "sdtl:lineNumberEnd": 6,
+      "sdtl:lineNumberStart": 6,
+      "sdtl:originalSourceText": "cdata = pd.read_csv(\"GSS_sample.csv\")",
+      "sdtl:sourceStartIndex": 61,
+      "sdtl:sourceStopIndex": 97
+    },
+    {
+      "@id": "#dataframeVariable/79",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "CLASSICL"
+    },
+    {
+      "@id": "#dataframeVariable/161",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER2"
+    },
+    {
+      "@id": "#dataframeVariable/261",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OLD4"
+    },
+    {
+      "@id": "#dataframeVariable/40",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "NATSPAC"
+    },
+    {
+      "@id": "#FunctionArgument/2",
+      "@type": "sdtl:FunctionArgument",
+      "sdtl:argumentName": "EXP1",
+      "sdtl:argumentValue": {
+        "@id": "#NumericConstantExpression/1"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/53",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "OVERSAMP"
+    },
+    {
+      "@id": "#VariableInventory/1",
+      "@type": "rdf:Seq",
+      "rdf:_1": {
+        "@id": "#dataframeVariable/1"
+      },
+      "rdf:_10": {
+        "@id": "#dataframeVariable/10"
+      },
+      "rdf:_11": {
+        "@id": "#dataframeVariable/11"
+      },
+      "rdf:_12": {
+        "@id": "#dataframeVariable/12"
+      },
+      "rdf:_13": {
+        "@id": "#dataframeVariable/13"
+      },
+      "rdf:_14": {
+        "@id": "#dataframeVariable/14"
+      },
+      "rdf:_15": {
+        "@id": "#dataframeVariable/15"
+      },
+      "rdf:_16": {
+        "@id": "#dataframeVariable/16"
+      },
+      "rdf:_17": {
+        "@id": "#dataframeVariable/17"
+      },
+      "rdf:_18": {
+        "@id": "#dataframeVariable/18"
+      },
+      "rdf:_19": {
+        "@id": "#dataframeVariable/19"
+      },
+      "rdf:_2": {
+        "@id": "#dataframeVariable/2"
+      },
+      "rdf:_20": {
+        "@id": "#dataframeVariable/20"
+      },
+      "rdf:_21": {
+        "@id": "#dataframeVariable/21"
+      },
+      "rdf:_22": {
+        "@id": "#dataframeVariable/22"
+      },
+      "rdf:_23": {
+        "@id": "#dataframeVariable/23"
+      },
+      "rdf:_24": {
+        "@id": "#dataframeVariable/24"
+      },
+      "rdf:_25": {
+        "@id": "#dataframeVariable/25"
+      },
+      "rdf:_26": {
+        "@id": "#dataframeVariable/26"
+      },
+      "rdf:_27": {
+        "@id": "#dataframeVariable/27"
+      },
+      "rdf:_28": {
+        "@id": "#dataframeVariable/28"
+      },
+      "rdf:_29": {
+        "@id": "#dataframeVariable/29"
+      },
+      "rdf:_3": {
+        "@id": "#dataframeVariable/3"
+      },
+      "rdf:_30": {
+        "@id": "#dataframeVariable/30"
+      },
+      "rdf:_31": {
+        "@id": "#dataframeVariable/31"
+      },
+      "rdf:_32": {
+        "@id": "#dataframeVariable/32"
+      },
+      "rdf:_33": {
+        "@id": "#dataframeVariable/33"
+      },
+      "rdf:_34": {
+        "@id": "#dataframeVariable/34"
+      },
+      "rdf:_35": {
+        "@id": "#dataframeVariable/35"
+      },
+      "rdf:_36": {
+        "@id": "#dataframeVariable/36"
+      },
+      "rdf:_37": {
+        "@id": "#dataframeVariable/37"
+      },
+      "rdf:_38": {
+        "@id": "#dataframeVariable/38"
+      },
+      "rdf:_39": {
+        "@id": "#dataframeVariable/39"
+      },
+      "rdf:_4": {
+        "@id": "#dataframeVariable/4"
+      },
+      "rdf:_40": {
+        "@id": "#dataframeVariable/40"
+      },
+      "rdf:_41": {
+        "@id": "#dataframeVariable/41"
+      },
+      "rdf:_42": {
+        "@id": "#dataframeVariable/42"
+      },
+      "rdf:_43": {
+        "@id": "#dataframeVariable/43"
+      },
+      "rdf:_44": {
+        "@id": "#dataframeVariable/44"
+      },
+      "rdf:_45": {
+        "@id": "#dataframeVariable/45"
+      },
+      "rdf:_46": {
+        "@id": "#dataframeVariable/46"
+      },
+      "rdf:_47": {
+        "@id": "#dataframeVariable/47"
+      },
+      "rdf:_48": {
+        "@id": "#dataframeVariable/48"
+      },
+      "rdf:_49": {
+        "@id": "#dataframeVariable/49"
+      },
+      "rdf:_5": {
+        "@id": "#dataframeVariable/5"
+      },
+      "rdf:_50": {
+        "@id": "#dataframeVariable/50"
+      },
+      "rdf:_51": {
+        "@id": "#dataframeVariable/51"
+      },
+      "rdf:_52": {
+        "@id": "#dataframeVariable/52"
+      },
+      "rdf:_53": {
+        "@id": "#dataframeVariable/53"
+      },
+      "rdf:_54": {
+        "@id": "#dataframeVariable/54"
+      },
+      "rdf:_55": {
+        "@id": "#dataframeVariable/55"
+      },
+      "rdf:_56": {
+        "@id": "#dataframeVariable/56"
+      },
+      "rdf:_57": {
+        "@id": "#dataframeVariable/57"
+      },
+      "rdf:_58": {
+        "@id": "#dataframeVariable/58"
+      },
+      "rdf:_59": {
+        "@id": "#dataframeVariable/59"
+      },
+      "rdf:_6": {
+        "@id": "#dataframeVariable/6"
+      },
+      "rdf:_60": {
+        "@id": "#dataframeVariable/60"
+      },
+      "rdf:_61": {
+        "@id": "#dataframeVariable/61"
+      },
+      "rdf:_62": {
+        "@id": "#dataframeVariable/62"
+      },
+      "rdf:_63": {
+        "@id": "#dataframeVariable/63"
+      },
+      "rdf:_64": {
+        "@id": "#dataframeVariable/64"
+      },
+      "rdf:_65": {
+        "@id": "#dataframeVariable/65"
+      },
+      "rdf:_66": {
+        "@id": "#dataframeVariable/66"
+      },
+      "rdf:_67": {
+        "@id": "#dataframeVariable/67"
+      },
+      "rdf:_68": {
+        "@id": "#dataframeVariable/68"
+      },
+      "rdf:_69": {
+        "@id": "#dataframeVariable/69"
+      },
+      "rdf:_7": {
+        "@id": "#dataframeVariable/7"
+      },
+      "rdf:_70": {
+        "@id": "#dataframeVariable/70"
+      },
+      "rdf:_71": {
+        "@id": "#dataframeVariable/71"
+      },
+      "rdf:_8": {
+        "@id": "#dataframeVariable/8"
+      },
+      "rdf:_9": {
+        "@id": "#dataframeVariable/9"
+      }
+    },
+    {
+      "@id": "#dataframeVariable/201",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "REALRINC"
+    },
+    {
+      "@id": "#dataframeVariable/204",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "RESPNUM"
+    },
+    {
+      "@id": "#dataframeVariable/152",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "COHORT"
+    },
+    {
+      "@id": "#dataframeVariable/94",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "GENDER7"
+    },
+    {
+      "@id": "#dataframeVariable/251",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "LATIN"
+    },
+    {
+      "@id": "#dataframeVariable/225",
+      "@type": "sdtl:VariableSymbolExpression",
+      "sdtl:VariableName": "COHORT"
+    },
+    {
+      "@id": "#Compute/1",
+      "@type": "sdtl:Compute",
+      "sdtl:ConsumesDataframe": {
+        "@id": "#DataframeInventory/2"
+      },
+      "sdtl:ProducesDataframe": {
+        "@id": "#DataframeInventory/3"
+      },
+      "sdtl:command": "Compute",
+      "sdtl:expression": {
+        "@id": "#FunctionCallExpression/1"
+      },
+      "sdtl:sourceInformation": {
+        "@id": "#sourceInformation/3"
+      },
+      "sdtl:variable": {
+        "@id": "#VariableSymbolExpression/1"
+      }
     }
   ]
 }
